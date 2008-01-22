@@ -1,0 +1,19 @@
+[Test Parameters]
+bgColor=127.5,127.5,127.5
+
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+fixAcquireTime=0
+fixHoldTime=0
+
+interTrialTime=1500
+juiceTime=20
+fixWinSize=50
+numTrials=1000
+rewardProb=1.0
+
+size=400,400
+color=255,0,0,0,255,0
+location=0,0
+stimTime=10500
