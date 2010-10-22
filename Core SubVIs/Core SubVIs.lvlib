@@ -62,7 +62,7 @@
 	<Item Name="acquireFixation.vi" Type="VI" URL="../acquireFixation.vi"/>
 	<Item Name="convertEyes.vi" Type="VI" URL="../convertEyes.vi"/>
 	<Item Name="Network - Send Start Session.vi" Type="VI" URL="../Network - Send Start Session.vi"/>
-	<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../Trial Based Experiment Runner.vi"/>
+	<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../../Trial Based Experiment Statechart/Trial Based Experiment Runner.vi"/>
 	<Item Name="Network - Send End Session.vi" Type="VI" URL="../Network - Send End Session.vi"/>
 	<Item Name="Select Matlab if Labview Negative.vi" Type="VI" URL="../Select Matlab if Labview Negative.vi"/>
 </Library>
