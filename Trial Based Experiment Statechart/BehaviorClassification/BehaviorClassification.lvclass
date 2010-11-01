@@ -29,6 +29,15 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1351361040</Property>
 	</Item>
+	<Item Name="Read Matlab Params.vi" Type="VI" URL="../Read Matlab Params.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'S!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!Z!-0````]%4G&amp;N:1!!#E"4"%2B&gt;'%!!"*!5!!#!!5!"A&gt;$&lt;(6T&gt;'6S!#"!1!!"`````Q!(%EVB&gt;'RB9C"198*B&lt;3""=H*B?1!!2%"Q!"Y!!#!?1G6I98:J&lt;X*$&lt;'&amp;T=WFG;7.B&gt;'FP&lt;CZM&gt;G.M98.T!!!96(*J97R#98.F:%6Y='6S;7VF&lt;H1A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#6!&amp;A!#$&amp;.U98*U5W6T=WFP&lt;AJ4&gt;'&amp;S&gt;&amp;2S;7&amp;M!!2&amp;&lt;H6N!!"#1(!!(A!!)"Z#:7BB&gt;GFP=E.M98.T;7:J9W&amp;U;7^O,GRW9WRB=X-!!"&gt;5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"J&lt;A"5!0!!$!!$!!1!#!!*!!1!"!!%!!1!#A!%!!M!$!-!!(A!!!U)!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!)!!!!EA!!!!!"!!U!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1351361040</Property>
+	</Item>
 	<Item Name="Run.vi" Type="VI" URL="../Run.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"A!!!!!A!%!!!!6!$Q!!Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!$!!"Y!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!"!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
