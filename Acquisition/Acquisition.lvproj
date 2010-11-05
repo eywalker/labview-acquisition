@@ -21,6 +21,7 @@
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
 		<Item Name="WriteMessage.vi" Type="VI" URL="../WriteMessage.vi"/>
 		<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
+		<Item Name="Test.vi" Type="VI" URL="../../HDF5/Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -295,6 +296,25 @@
 			</Item>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
+			<Item Name="HDF5Tools.dll" Type="Document" URL="../../HDF5/HDF5Tools.dll"/>
+			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../HDF5/Append To Dataset 1D Double.vi"/>
+			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../HDF5/Append To Dataset 1D Integer.vi"/>
+			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../HDF5/Append To Dataset 2D Double.vi"/>
+			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../HDF5/Append To Dataset 2D Integer.vi"/>
+			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../HDF5/Append To Dataset 3D Double.vi"/>
+			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../HDF5/Append To Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../HDF5/Create Dataset 1D Double.vi"/>
+			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../HDF5/Create Dataset 1D Integer.vi"/>
+			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../HDF5/Create Dataset 2D Double.vi"/>
+			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../HDF5/Create Dataset 2D Integer.vi"/>
+			<Item Name="Create Dataset Array Wfm.vi" Type="VI" URL="../../HDF5/Create Dataset Array Wfm.vi"/>
+			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../HDF5/Create Dataset 3D Integer.vi"/>
+			<Item Name="Add Attribute Double.vi" Type="VI" URL="../../HDF5/Add Attribute Double.vi"/>
+			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../HDF5/hdf5_hldll.dll"/>
+			<Item Name="Add Attribute Integer.vi" Type="VI" URL="../../HDF5/Add Attribute Integer.vi"/>
+			<Item Name="Add Attribute String.vi" Type="VI" URL="../../HDF5/Add Attribute String.vi"/>
+			<Item Name="HDF5Tool.lvlib" Type="Library" URL="../../HDF5/HDF5Tool.lvlib"/>
+			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../HDF5/Create Dataset 3D Double.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
