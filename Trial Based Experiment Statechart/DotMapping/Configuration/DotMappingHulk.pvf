@@ -1,0 +1,20 @@
+[Test Parameters]
+
+bgColor=128,128,128
+
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+
+dotColor=0,255
+
+passive=1
+acquireFixation=1
+allowSaccades=0
+
+monitorSize=41,30
+monitorDistance=109
+monitorCenter=800,600
+
+rewardProb=1
+nTrials=500
