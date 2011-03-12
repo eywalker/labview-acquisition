@@ -14,8 +14,16 @@ allowSaccades=0
 
 monitorSize=43.29,27.09
 monitorDistance=28
-monitorCenter=840,525
+monitorCenter=800,500
 
 location=0,0
 
 nTrials=500
+
+pFill=0.0044
+stimFrames=3
+stimCenterX=800
+stimCenterY=600
+dotSize=30
+dotNumX=30
+dotNumY=30
