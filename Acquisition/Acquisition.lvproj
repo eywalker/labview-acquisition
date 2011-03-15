@@ -15,13 +15,13 @@
 		<Item Name="BehaviorEphys.vi" Type="VI" URL="../BehaviorEphys.vi"/>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
-		<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../BehaviorData/BehaviorData.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
 		<Item Name="WriteMessage.vi" Type="VI" URL="../WriteMessage.vi"/>
 		<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
-		<Item Name="Test.vi" Type="VI" URL="../../HDF5/Test.vi"/>
+		<Item Name="Test.vi" Type="VI" URL="../HDF5Tools/LabView/Test.vi"/>
+		<Item Name="HDF5Tools.lvlib" Type="Library" URL="../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -265,56 +265,30 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
-				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
-				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
-				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
-				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
-				<Item Name="NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="/&lt;vilib&gt;/Statechart/Common/NI_SC_LVSCCommonFiles.lvlib"/>
-				<Item Name="DWDT Empty Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Empty Digital.vi"/>
-				<Item Name="Digital Pattern Generator (Toggle).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Toggle).vi"/>
-				<Item Name="Digital Pattern Generator (Random).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Random).vi"/>
-				<Item Name="Digital Pattern Generator (Single Value).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Single Value).vi"/>
-				<Item Name="Digital Pattern Generator (Marching Values).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Marching Values).vi"/>
-				<Item Name="Digital Pattern Generator (Ramp).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Ramp).vi"/>
-				<Item Name="Digital Pattern Generator.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital Pattern Generator.vi"/>
 				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
-				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
-				<Item Name="SCRT Dbg Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT Dbg Rtn.vi"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
-				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
-				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
-				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
-			<Item Name="HDF5Tools.dll" Type="Document" URL="../../HDF5/HDF5Tools.dll"/>
-			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../HDF5/Append To Dataset 1D Double.vi"/>
-			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../HDF5/Append To Dataset 1D Integer.vi"/>
-			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../HDF5/Append To Dataset 2D Double.vi"/>
-			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../HDF5/Append To Dataset 2D Integer.vi"/>
-			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../HDF5/Append To Dataset 3D Double.vi"/>
-			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../HDF5/Append To Dataset 3D Integer.vi"/>
-			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../HDF5/Create Dataset 1D Double.vi"/>
-			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../HDF5/Create Dataset 1D Integer.vi"/>
-			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../HDF5/Create Dataset 2D Double.vi"/>
-			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../HDF5/Create Dataset 2D Integer.vi"/>
-			<Item Name="Create Dataset Array Wfm.vi" Type="VI" URL="../../HDF5/Create Dataset Array Wfm.vi"/>
-			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../HDF5/Create Dataset 3D Integer.vi"/>
-			<Item Name="Add Attribute Double.vi" Type="VI" URL="../../HDF5/Add Attribute Double.vi"/>
-			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../HDF5/hdf5_hldll.dll"/>
-			<Item Name="Add Attribute Integer.vi" Type="VI" URL="../../HDF5/Add Attribute Integer.vi"/>
-			<Item Name="Add Attribute String.vi" Type="VI" URL="../../HDF5/Add Attribute String.vi"/>
-			<Item Name="HDF5Tool.lvlib" Type="Library" URL="../../HDF5/HDF5Tool.lvlib"/>
-			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../HDF5/Create Dataset 3D Double.vi"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
+			<Item Name="CreateTestTask.vi" Type="VI" URL="../HDF5Tools/LabView/CreateTestTask.vi"/>
+			<Item Name="HDF5Tools.dll" Type="Document" URL="../HDF5Tools/Release/HDF5Tools.dll"/>
+			<Item Name="Add Attribute Double.vi" Type="VI" URL="../HDF5Tools/LabView/Add Attribute Double.vi"/>
+			<Item Name="hdf5_hldll.dll" Type="Document" URL="../HDF5Tools/Release/hdf5_hldll.dll"/>
+			<Item Name="Add Attribute Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Add Attribute Integer.vi"/>
+			<Item Name="Add Attribute String.vi" Type="VI" URL="../HDF5Tools/LabView/Add Attribute String.vi"/>
+			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
+			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
+			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
+			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
+			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
+			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
+			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
+			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
+			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
+			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
+			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
+			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
