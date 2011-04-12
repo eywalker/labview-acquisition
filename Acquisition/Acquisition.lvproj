@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
-	<Property Name="varPersistentID:{18BE6BC0-D6E6-44E0-A75D-113C220BED3D}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
+	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
+	<Property Name="varPersistentID:{D38A100C-4C39-4349-8B51-72906B7E64F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -12,16 +13,28 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="BehaviorEphys.vi" Type="VI" URL="../BehaviorEphys.vi"/>
+		<Item Name="utils" Type="Folder">
+			<Item Name="Waveform to 2D Array.vi" Type="VI" URL="../utils/Waveform to 2D Array.vi"/>
+			<Item Name="Single Waveform.vi" Type="VI" URL="../utils/Single Waveform.vi"/>
+			<Item Name="Multiple Waveforms.vi" Type="VI" URL="../utils/Multiple Waveforms.vi"/>
+		</Item>
+		<Item Name="Database" Type="Folder">
+			<Item Name="SessionPrimary.ctl" Type="VI" URL="../Database/SessionPrimary.ctl"/>
+			<Item Name="InsertSession.vi" Type="VI" URL="../Database/InsertSession.vi"/>
+			<Item Name="InsertEphys.vi" Type="VI" URL="../Database/InsertEphys.vi"/>
+		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
+		<Item Name="ElectrophysiologyHDF5.lvclass" Type="LVClass" URL="../ElectrophysiologyHDF5/ElectrophysiologyHDF5.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
+		<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
 		<Item Name="WriteMessage.vi" Type="VI" URL="../WriteMessage.vi"/>
 		<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
-		<Item Name="Test.vi" Type="VI" URL="../HDF5Tools/LabView/Test.vi"/>
-		<Item Name="HDF5Tools.lvlib" Type="Library" URL="../HDF5Tools/LabView/HDF5Tools.lvlib"/>
+		<Item Name="EphysTest.vi" Type="VI" URL="../EphysTest.vi"/>
+		<Item Name="WriteTest.vi" Type="VI" URL="../WriteTest.vi"/>
+		<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -265,30 +278,35 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
+				<Item Name="NI_Database_API.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/database/NI_Database_API.lvlib"/>
+				<Item Name="GOOP Object Repository Statistics.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Statistics.ctl"/>
+				<Item Name="GOOP Object Repository Method.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Method.ctl"/>
+				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
-			<Item Name="CreateTestTask.vi" Type="VI" URL="../HDF5Tools/LabView/CreateTestTask.vi"/>
-			<Item Name="HDF5Tools.dll" Type="Document" URL="../HDF5Tools/Release/HDF5Tools.dll"/>
-			<Item Name="Add Attribute Double.vi" Type="VI" URL="../HDF5Tools/LabView/Add Attribute Double.vi"/>
-			<Item Name="hdf5_hldll.dll" Type="Document" URL="../HDF5Tools/Release/hdf5_hldll.dll"/>
-			<Item Name="Add Attribute Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Add Attribute Integer.vi"/>
-			<Item Name="Add Attribute String.vi" Type="VI" URL="../HDF5Tools/LabView/Add Attribute String.vi"/>
-			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
-			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
-			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
-			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
-			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
-			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
-			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
-			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
-			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
-			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
-			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
-			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
+			<Item Name="Create Dataset.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset.vi"/>
+			<Item Name="Close Dataset.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Close Dataset.vi"/>
+			<Item Name="Close File.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Close File.vi"/>
+			<Item Name="HDF5Tools.dll" Type="Document" URL="../../../../../libraries/HDF5Tools/Release/HDF5Tools.dll"/>
+			<Item Name="Error Code.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Error Code.vi"/>
+			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
+			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
+			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
+			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
+			<Item Name="Create File.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create File.vi"/>
+			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
+			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
+			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
+			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
+			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
+			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
+			<Item Name="Append To Dataset.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -320,7 +338,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{8FBFF6AD-1B28-4AF9-9908-AF300897F70D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/BehaviorEphys.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Ephys.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>

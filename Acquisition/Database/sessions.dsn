@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=MySQL ODBC 3.51 Driver
+UID=timestamper
+SERVER=at-storage
+PORT=0
+OPTION=0
+DATABASE=sessions
