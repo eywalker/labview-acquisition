@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
 	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
+	<Property Name="varPersistentID:{500D56EA-A11B-437D-B792-4C2522374099}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
 	<Property Name="varPersistentID:{D38A100C-4C39-4349-8B51-72906B7E64F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
@@ -13,19 +14,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="utils" Type="Folder">
-			<Item Name="Waveform to 2D Array.vi" Type="VI" URL="../utils/Waveform to 2D Array.vi"/>
-			<Item Name="Single Waveform.vi" Type="VI" URL="../utils/Single Waveform.vi"/>
-			<Item Name="Multiple Waveforms.vi" Type="VI" URL="../utils/Multiple Waveforms.vi"/>
-		</Item>
-		<Item Name="Database" Type="Folder">
-			<Item Name="SessionPrimary.ctl" Type="VI" URL="../Database/SessionPrimary.ctl"/>
-			<Item Name="InsertSession.vi" Type="VI" URL="../Database/InsertSession.vi"/>
-			<Item Name="InsertEphys.vi" Type="VI" URL="../Database/InsertEphys.vi"/>
+		<Item Name="Database" Type="Folder" URL="../Database">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
-		<Item Name="ElectrophysiologyHDF5.lvclass" Type="LVClass" URL="../ElectrophysiologyHDF5/ElectrophysiologyHDF5.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
@@ -35,6 +28,9 @@
 		<Item Name="EphysTest.vi" Type="VI" URL="../EphysTest.vi"/>
 		<Item Name="WriteTest.vi" Type="VI" URL="../WriteTest.vi"/>
 		<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
+		<Item Name="SimpleStreamTesting.vi" Type="VI" URL="../SimpleStreamTesting.vi"/>
+		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
+		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -47,8 +43,6 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
-				<Item Name="DAQmx Configure Logging (TDMS).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging (TDMS).vi"/>
-				<Item Name="DAQmx Configure Logging.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging.vi"/>
 				<Item Name="DAQmx Create AI Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create AI Channel (sub).vi"/>
 				<Item Name="DAQmx Create AI Channel TEDS(sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create AI Channel TEDS(sub).vi"/>
 				<Item Name="DAQmx Create AO Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create AO Channel (sub).vi"/>
@@ -283,30 +277,33 @@
 				<Item Name="GOOP Object Repository Method.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Method.ctl"/>
 				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
+				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
+				<Item Name="Convert 1DWfm to DDT.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DWfm to DDT.vi"/>
+				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
-			<Item Name="Create Dataset.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset.vi"/>
-			<Item Name="Close Dataset.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Close Dataset.vi"/>
-			<Item Name="Close File.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Close File.vi"/>
 			<Item Name="HDF5Tools.dll" Type="Document" URL="../../../../../libraries/HDF5Tools/Release/HDF5Tools.dll"/>
-			<Item Name="Error Code.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Error Code.vi"/>
 			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
 			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
 			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
 			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
 			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
-			<Item Name="Create File.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create File.vi"/>
 			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
 			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
 			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
 			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
 			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
 			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
-			<Item Name="Append To Dataset.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset.vi"/>
+			<Item Name="ElectrophysiologyHDF5.lvclass" Type="LVClass" URL="../ElectrophysiologyHDF5/ElectrophysiologyHDF5.lvclass"/>
+			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../../../libraries/HDF5Tools/LabView/HDF5Tools.lvlib"/>
+			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../../../../libraries/HDF5Tools/Release/hdf5_hldll.dll"/>
+			<Item Name="GetShit.vi" Type="VI" URL="../ElectrophysiologyHDF5/GetShit.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -359,6 +356,47 @@
 				<Property Name="TgtF_productName" Type="Str">Ephys Acquisition</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{5AC4E99B-5787-4148-9903-82ED91BD88A7}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">EphysAcquisition.exe</Property>
+			</Item>
+			<Item Name="Session Manager" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{629D9A91-67B0-4D56-8882-01D1D0B115EB}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{0F120A39-FB7C-403A-B296-AF11CA614B36}</Property>
+				<Property Name="App_INI_itemID" Type="Ref">/My Computer/app.ini</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Session Manager</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Acquisition/Session Manager</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">SessionManager.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Session Manager/SessionManager.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Session Manager/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/sessMan.ico</Property>
+				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
+				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{75538FFC-70E8-4224-B63B-8ADB60A6EE43}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SessionManager.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Database/ATLab.dsn</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">8</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
+				<Property Name="TgtF_productName" Type="Str">Session Manager</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{5E1B8872-F18F-4D51-B732-54E9C8DFD3E4}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">SessionManager.exe</Property>
 			</Item>
 		</Item>
 	</Item>

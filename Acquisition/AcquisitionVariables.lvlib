@@ -23,4 +23,17 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!I*!!!!"!!A!!!!!!"!""!-0````]'5X2S;7ZH!!!"!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="SessionPK" Type="Variable">
+		<Property Name="Description:Description" Type="Str">This has the primary key for the currently active session
+</Property>
+		<Property Name="featurePacks" Type="Str">Description,Network</Property>
+		<Property Name="Network:SingleWriter" Type="Str">True</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typedefName1" Type="Str">SessionPrimary.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../Database/SessionPrimary.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"^?1!!!"!!A!!!!!!$!!N!"1!&amp;=W6U&gt;8!!'E"5!!93=W6T=WFP&lt;F^T&gt;'&amp;S&gt;&amp;^U;7VF!!!T!0(*S7&amp;W!!!!!2*4:8.T;7^O5(*J&lt;7&amp;S?3ZD&gt;'Q!'%"1!!)!!!!"#6.F=X.J&lt;WZ13Q!"!!)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
 </Library>

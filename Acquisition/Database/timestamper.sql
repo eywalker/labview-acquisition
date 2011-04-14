@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS sessions;
 CREATE DATABASE sessions;
 USE sessions;
 GRANT ALL ON session TO 'timestamper'@'%' IDENTIFIED BY '0815';
+
 CREATE TABLE sessions (
 	setup TINYINT UNSIGNED NOT NULL,
 	session_start_time TIMESTAMP NOT NULL,
