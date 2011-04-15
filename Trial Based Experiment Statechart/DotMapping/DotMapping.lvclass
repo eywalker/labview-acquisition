@@ -28,13 +28,4 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1351361040</Property>
 	</Item>
-	<Item Name="Read Matlab Params.vi" Type="VI" URL="../Read Matlab Params.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'I!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!Z!-0````]%4G&amp;N:1!!#E"4"%2B&gt;'%!!"*!5!!#!!5!"A&gt;$&lt;(6T&gt;'6S!#"!1!!"`````Q!(%EVB&gt;'RB9C"198*B&lt;3""=H*B?1!!/%"Q!"Y!!"132'^U47&amp;Q='FO:SZM&gt;G.M98.T!!!96(*J97R#98.F:%6Y='6S;7VF&lt;H1A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$.!&amp;A!$$&amp;.U98*U5W6T=WFP&lt;AJ4&gt;'&amp;S&gt;&amp;2S;7&amp;M$&amp;.I&lt;X&gt;4&gt;'FN&gt;7RV=Q!!"%6O&gt;7U!!$:!=!!?!!!5%E2P&gt;%VB=("J&lt;G=O&lt;(:D&lt;'&amp;T=Q!!&amp;V2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU)'FO!&amp;1!]!!-!!-!"!!)!!E!"!!%!!1!"!!+!!1!#Q!-!Q!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!A!!!#3!!!!!!%!$1!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1351361040</Property>
-	</Item>
 </LVClass>
