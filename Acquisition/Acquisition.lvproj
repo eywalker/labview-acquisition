@@ -17,18 +17,16 @@
 		<Item Name="Database" Type="Folder" URL="../Database">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Main Programs" Type="Folder">
+			<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
+			<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
+			<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
+		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
-		<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
-		<Item Name="WriteMessage.vi" Type="VI" URL="../WriteMessage.vi"/>
-		<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
-		<Item Name="EphysTest.vi" Type="VI" URL="../EphysTest.vi"/>
-		<Item Name="WriteTest.vi" Type="VI" URL="../WriteTest.vi"/>
-		<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
-		<Item Name="SimpleStreamTesting.vi" Type="VI" URL="../SimpleStreamTesting.vi"/>
 		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -277,10 +275,6 @@
 				<Item Name="GOOP Object Repository Method.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Method.ctl"/>
 				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
-				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
-				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
-				<Item Name="Convert 1DWfm to DDT.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DWfm to DDT.vi"/>
-				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
@@ -300,10 +294,9 @@
 			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
 			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
 			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
-			<Item Name="ElectrophysiologyHDF5.lvclass" Type="LVClass" URL="../ElectrophysiologyHDF5/ElectrophysiologyHDF5.lvclass"/>
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../../../libraries/HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../../../../libraries/HDF5Tools/Release/hdf5_hldll.dll"/>
-			<Item Name="GetShit.vi" Type="VI" URL="../ElectrophysiologyHDF5/GetShit.vi"/>
+			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -335,7 +328,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{8FBFF6AD-1B28-4AF9-9908-AF300897F70D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Ephys.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Ephys.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
@@ -381,7 +374,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{75538FFC-70E8-4224-B63B-8ADB60A6EE43}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SessionManager.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/SessionManager.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
