@@ -2,7 +2,9 @@
 <Project Type="Project" LVVersion="10008000">
 	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
 	<Property Name="varPersistentID:{500D56EA-A11B-437D-B792-4C2522374099}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
+	<Property Name="varPersistentID:{BE53E74B-B5E1-4CFB-8FCE-3DFD5ECDDC15}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/BehaviorBK</Property>
 	<Property Name="varPersistentID:{D38A100C-4C39-4349-8B51-72906B7E64F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
+	<Property Name="varPersistentID:{FABF56F5-998C-408E-8D41-59E475F5CB79}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysPK</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
