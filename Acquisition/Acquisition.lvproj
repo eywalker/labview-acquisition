@@ -23,8 +23,10 @@
 			<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
 			<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
 			<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
+			<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Trial Based Experiment Runner.vi"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
+		<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
@@ -278,27 +280,82 @@
 				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="Digital Pattern Generator.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital Pattern Generator.vi"/>
+				<Item Name="Digital Pattern Generator (Ramp).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Ramp).vi"/>
+				<Item Name="DWDT Empty Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Empty Digital.vi"/>
+				<Item Name="Digital Pattern Generator (Marching Values).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Marching Values).vi"/>
+				<Item Name="Digital Pattern Generator (Single Value).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Single Value).vi"/>
+				<Item Name="Digital Pattern Generator (Random).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Random).vi"/>
+				<Item Name="Digital Pattern Generator (Toggle).vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/Digital Pattern Generator (Toggle).vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
+				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
+				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
+				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
+				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Waveform to XY Pairs.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform to XY Pairs.vi"/>
+				<Item Name="WDT Waveform to XY Pairs DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs DBL.vi"/>
+				<Item Name="WDT Waveform to XY Pairs SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs SGL.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I64.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I64.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I32.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I16.vi"/>
+				<Item Name="WDT Waveform to XY Pairs I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs I8.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U64.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U64.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U32.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U16.vi"/>
+				<Item Name="WDT Waveform to XY Pairs U8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs U8.vi"/>
+				<Item Name="WDT Waveform to XY Pairs CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CDB.vi"/>
+				<Item Name="WDT Waveform to XY Pairs CSG.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CSG.vi"/>
+				<Item Name="WDT Waveform to XY Pairs EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs EXT.vi"/>
+				<Item Name="WDT Waveform to XY Pairs CXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CXT.vi"/>
+				<Item Name="DAQmx Export Signal.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal.vi"/>
+				<Item Name="DAQmx Export Signal (Most Signals).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal (Most Signals).vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="/&lt;vilib&gt;/Statechart/Common/NI_SC_LVSCCommonFiles.lvlib"/>
+				<Item Name="SCRT Dbg Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT Dbg Rtn.vi"/>
+				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
-			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
-			<Item Name="HDF5Tools.dll" Type="Document" URL="../../../../../libraries/HDF5Tools/Release/HDF5Tools.dll"/>
-			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
-			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
-			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
-			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
-			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
-			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
-			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
-			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
-			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
-			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
-			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../../../libraries/HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
-			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../../../libraries/HDF5Tools/LabView/HDF5Tools.lvlib"/>
-			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../../../../libraries/HDF5Tools/Release/hdf5_hldll.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
+			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
+			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
+			<Item Name="HDF5Tools.lvlib" Type="Library" URL="/Z/libraries/HDF5Tools/LabView/HDF5Tools.lvlib"/>
+			<Item Name="HDF5Tools.dll" Type="Document" URL="/Z/libraries/HDF5Tools/Release/HDF5Tools.dll"/>
+			<Item Name="hdf5_hldll.dll" Type="Document" URL="/Z/libraries/HDF5Tools/Release/hdf5_hldll.dll"/>
+			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
+			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
+			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
+			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
+			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
+			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
+			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
+			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
+			<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../BehaviorData/BehaviorData.lvclass"/>
+			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
+			<Item Name="Eye Params.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Eye Params.vi"/>
+			<Item Name="Core SubVIs.lvlib" Type="Library" URL="../../Core SubVIs/Core SubVIs.lvlib"/>
+			<Item Name="Matlab API.lvlib" Type="Library" URL="../../Matlab API/Matlab API.lvlib"/>
+			<Item Name="Network - Send PSP String.vi" Type="VI" URL="../../Core SubVIs/Network - Send PSP String.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="Append_HDF5_waveform 2D.vi" Type="VI" URL="../../HDF5/Append_HDF5_waveform 2D.vi"/>
+			<Item Name="Trial Based Experiment.lvsc" Type="LVStatechart" URL="../../Trial Based Experiment Statechart/Trial Based Experiment.lvsc"/>
+			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
+			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
+			<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/MatlabExperiment/MatlabExperiment.lvclass"/>
+			<Item Name="BehaviorClassification.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/BehaviorClassification/BehaviorClassification.lvclass"/>
+			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
