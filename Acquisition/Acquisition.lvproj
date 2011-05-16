@@ -25,11 +25,20 @@
 			<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
 			<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Trial Based Experiment Runner.vi"/>
 		</Item>
+		<Item Name="BehaviorObjects" Type="Folder">
+			<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
+			<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/MatlabExperiment/MatlabExperiment.lvclass"/>
+			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
+		</Item>
+		<Item Name="Experiments" Type="Folder">
+			<Item Name="BehaviorClassification.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/BehaviorClassification/BehaviorClassification.lvclass"/>
+			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
+		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
-		<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
+		<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../BehaviorData/BehaviorData.lvclass"/>
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
 		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
@@ -342,8 +351,6 @@
 			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
 			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
 			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="/Z/libraries/HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
-			<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../BehaviorData/BehaviorData.lvclass"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 			<Item Name="Eye Params.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Eye Params.vi"/>
 			<Item Name="Core SubVIs.lvlib" Type="Library" URL="../../Core SubVIs/Core SubVIs.lvlib"/>
 			<Item Name="Matlab API.lvlib" Type="Library" URL="../../Matlab API/Matlab API.lvlib"/>
@@ -351,11 +358,7 @@
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="Append_HDF5_waveform 2D.vi" Type="VI" URL="../../HDF5/Append_HDF5_waveform 2D.vi"/>
 			<Item Name="Trial Based Experiment.lvsc" Type="LVStatechart" URL="../../Trial Based Experiment Statechart/Trial Based Experiment.lvsc"/>
-			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
-			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
-			<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/MatlabExperiment/MatlabExperiment.lvclass"/>
-			<Item Name="BehaviorClassification.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/BehaviorClassification/BehaviorClassification.lvclass"/>
-			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
+			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
