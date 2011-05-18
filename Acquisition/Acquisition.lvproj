@@ -35,6 +35,7 @@
 			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
+		<Item Name="AcquireTraces.lvclass" Type="LVClass" URL="../AcquireTraces/AcquireTraces.lvclass"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
