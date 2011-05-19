@@ -344,29 +344,22 @@
 			<Item Name="Network - Send PSP String.vi" Type="VI" URL="../../Core SubVIs/Network - Send PSP String.vi"/>
 			<Item Name="Append_HDF5_waveform 2D.vi" Type="VI" URL="../../HDF5/Append_HDF5_waveform 2D.vi"/>
 			<Item Name="Trial Based Experiment.lvsc" Type="LVStatechart" URL="../../Trial Based Experiment Statechart/Trial Based Experiment.lvsc"/>
-			<Item Name="Create File.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create File.vi"/>
-			<Item Name="Create Dataset.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset.vi"/>
-			<Item Name="Add Attribute Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Add Attribute Double.vi"/>
-			<Item Name="Add Attribute String.vi" Type="VI" URL="../../../HDF5Tools/LabView/Add Attribute String.vi"/>
-			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
-			<Item Name="Append To Dataset.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 			<Item Name="HDF5Tools.dll" Type="Document" URL="../../../HDF5Tools/Release/HDF5Tools.dll"/>
 			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
-			<Item Name="Error Code.vi" Type="VI" URL="../../../HDF5Tools/LabView/Error Code.vi"/>
 			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
 			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
 			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
 			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
 			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../../HDF5Tools/Release/hdf5_hldll.dll"/>
-			<Item Name="Close File.vi" Type="VI" URL="../../../HDF5Tools/LabView/Close File.vi"/>
-			<Item Name="Close Dataset.vi" Type="VI" URL="../../../HDF5Tools/LabView/Close Dataset.vi"/>
 			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
 			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
 			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
 			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
 			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
+			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
+			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
