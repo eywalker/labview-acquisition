@@ -361,7 +361,6 @@
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -414,7 +413,7 @@
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">19</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">20</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
