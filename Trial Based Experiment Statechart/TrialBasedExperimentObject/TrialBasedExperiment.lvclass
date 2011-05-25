@@ -340,11 +340,11 @@
 		<Item Name="Write BehaviorData.vi" Type="VI" URL="../Write BehaviorData.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;V!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!?(&amp;2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU,GRW9WRB=X-!!"B5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!.E"Q!"Y!!"951G6I98:J&lt;X*%982B,GRW9WRB=X-!!"2#:7BB&gt;GFP=E2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!1%"Q!"Y!!"Y=6(*J97R#98.F:%6Y='6S;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!&amp;V2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!A!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!"!!!!#3!!!!!!%!#1!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">33554432</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1107821056</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1342972416</Property>
 		</Item>
 	</Item>
 	<Item Name="Passive Task" Type="Property Definition">
