@@ -24,6 +24,15 @@
 	<Item Name="BehaviorData.ctl" Type="Class Private Data" URL="BehaviorData.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Looking.vi" Type="VI" URL="../Looking.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$C!!!!#1!%!!!!$%!B"URP&lt;WNJ&lt;G=!'5!+!"*#=G6B;S"5;7VF&lt;X6U)#BN=SE!!"N!#A!52GFY982J&lt;WYA5G&amp;E;86T)#BQ?#E!!!&gt;!#A!"7!!(1!I!!6E!(%"1!!)!"!!&amp;%%2F=WFS:71A5'^T;82J&lt;WY!!"B!5!!#!!1!"1R&amp;?75A5'^T;82J&lt;WY!!&amp;1!]!!-!!!!!!!!!!%!!!!#!!!!!Q!!!!!!"A!(!A!!?!!!!!!!!!!!!!!!!!!!#1!!!!!!!!!)!!!!!!!!!!A!!!!!!!!!!!!!!!A!!!!)!!!!!!%!#!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710274</Property>
+	</Item>
 	<Item Name="Read From Queue.vi" Type="VI" URL="../Read From Queue.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;"!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!6!!$#&amp;&gt;B&gt;G6G&lt;X*N!!!31%!!!@````]!"16"=H*B?1!S1(!!(A!!&amp;B2#:7BB&gt;GFP=E2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!%%*F;'&amp;W;7^S2'&amp;U93"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!-%"Q!"Y!!"951G6I98:J&lt;X*%982B,GRW9WRB=X-!!!^#:7BB&gt;GFP=E2B&gt;'%A;7Y!6!$Q!!Q!!Q!%!!9!"Q!%!!1!"!!%!!A!"!!%!!E$!!"Y!!!.#!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!*!!!!!!!1!+!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
