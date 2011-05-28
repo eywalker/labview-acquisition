@@ -42,11 +42,13 @@
 		<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../BehaviorData/BehaviorData.lvclass"/>
 		<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../Electrophysiology/Electrophysiology.lvclass"/>
 		<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../TimeStamper/TimeStamper.lvclass"/>
-		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
-		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
 		<Item Name="beh.ico" Type="Document" URL="../beh.ico"/>
+		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
+		<Item Name="matlabListener.ico" Type="Document" URL="../matlabListener.ico"/>
+		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="acquisition-errors.txt" Type="Document" URL="../acquisition-errors.txt"/>
+		<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -337,7 +339,6 @@
 			</Item>
 			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
 			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
-			<Item Name="Eye Params.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Eye Params.vi"/>
 			<Item Name="Core SubVIs.lvlib" Type="Library" URL="../../Core SubVIs/Core SubVIs.lvlib"/>
 			<Item Name="Matlab API.lvlib" Type="Library" URL="../../Matlab API/Matlab API.lvlib"/>
 			<Item Name="Network - Send PSP String.vi" Type="VI" URL="../../Core SubVIs/Network - Send PSP String.vi"/>
@@ -411,7 +412,7 @@
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">29</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">31</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
@@ -468,7 +469,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">20</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">22</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
@@ -496,10 +497,13 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Behavior/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/beh.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{59316E83-F91F-4095-AFE3-F8D847EA8AAD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{42EA97E3-618E-4D3D-908B-DF06A4DD2A8D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Trial Based Experiment Runner.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -511,6 +515,41 @@
 				<Property Name="TgtF_productName" Type="Str">Behavior</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{9148D384-D5A8-44D3-A50D-68C5AB98A472}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Behavior.exe</Property>
+			</Item>
+			<Item Name="Listener" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{A2B25B06-11D8-4EC2-B450-379F69A88629}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{0C043433-790B-4CF5-B428-82260BC31AB6}</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.FALSE.com</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Listener</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Acquisition/Listener</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">Listener.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Listener/Listener.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Listener/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/matlabListener.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{42EA97E3-618E-4D3D-908B-DF06A4DD2A8D}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Start Listener.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">BCM</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Listener</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">Listener</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 BCM</Property>
+				<Property Name="TgtF_productName" Type="Str">Listener</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{8ACA9772-065A-429E-A552-D8D2EC25B3B3}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Listener.exe</Property>
 			</Item>
 		</Item>
 	</Item>
