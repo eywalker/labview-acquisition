@@ -9,4 +9,7 @@ timestamper channel not set
 <nierror code="-8001">
 Failed to initialize the connection to session database
 </nierror>
+<nierror code="-8002">
+Starting experiment failed on matlab side
+</nierror>
 </nidocument> 
