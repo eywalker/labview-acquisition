@@ -24,14 +24,23 @@
 	<Item Name="TimeStamper.ctl" Type="Class Private Data" URL="TimeStamper.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Add Timestamp.vi" Type="VI" URL="../Add Timestamp.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;N!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!V!!Q!(1WBB&lt;GZF&lt;!!41!=!$5.P&gt;7ZU:8)A6G&amp;M&gt;75!(E"5!!97=W6D&lt;WZE=S"T;7ZD:3!R3G&amp;O-4EQ.!!!&amp;E"1!!-!"1!'!!=*6'FN:8.U97VQ!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$V2J&lt;764&gt;'&amp;N='6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$F2J&lt;764&gt;'&amp;N='6S)'FO!!"5!0!!$!!$!!1!#!!*!!1!"!!%!!1!#A!'!!5!#Q)!!(A!!!U)!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!A!!!!)!!!!E!!!!!!"!!Q!!!!!</Property>
+	<Item Name="Add Timestamp to DB.vi" Type="VI" URL="../Add Timestamp to DB.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;N!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$V2J&lt;764&gt;'&amp;N='6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!!V!!Q!(1WBB&lt;GZF&lt;!!41!=!$5.P&gt;7ZU:8)A6G&amp;M&gt;75!(E"5!!97=W6D&lt;WZE=S"T;7ZD:3!R3G&amp;O-4EQ.!!!&amp;E"1!!-!"Q!)!!E*6'FN:8.U97VQ!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$F2J&lt;764&gt;'&amp;N='6S)'FO!!"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!I!#Q-!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!)!!!!EA!!!!!"!!Q!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
+	</Item>
+	<Item Name="Add Timestamp.vi" Type="VI" URL="../Add Timestamp.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;N!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!V!!Q!(1WBB&lt;GZF&lt;!!41!=!$5.P&gt;7ZU:8)A6G&amp;M&gt;75!(E"5!!97=W6D&lt;WZE=S"T;7ZD:3!R3G&amp;O-4EQ.!!!&amp;E"1!!-!"1!'!!=*6'FN:8.U97VQ!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$V2J&lt;764&gt;'&amp;N='6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$F2J&lt;764&gt;'&amp;N='6S)'FO!!"5!0!!$!!$!!1!#!!*!!1!"!!%!!1!#A!'!!5!#Q-!!(A!!!U)!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!A!!!!)!!!!EA!!!!!"!!Q!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
 	<Item Name="Add Message.vi" Type="VI" URL="../Add Message.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;U!!!!$1!O1(!!(A!!&amp;2.5;7VF5X2B&lt;8"F=CZM&gt;G.M98.T!!Z5;7VF5X2B&lt;8"F=C"J&lt;A!!"!!!!#Z!=!!?!!!6%V2J&lt;764&gt;'&amp;N='6S,GRW9WRB=X-!$V2J&lt;764&gt;'&amp;N='6S)'^V&gt;!!.1!5!"U.I97ZO:7Q!%%!Q`````Q&gt;.:8.T97&gt;F!"*!6!!'#F2J&lt;75A5X2B&lt;8!!!"2!5!!$!!-!"!!&amp;"U.M&gt;8.U:8)!$%!B"H.U982V=Q!!#U!$!!2D&lt;W2F!!!11$$`````"H.P&gt;8*D:1!!)%"1!!-!"Q!)!!E4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!71&amp;!!!Q!(!!A!#1FF=H*P=C"P&gt;81!&lt;!$Q!"!!!!!"!!%!!1!#!!-!"A!%!!%!"1!"!!I!!1!"!!%!#Q)!!1A!!*!!!!!!!!!!!!!!!!!!!!#.!!!!#!!!!!E!!!!)!!!!!!!!!!A!!!!!!!!!#A!!!!!!!!!!!!!!!!!!!!U,!!!!!1!-!!!!!!</Property>
