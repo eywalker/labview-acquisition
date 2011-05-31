@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+This file describes custom errors for the acquisition system.
+</nicomment>
+<nierror code="-8000">
+timestamper channel not set
+</nierror>
+<nierror code="-8001">
+Failed to initialize the connection to session database
+</nierror>
+<nierror code="-8002">
+Starting experiment failed on matlab side
+</nierror>
+</nidocument> 
