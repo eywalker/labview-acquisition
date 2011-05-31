@@ -388,7 +388,7 @@
 				<Property Name="Exe_VardepHideDeployDlg" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7770D445-7E11-4021-8C13-060700F3D00B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DEBEE244-E7FC-427B-8377-687EAB72E88B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Ephys.vi</Property>
@@ -412,7 +412,7 @@
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">31</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">32</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
@@ -446,7 +446,7 @@
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{59316E83-F91F-4095-AFE3-F8D847EA8AAD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DEBEE244-E7FC-427B-8377-687EAB72E88B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/SessionManager.vi</Property>
@@ -469,7 +469,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">22</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">23</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
