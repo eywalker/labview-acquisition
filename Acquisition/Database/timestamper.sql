@@ -17,7 +17,7 @@ CREATE TABLE session_timestamps (
 	session_start_time BIGINT NOT NULL,
 	channel INT NOT NULL,
 	count INT UNSIGNED NOT NULL,
-	time TIMESTAMP NOT NULL,
+	time BIGINT NOT NULL,
 	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY (setup, session_start_time, channel, count)
 );
