@@ -359,7 +359,6 @@
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">

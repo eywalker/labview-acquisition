@@ -11,7 +11,7 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typedefName1" Type="Str">BehPrimary.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../Database/BehPrimary.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#2D1!!!"!!A!!!!!!%!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"6!#A!0=X2J&lt;6^T&gt;'&amp;S&gt;&amp;^U;7VF!$-!]=I.H=E!!!!"$E*F;&amp;"S;7VB=HEO9X2M!"R!5!!$!!!!!1!##E*F;'&amp;W;7^S5%M!!!%!!Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#QL!!!!"!!A!!!!!!&amp;!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"6!#A!0=X2J&lt;6^T&gt;'&amp;S&gt;&amp;^U;7VF!"6!#A!/9G6I8X.U98*U8X2J&lt;75!!$5!]=I.T$5!!!!"$E*F;&amp;"S;7VB=HEO9X2M!"Z!5!!%!!!!!1!#!!-+1G6I98:J&lt;X*13Q!!!1!%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="EphysPK" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
@@ -60,11 +60,14 @@
 	</Item>
 	<Item Name="StimulationPK" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:SingleWriter" Type="Str">False</Property>
 		<Property Name="Network:UseBinding" Type="Str">False</Property>
 		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
 		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"Y&gt;!!!!"!!A!!!!!!%!!N!"1!&amp;=W6U&gt;8!!'5!)!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"6!#!!0=X2J&lt;6^T&gt;'&amp;S&gt;&amp;^U;7VF!"J!5!!$!!!!!1!#$6.U;7VV&lt;'&amp;U;7^O5%M!!1!$!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typedefName1" Type="Str">StimulationPrimary.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../Database/StimulationPrimary.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#&lt;FQ!!!"!!A!!!!!!%!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"6!#A!0=X2J&lt;6^T&gt;'&amp;S&gt;&amp;^U;7VF!$U!]=I.S7I!!!!"&amp;F.U;7VV&lt;'&amp;U;7^O5(*J&lt;7&amp;S?3ZD&gt;'Q!(E"1!!-!!!!"!!).5X2J&lt;86M982J&lt;WZ13Q!"!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Subject" Type="Variable">
 		<Property Name="Description:Description" Type="Str">The subject currenty running in the setup.</Property>
