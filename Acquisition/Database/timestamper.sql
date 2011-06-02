@@ -18,7 +18,7 @@ CREATE TABLE session_timestamps (
 	channel INT NOT NULL,
 	count INT UNSIGNED NOT NULL,
 	time TIMESTAMP NOT NULL,
-	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE CASCADE ON UPDATE RESTRICT,
+	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY (setup, session_start_time, channel, count)
 );
 
@@ -28,7 +28,7 @@ CREATE TABLE ephys (
 	session_start_time BIGINT NOT NULL,
 	ephys_start_time BIGINT NOT NULL,
 	ephys_path LONGTEXT NOT NULL,
-	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE CASCADE ON UPDATE RESTRICT,
+	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY (setup, session_start_time, ephys_start_time)
 );
 
@@ -42,7 +42,7 @@ CREATE TABLE stimulation (
 	total_trials INT,
 	correct_trials INT,
 	incorrect_trials INT,
-	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE CASCADE ON UPDATE RESTRICT,
+	FOREIGN KEY (setup, session_start_time) REFERENCES sessions(setup,session_start_time) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY (setup, session_start_time, stim_start_time)
 );
 
@@ -52,7 +52,7 @@ CREATE TABLE tber_pulses(
 	session_start_time BIGINT NOT NULL,
 	stim_start_time BIGINT NOT NULL,
 	time BIGINT NOT NULL,
-	FOREIGN KEY (setup, session_start_time, stim_start_time) REFERENCES stimulation(setup, session_start_time, stim_start_time) ON DELETE CASCADE ON UPDATE RESTRICT,
+	FOREIGN KEY (setup, session_start_time, stim_start_time) REFERENCES stimulation(setup, session_start_time, stim_start_time) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY (setup, session_start_time, stim_start_time,time)
 );
 
@@ -64,6 +64,6 @@ CREATE TABLE behavior_traces (
 	beh_start_time BIGINT NOT NULL,
 	beh_path LONGTEXT NOT NULL,
 	beh_traces_type VARCHAR(45) NOT NULL,
-	FOREIGN KEY (setup, session_start_time, stim_start_time) REFERENCES stimulation(setup,session_start_time,stim_start_time) ON DELETE CASCADE ON UPDATE RESTRICT,
+	FOREIGN KEY (setup, session_start_time, stim_start_time) REFERENCES stimulation(setup,session_start_time,stim_start_time) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY (setup, session_start_time, stim_start_time)
 );
