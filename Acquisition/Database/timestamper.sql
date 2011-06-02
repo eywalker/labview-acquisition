@@ -60,7 +60,7 @@ CREATE TABLE tber_pulses(
 CREATE TABLE behavior_traces (
 	setup TINYINT UNSIGNED NOT NULL,
 	session_start_time BIGINT NOT NULL,
-	beh_start_time BIGINT NOT NULL,
+	stim_start_time BIGINT NOT NULL,
 	beh_start_time BIGINT NOT NULL,
 	beh_path LONGTEXT NOT NULL,
 	beh_traces_type VARCHAR(45) NOT NULL,
