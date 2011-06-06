@@ -382,11 +382,12 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/EphysAcquisition/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/ephysAcq.ico</Property>
+				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
 				<Property Name="Exe_VardepHideDeployDlg" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F8E19EB5-B692-4D77-A387-C3B134153D2A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Ephys.vi</Property>
@@ -410,7 +411,7 @@
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">36</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">37</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
@@ -444,7 +445,7 @@
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DEBEE244-E7FC-427B-8377-687EAB72E88B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/SessionManager.vi</Property>
@@ -467,7 +468,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">26</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">27</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
@@ -500,7 +501,7 @@
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F8E19EB5-B692-4D77-A387-C3B134153D2A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Trial Based Experiment Runner.vi</Property>
@@ -538,7 +539,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Listener/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/matlabListener.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{42EA97E3-618E-4D3D-908B-DF06A4DD2A8D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Start Listener.vi</Property>
