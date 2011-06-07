@@ -12,4 +12,7 @@ Failed to initialize the connection to session database
 <nierror code="-8002">
 Starting experiment failed on matlab side
 </nierror>
+<nierror code="-8003">
+Recording path in config file not valid
+</nierror>
 </nidocument> 
