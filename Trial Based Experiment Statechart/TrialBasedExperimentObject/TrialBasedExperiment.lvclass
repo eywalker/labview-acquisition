@@ -154,6 +154,15 @@
 		</Item>
 	</Item>
 	<Item Name="Timestamping" Type="Folder">
+		<Item Name="Insert Trial Timestamp to Db.vi" Type="VI" URL="../Insert Trial Timestamp to Db.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;6!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!?(&amp;2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU,GRW9WRB=X-!!"B5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!&amp;E"5!!9/6'FN:82T97VQ)&amp;2J&lt;75!!%"!=!!?!!!?(&amp;2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU,GRW9WRB=X-!!"&gt;5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"J&lt;A"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!)!!!!EA!!!!!"!!E!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+		</Item>
 		<Item Name="Trigger Timestamp.vi" Type="VI" URL="../Trigger Timestamp.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%`!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!?(&amp;2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU,GRW9WRB=X-!!"B5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!1%"Q!"Y!!"Y=6(*J97R#98.F:%6Y='6S;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!&amp;V2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!#1!!!!!!%!#!!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -181,6 +190,15 @@
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1351361040</Property>
 		</Item>
+	</Item>
+	<Item Name="Autoadjust.vi" Type="VI" URL="../Autoadjust.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;A!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!?(&amp;2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU,GRW9WRB=X-!!"B5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"P&gt;81!!"6!#A!0172K&gt;8.U&lt;76O&gt;#"3982F!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!$%!B"U:J?'&amp;U:71!1%"Q!"Y!!"Y=6(*J97R#98.F:%6Y='6S;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!&amp;V2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"A!(!!1!#!!*!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!I!!!!)!!!!!!!!!!A!!!#3!!!!!!%!#A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821074</Property>
 	</Item>
 	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%`!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!?(&amp;2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU,GRW9WRB=X-!!"B5=GFB&lt;%*B=W6E28BQ:8*J&lt;76O&gt;#"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!1%"Q!"Y!!"Y=6(*J97R#98.F:%6Y='6S;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!&amp;V2S;7&amp;M1G&amp;T:72&amp;?("F=GFN:7ZU)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!#3!!!!!!%!#!!!!!!</Property>
