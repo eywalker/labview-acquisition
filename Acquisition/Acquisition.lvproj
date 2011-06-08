@@ -33,8 +33,8 @@
 			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
 		</Item>
 		<Item Name="Experiments" Type="Folder">
-			<Item Name="BehaviorClassification.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/BehaviorClassification/BehaviorClassification.lvclass"/>
 			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
+			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/BehaviorClassification/ClassDiscrimination.lvclass"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
@@ -412,7 +412,7 @@
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">39</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">40</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
@@ -469,7 +469,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">29</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">30</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
@@ -512,7 +512,7 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Experiments/BehaviorClassification.lvclass/Cycle.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Experiments/ClassDiscrimination.lvclass/Cycle.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
