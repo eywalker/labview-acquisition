@@ -15,4 +15,11 @@ Starting experiment failed on matlab side
 <nierror code="-8003">
 Recording path in config file not valid
 </nierror>
+<nierror code="-8004">
+Experiment path in config file not found
+</nierror>
+</nierror>
+<nierror code="-8005">
+Reading config file before setting in
+</nierror>
 </nidocument> 
