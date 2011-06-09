@@ -34,7 +34,7 @@
 		</Item>
 		<Item Name="Experiments" Type="Folder">
 			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
-			<Item Name="BehaviorClassification.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/BehaviorClassification/BehaviorClassification.lvclass"/>
+			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/ClassDiscrimination/ClassDiscrimination.lvclass"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
