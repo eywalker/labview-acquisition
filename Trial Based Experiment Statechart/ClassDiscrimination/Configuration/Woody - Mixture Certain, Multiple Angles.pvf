@@ -40,8 +40,8 @@ annulus=5
 numDots=2000
 fkill=0
 
-distributionA=(1e-8 + ((360-theta)/90).^4 .* (theta > 270)) / sum((1e-8 + ((360-theta)/90).^4 .* (theta > 270))) + (1e-8 + (360-theta).^2 .* (theta > 270)) / sum((1e-8 + (360-theta).^2 .* (theta > 270)))
-distributionB=(1e-8 + ((theta-180)/90).^4 .* (theta > 180 & theta < 270)) / sum((1e-8 + ((theta-180)/90).^4 .* (theta > 180 & theta < 270))) + (1e-8 + (theta-180).^2 .* (theta > 180 & theta < 270)) / sum((1e-8 + (theta-180).^2 .* (theta > 180 & theta < 270)))
+distributionA=(1e-11 + ((theta < 360) & (theta > 270)) / sum((theta < 360) & (theta > 270))) + (((360-theta)/90).^4 .* (theta > 270)) / sum(((360-theta)/90).^4 .* (theta  > 270))
+distributionB=(1e-11 + ((theta < 270) & (theta > 180)) / sum((theta < 270) & (theta > 180))) + (((theta-180)/90).^4 .* (theta > 180 & theta < 270)) / sum(((theta-180)/90).^4 .* (theta > 180 & theta < 270))
 targetOffset=300
 
 targetDiameter=50
