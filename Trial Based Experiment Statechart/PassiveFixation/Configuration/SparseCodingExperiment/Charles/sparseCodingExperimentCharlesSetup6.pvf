@@ -1,0 +1,27 @@
+[Test Parameters]
+
+bgColor=64,64,64
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+stimulusTime=1000
+postStimulusTime=300
+
+passive=1
+acquireFixation=1
+allowSaccades=0
+
+monitorSize=41,30
+monitorDistance=107
+monitorCenter=640,480
+
+location=50,105
+diskSize=210
+fadeFactor=1.4
+imageFile=/lab/users/philipp/stimulation/user/exp/@SparseCodingExperiment/textures_400.mat
+imageNumber=26,27,28,29
+imageStats=1,2,3
+modFunction=rem(t,.25)<.2
+
+
+rewardProb=1

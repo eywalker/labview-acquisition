@@ -1,0 +1,26 @@
+[Test Parameters]
+
+bgColor=128,128,128
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+stimulusTime=1000
+postStimulusTime=300
+
+passive=1
+acquireFixation=1
+allowSaccades=0
+
+monitorSize=41,30
+monitorDistance=109
+monitorCenter=800,600
+
+location=0,30
+diskSize=150
+contrast=100
+spatialFreq=0.03
+orientation=0,45,90,135,180,225,270,315
+initialPhase=0
+speed=3.4
+
+rewardProb=1
