@@ -33,11 +33,11 @@
 			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
 		</Item>
 		<Item Name="Experiments" Type="Folder">
-			<Item Name="DotMapping.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/DotMapping/DotMapping.lvclass"/>
 			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/ClassDiscrimination/ClassDiscrimination.lvclass"/>
 			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/EyeCalibration/EyeCalibration.lvclass"/>
 			<Item Name="FlePhysEffExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlePhysEffExperiment/FlePhysEffExperiment.lvclass"/>
 			<Item Name="MultDimExperiment.lvclass" Type="LVClass" URL="../../Experiments/MultDimExperiment/MultDimExperiment.lvclass"/>
+			<Item Name="DotMappingExperiment.lvclass" Type="LVClass" URL="../../Experiments/DotMappingExperiment/DotMappingExperiment.lvclass"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
@@ -364,6 +364,8 @@
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvsound2.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
+			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
+			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
@@ -391,8 +393,6 @@
 			<Item Name="NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170.lvgen/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_001.vi"/>
 			<Item Name="NIMS_Range_1C63927E4E474DADACDA97C3F2261A11_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_1C63927E4E474DADACDA97C3F2261A11.lvgen/NIMS_Range_1C63927E4E474DADACDA97C3F2261A11_001.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi"/>
-			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
