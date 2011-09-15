@@ -23,9 +23,9 @@
 		</Item>
 		<Item Name="Main Programs" Type="Folder">
 			<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
-			<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
 			<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
 			<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Trial Based Experiment Runner.vi"/>
+			<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
 		</Item>
 		<Item Name="BehaviorObjects" Type="Folder">
 			<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
@@ -424,7 +424,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Ephys.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].newName" Type="Str">Electrophysiology.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
@@ -502,7 +502,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">31</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">33</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>

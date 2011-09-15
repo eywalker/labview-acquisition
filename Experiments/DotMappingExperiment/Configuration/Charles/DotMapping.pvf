@@ -24,11 +24,11 @@ joystickThreshold= 250
 pFill=0
 stimFrames=3
 
-stimCenterX= 873
-stimCenterY= 692
+stimCenterX= 869
+stimCenterY= 686
 
-dotSize= 9
+dotSize= 8
 
-dotNumX= 25
-dotNumY= 21
+dotNumX= 26
+dotNumY= 22
 
