@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
-	<Property Name="varPersistentID:{04ECBAC8-5871-4F99-B934-98C96F0BA5F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/ChannelNames</Property>
 	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
 	<Property Name="varPersistentID:{4613179C-CB92-4AC9-A3B5-FBE7E0CAC80E}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/StimulationPK</Property>
 	<Property Name="varPersistentID:{500D56EA-A11B-437D-B792-4C2522374099}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
-	<Property Name="varPersistentID:{5F6F965A-1C94-4BA3-8DA4-14DE1ACB2E0C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SamplingRate</Property>
+	<Property Name="varPersistentID:{71A5460E-DDCE-4559-ACFF-46EB94F67A65}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/ChannelNames</Property>
 	<Property Name="varPersistentID:{BE53E74B-B5E1-4CFB-8FCE-3DFD5ECDDC15}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/BehaviorPK</Property>
+	<Property Name="varPersistentID:{CF269BBD-E219-4BBE-AA8F-571B018135FB}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SamplingRate</Property>
 	<Property Name="varPersistentID:{D38A100C-4C39-4349-8B51-72906B7E64F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
 	<Property Name="varPersistentID:{DD2184FE-091A-4647-A290-151834C8289B}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Subject</Property>
 	<Property Name="varPersistentID:{FABF56F5-998C-408E-8D41-59E475F5CB79}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysPK</Property>
