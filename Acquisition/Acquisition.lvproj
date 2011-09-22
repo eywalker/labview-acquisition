@@ -563,11 +563,12 @@
 			<Item Name="NIMS_Replace - Check Linear_662D5651E4E34E0584DA82A256193A4C_007.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - Check Linear_662D5651E4E34E0584DA82A256193A4C.lvgen/NIMS_Replace - Check Linear_662D5651E4E34E0584DA82A256193A4C_007.vi"/>
 			<Item Name="NIMS_length(GV)_08A3D13377FD4E4B96F5795FBF3698FA_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_length(GV)_08A3D13377FD4E4B96F5795FBF3698FA.lvgen/NIMS_length(GV)_08A3D13377FD4E4B96F5795FBF3698FA_002.vi"/>
 			<Item Name="NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8.lvgen/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_001.vi"/>
-			<Item Name="NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20.lvgen/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_001.vi"/>
+			<Item Name="NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20.lvgen/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_002.vi"/>
 			<Item Name="NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9_003.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9.lvgen/NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9_003.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi"/>
 			<Item Name="NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_003.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565.lvgen/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_003.vi"/>
-			<Item Name="NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192.lvgen/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_002.vi"/>
+			<Item Name="NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192.lvgen/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_001.vi"/>
+			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -801,6 +802,39 @@
 				<Property Name="TgtF_productName" Type="Str">Displayer</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{3AB02566-5D57-4625-ADB0-622554F7451B}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Displayer.exe</Property>
+			</Item>
+			<Item Name="TestDisplay" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{87482001-853B-45FE-AFFD-8FE36A06C79C}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{AF6AE168-5B0E-4CE5-9A36-F4F3D0C97AD3}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">TestDisplay</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Acquisition/TestDisplay</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">TestDisplay.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TestDisplay/TestDisplay.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TestDisplay/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BF59176A-E95B-46A7-BA63-A04C53C5A5BA}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DisplayTetrodes.lvclass/Display.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Baylor College of Medicine</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TestDisplay</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">TestDisplay</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 Baylor College of Medicine</Property>
+				<Property Name="TgtF_productName" Type="Str">TestDisplay</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{D5CAE96D-F3F0-4F64-A25A-80FE4B1B9883}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">TestDisplay.exe</Property>
 			</Item>
 		</Item>
 	</Item>
