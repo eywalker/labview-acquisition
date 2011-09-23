@@ -58,6 +58,8 @@
 		<Item Name="DisplayTetrodes.lvclass" Type="LVClass" URL="../../Data Display/DisplayTetrodes/DisplayTetrodes.lvclass"/>
 		<Item Name="DataReceiver.lvclass" Type="LVClass" URL="../../Data Display/DataReceiver/DataReceiver.lvclass"/>
 		<Item Name="DataReceiverTemp.vi" Type="VI" URL="../DataReceiverTemp.vi"/>
+		<Item Name="Untitled 3.vi" Type="VI" URL="/Z/users/mani/temp/Untitled 3.vi"/>
+		<Item Name="DataFilter.lvclass" Type="LVClass" URL="../../Data Display/DataFilter/DataFilter.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -344,6 +346,8 @@
 				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
 				<Item Name="DAQmx Flatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Flatten Channel String.vi"/>
 				<Item Name="DAQmx Unflatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Unflatten Channel String.vi"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="NIMS_Any To Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Any To Vector.vi"/>
 				<Item Name="NIMS_Replace - _(_)=[].vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=[].vi"/>
 				<Item Name="NIMS_Replace - _(_)=S.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=S.vi"/>
@@ -384,6 +388,7 @@
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
 			<Item Name="sortTetRecChannels.vi" Type="VI" URL="../../NonCore SubVIs/sortTetRecChannels.vi"/>
 			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
+			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
@@ -568,7 +573,6 @@
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi"/>
 			<Item Name="NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_003.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565.lvgen/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_003.vi"/>
 			<Item Name="NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192.lvgen/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_001.vi"/>
-			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -823,7 +827,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{BF59176A-E95B-46A7-BA63-A04C53C5A5BA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DisplayTetrodes.lvclass/Display.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DisplayTetrodes.lvclass/DisplayQuick.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
