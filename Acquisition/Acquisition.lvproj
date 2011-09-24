@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
 	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
+	<Property Name="varPersistentID:{1E077441-AC7F-4627-B1E7-54A359E432CB}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysAIscalingCoeff</Property>
 	<Property Name="varPersistentID:{4613179C-CB92-4AC9-A3B5-FBE7E0CAC80E}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/StimulationPK</Property>
 	<Property Name="varPersistentID:{500D56EA-A11B-437D-B792-4C2522374099}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
 	<Property Name="varPersistentID:{71A5460E-DDCE-4559-ACFF-46EB94F67A65}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysChanNames</Property>
@@ -54,11 +55,8 @@
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="acquisition-errors.txt" Type="Document" URL="../acquisition-errors.txt"/>
 		<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
-		<Item Name="Quick Vie.vi" Type="VI" URL="../../../Documents and Settings/atlab/Desktop/Quick Vie.vi"/>
 		<Item Name="DisplayTetrodes.lvclass" Type="LVClass" URL="../../Data Display/DisplayTetrodes/DisplayTetrodes.lvclass"/>
 		<Item Name="DataReceiver.lvclass" Type="LVClass" URL="../../Data Display/DataReceiver/DataReceiver.lvclass"/>
-		<Item Name="DataReceiverTemp.vi" Type="VI" URL="../DataReceiverTemp.vi"/>
-		<Item Name="Untitled 3.vi" Type="VI" URL="/Z/users/mani/temp/Untitled 3.vi"/>
 		<Item Name="DataFilter.lvclass" Type="LVClass" URL="../../Data Display/DataFilter/DataFilter.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -346,8 +344,6 @@
 				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
 				<Item Name="DAQmx Flatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Flatten Channel String.vi"/>
 				<Item Name="DAQmx Unflatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Unflatten Channel String.vi"/>
-				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
-				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="NIMS_Any To Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Any To Vector.vi"/>
 				<Item Name="NIMS_Replace - _(_)=[].vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=[].vi"/>
 				<Item Name="NIMS_Replace - _(_)=S.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=S.vi"/>
@@ -386,8 +382,8 @@
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="sortTetRecChannels.vi" Type="VI" URL="../../NonCore SubVIs/sortTetRecChannels.vi"/>
 			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/daqmx.rc"/>
+			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
