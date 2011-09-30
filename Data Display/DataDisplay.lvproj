@@ -15,6 +15,7 @@
 		<Item Name="DataProcessor.lvclass" Type="LVClass" URL="../DataProcessor/DataProcessor.lvclass"/>
 		<Item Name="DataDisplayer.lvclass" Type="LVClass" URL="../DataDisplayer/DataDisplayer.lvclass"/>
 		<Item Name="DisplayTetrodes.lvclass" Type="LVClass" URL="../DisplayTetrodes/DisplayTetrodes.lvclass"/>
+		<Item Name="TETRODE.ico" Type="Document" URL="../DisplayTetrodes/TETRODE.ico"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
@@ -24,20 +25,19 @@
 				<Item Name="DAQmx Unflatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Unflatten Channel String.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="NIMS_Get Scalar.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar.vi"/>
-				<Item Name="NIMS_Get Dims.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Dims.vi"/>
-				<Item Name="NIMS_Get Elements - RV(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(_).vi"/>
-				<Item Name="NIMS_V_Check Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check Index.vi"/>
-				<Item Name="NIMS_And Generic Elements.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Generic Elements.vi"/>
-				<Item Name="NIMS_To I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_To I32 Index.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="NIMS_Any To Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Any To Vector.vi"/>
 				<Item Name="NIMS_Replace - _(_)=[].vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=[].vi"/>
 				<Item Name="NIMS_Replace - _(_)=S.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=S.vi"/>
+				<Item Name="NIMS_Get Scalar.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar.vi"/>
 				<Item Name="NIMS_Replace - _(_)=VorM.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - _(_)=VorM.vi"/>
 				<Item Name="NIMS_Grow Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Grow Vector.vi"/>
 				<Item Name="NIMS_Replace - Get Dims Poly.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - Get Dims Poly.vi"/>
+				<Item Name="NIMS_And Generic Elements.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Generic Elements.vi"/>
 				<Item Name="NIMS_Check Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Check Index.vi"/>
+				<Item Name="NIMS_Get Elements - RV(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(_).vi"/>
+				<Item Name="NIMS_V_Check Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check Index.vi"/>
+				<Item Name="NIMS_To I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_To I32 Index.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 			</Item>
@@ -45,60 +45,13 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="NIMS_Get Scalar - Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar - Vector.vi"/>
-			<Item Name="NIMS_Get Scalar - Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar - Matrix.vi"/>
-			<Item Name="NIMS_Get Scalar - Scalar.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar - Scalar.vi"/>
-			<Item Name="NIMS_Get Scalar - Scalar_5A4BDE8734A347C995A92797C9293A32_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Scalar_5A4BDE8734A347C995A92797C9293A32.lvgen/NIMS_Get Scalar - Scalar_5A4BDE8734A347C995A92797C9293A32_000.vi"/>
-			<Item Name="NIMS_Get Scalar - Matrix_1E430E5CAF9140B2A906F03FDAFA275A_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Matrix_1E430E5CAF9140B2A906F03FDAFA275A.lvgen/NIMS_Get Scalar - Matrix_1E430E5CAF9140B2A906F03FDAFA275A_000.vi"/>
-			<Item Name="NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2.lvgen/NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2_000.vi"/>
-			<Item Name="NIMS_Get Dims (Matrix).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Dims (Matrix).vi"/>
-			<Item Name="NIMS_Get Dims (Vector).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Dims (Vector).vi"/>
-			<Item Name="NIMS_Get Dims (Scalar).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Dims (Scalar).vi"/>
-			<Item Name="NIMS_Get Dims (Matrix)_BC29225E7A664B16ACDE05B1E08C63D6_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Dims (Matrix)_BC29225E7A664B16ACDE05B1E08C63D6.lvgen/NIMS_Get Dims (Matrix)_BC29225E7A664B16ACDE05B1E08C63D6_000.vi"/>
-			<Item Name="NIMS_Get Dims (Vector)_A2EDA302BA1D47449C1BA3CB58D8106E_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Dims (Vector)_A2EDA302BA1D47449C1BA3CB58D8106E.lvgen/NIMS_Get Dims (Vector)_A2EDA302BA1D47449C1BA3CB58D8106E_000.vi"/>
-			<Item Name="NIMS_Get Dims (Scalar)_05BAC1FCB4284FBD8A0509A59B5F6578_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Dims (Scalar)_05BAC1FCB4284FBD8A0509A59B5F6578.lvgen/NIMS_Get Dims (Scalar)_05BAC1FCB4284FBD8A0509A59B5F6578_000.vi"/>
-			<Item Name="NIMS_Is Scalar.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Is Scalar.vi"/>
-			<Item Name="NIMS_Compare Dims.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Compare Dims.vi"/>
-			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
-			<Item Name="NIMS_Is Scalar_76061E57F1104919A2ECDFB7B635F2E9_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Is Scalar_76061E57F1104919A2ECDFB7B635F2E9.lvgen/NIMS_Is Scalar_76061E57F1104919A2ECDFB7B635F2E9_000.vi"/>
-			<Item Name="NIMS_Compare Dims_379F6FBB95194E1AB4A32DBF0BC163D1_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Compare Dims_379F6FBB95194E1AB4A32DBF0BC163D1.lvgen/NIMS_Compare Dims_379F6FBB95194E1AB4A32DBF0BC163D1_000.vi"/>
-			<Item Name="NIMS_Relational_Operator_Eq.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RelationalOperatorToken/NIMS_Relational_Operator_Eq.vi"/>
 			<Item Name="NIMS_is_empty(GV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/is_empty/NIMS_is_empty(GV).vi"/>
-			<Item Name="NIMS_Replace - Range2.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Replace - Range2.ctl"/>
-			<Item Name="NIMS_Get Elements - V(R2).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - V(R2).vi"/>
-			<Item Name="NIMS_Get Elements - V(S).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - V(S).vi"/>
-			<Item Name="NIMS_Get Elements - V(V).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - V(V).vi"/>
-			<Item Name="NIMS_Get Elements - RV(M).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(M).vi"/>
-			<Item Name="NIMS_Get Elements - RV(M)_26B0FF57CBD149438820B5A2EA9835D0_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(M)_26B0FF57CBD149438820B5A2EA9835D0.lvgen/NIMS_Get Elements - RV(M)_26B0FF57CBD149438820B5A2EA9835D0_000.vi"/>
-			<Item Name="NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8.lvgen/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_000.vi"/>
-			<Item Name="NIMS_Get Elements - V(R2)_6908C3CBC145405FBDD78690B7F1945D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(R2)_6908C3CBC145405FBDD78690B7F1945D.lvgen/NIMS_Get Elements - V(R2)_6908C3CBC145405FBDD78690B7F1945D_000.vi"/>
-			<Item Name="NIMS_Get Elements - V(S)_C99A26467DB24FA3A79619D034B25FD8_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(S)_C99A26467DB24FA3A79619D034B25FD8.lvgen/NIMS_Get Elements - V(S)_C99A26467DB24FA3A79619D034B25FD8_000.vi"/>
-			<Item Name="NIMS_Range_Compute_Iterations.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Range_Compute_Iterations.vi"/>
-			<Item Name="NIMS_Replace - Range3.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Replace - Range3.ctl"/>
-			<Item Name="NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170.lvgen/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_000.vi"/>
-			<Item Name="NIMS_V_Check_R3_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_R3_Index.vi"/>
-			<Item Name="NIMS_V_Check_R2_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_R2_Index.vi"/>
-			<Item Name="NIMS_V_Check_VorM_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_VorM_Index.vi"/>
-			<Item Name="NIMS_V_Check_S_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_S_Index.vi"/>
-			<Item Name="NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20.lvgen/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_000.vi"/>
-			<Item Name="NIMS_V_Check_R3_Index_EB158D3003744B2A8E5DEED7FE9B25D1_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_R3_Index_EB158D3003744B2A8E5DEED7FE9B25D1.lvgen/NIMS_V_Check_R3_Index_EB158D3003744B2A8E5DEED7FE9B25D1_000.vi"/>
-			<Item Name="NIMS_V_Check_R2_Index_0CF0EF6F08964BBC8E3339DBE90EDA4A_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_R2_Index_0CF0EF6F08964BBC8E3339DBE90EDA4A.lvgen/NIMS_V_Check_R2_Index_0CF0EF6F08964BBC8E3339DBE90EDA4A_000.vi"/>
-			<Item Name="NIMS_V_Check_S_Index_1B3A1D02FE1341DD90AAF85B01B8FF3B_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_S_Index_1B3A1D02FE1341DD90AAF85B01B8FF3B.lvgen/NIMS_V_Check_S_Index_1B3A1D02FE1341DD90AAF85B01B8FF3B_000.vi"/>
-			<Item Name="NIMS_And Array Elements.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Array Elements.vi"/>
-			<Item Name="NIMS_And Scalar Element.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Scalar Element.vi"/>
-			<Item Name="NIMS_And Array Elements_631861BECDC54B97B1BA31611A562819_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_And Array Elements_631861BECDC54B97B1BA31611A562819.lvgen/NIMS_And Array Elements_631861BECDC54B97B1BA31611A562819_000.vi"/>
-			<Item Name="NIMS_DBL Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_DBL Index to I32 Index.vi"/>
-			<Item Name="MC_Global_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Constants/MC_Global_Global.vi"/>
-			<Item Name="NIMS_Complex Is Real.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Complex Is Real.vi"/>
-			<Item Name="NIMS_DBL Index to I32 Index_7BB6E1164FCD413DA3058BD0442BB432_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_DBL Index to I32 Index_7BB6E1164FCD413DA3058BD0442BB432.lvgen/NIMS_DBL Index to I32 Index_7BB6E1164FCD413DA3058BD0442BB432_000.vi"/>
-			<Item Name="NIMS_Complex Is Real_BCCCE425E10B42D99B0B06E87470C368_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Complex Is Real_BCCCE425E10B42D99B0B06E87470C368.lvgen/NIMS_Complex Is Real_BCCCE425E10B42D99B0B06E87470C368_002.vi"/>
-			<Item Name="NIMS_Complex Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Complex Index to I32 Index.vi"/>
-			<Item Name="MC_Subscripts_to_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/MC_Matrix_Indexing/MC_Support/MC_Subscripts_to_Index.vi"/>
-			<Item Name="NIMS_Matrix Boolean Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Matrix Boolean Index to I32 Index.vi"/>
-			<Item Name="NIMS_Vector Boolean Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Vector Boolean Index to I32 Index.vi"/>
-			<Item Name="NIMS_Scalar Boolean Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Scalar Boolean Index to I32 Index.vi"/>
-			<Item Name="NIMS_Complex Index to I32 Index_E6BBD096F76B426E945A1E1EEB24330D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Complex Index to I32 Index_E6BBD096F76B426E945A1E1EEB24330D.lvgen/NIMS_Complex Index to I32 Index_E6BBD096F76B426E945A1E1EEB24330D_000.vi"/>
-			<Item Name="NIMS_Get Elements - RV(_) - Check(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(_) - Check(_).vi"/>
+			<Item Name="NIMS_findnz_Rotate_Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/findnz/NIMS_findnz_Rotate_Matrix.vi"/>
+			<Item Name="NIMS_findnz_Rotate_Matrix_BA3F545161D8454E94DAA185DE99192D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_findnz_Rotate_Matrix_BA3F545161D8454E94DAA185DE99192D.lvgen/NIMS_findnz_Rotate_Matrix_BA3F545161D8454E94DAA185DE99192D_000.vi"/>
+			<Item Name="NIMS_findnz_core.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/findnz/NIMS_findnz_core.vi"/>
+			<Item Name="NIMS_findnz_core_2ADB407513D24EB7975C76F1663C01AA_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_findnz_core_2ADB407513D24EB7975C76F1663C01AA.lvgen/NIMS_findnz_core_2ADB407513D24EB7975C76F1663C01AA_000.vi"/>
+			<Item Name="NIMS_[1o]_findnz(GRowV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/findnz/NIMS_[1o]_findnz(GRowV).vi"/>
+			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
 			<Item Name="Create Error.vi" Type="VI" URL="/&lt;vilib&gt;/imathl/engines/lvmath/Functions/Error Handling/Create Error.vi"/>
@@ -106,11 +59,16 @@
 			<Item Name="NIMS_Error From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Error From Error Code.vi"/>
 			<Item Name="NIMS_Create Error From Enums.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Create Error From Enums.vi"/>
 			<Item Name="NIMS_Replace - Prepare Contraction Indices.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - Prepare Contraction Indices.vi"/>
+			<Item Name="MC_Global_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Constants/MC_Global_Global.vi"/>
 			<Item Name="MC_Equal_within_epsilon.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/MC_Equal_within_epsilon.vi"/>
 			<Item Name="MC_Range_Check_Step_Iter.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/MC_Range_Check_Step_Iter.vi"/>
+			<Item Name="NIMS_Range_Compute_Iterations.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Range_Compute_Iterations.vi"/>
+			<Item Name="NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170.lvgen/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_000.vi"/>
 			<Item Name="NIMS_Range.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Range.vi"/>
+			<Item Name="NIMS_Replace - Range3.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Replace - Range3.ctl"/>
 			<Item Name="NIMS_Range_1C63927E4E474DADACDA97C3F2261A11_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_1C63927E4E474DADACDA97C3F2261A11.lvgen/NIMS_Range_1C63927E4E474DADACDA97C3F2261A11_000.vi"/>
 			<Item Name="NIMS_Range_R3 To Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Range_R3 To Vector.vi"/>
+			<Item Name="NIMS_Replace - Range2.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Replace - Range2.ctl"/>
 			<Item Name="NIMS_Range_R2 To Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RangeToken/NIMS_Range_R2 To Vector.vi"/>
 			<Item Name="NIMS_Flatten Matrix To Vector Columnwise.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Flatten Matrix To Vector Columnwise.vi"/>
 			<Item Name="NIMS_Vector To Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Vector To Vector.vi"/>
@@ -143,6 +101,12 @@
 			<Item Name="NIMS_Replace - V(R3)=S_C3273A4E4CEC423DAAD65E20982F31B6_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - V(R3)=S_C3273A4E4CEC423DAAD65E20982F31B6.lvgen/NIMS_Replace - V(R3)=S_C3273A4E4CEC423DAAD65E20982F31B6_000.vi"/>
 			<Item Name="NIMS_Replace - M(R3)=S_77EE77E6CF2E493592A77F8952D41324_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - M(R3)=S_77EE77E6CF2E493592A77F8952D41324.lvgen/NIMS_Replace - M(R3)=S_77EE77E6CF2E493592A77F8952D41324_000.vi"/>
 			<Item Name="NIMS_Replace - M(R2)=S_1C0BBBB2486E4EF3ACE7FC7CF7E9D89D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - M(R2)=S_1C0BBBB2486E4EF3ACE7FC7CF7E9D89D.lvgen/NIMS_Replace - M(R2)=S_1C0BBBB2486E4EF3ACE7FC7CF7E9D89D_000.vi"/>
+			<Item Name="NIMS_Get Scalar - Vector.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar - Vector.vi"/>
+			<Item Name="NIMS_Get Scalar - Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar - Matrix.vi"/>
+			<Item Name="NIMS_Get Scalar - Scalar.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Get Scalar - Scalar.vi"/>
+			<Item Name="NIMS_Get Scalar - Scalar_5A4BDE8734A347C995A92797C9293A32_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Scalar_5A4BDE8734A347C995A92797C9293A32.lvgen/NIMS_Get Scalar - Scalar_5A4BDE8734A347C995A92797C9293A32_000.vi"/>
+			<Item Name="NIMS_Get Scalar - Matrix_1E430E5CAF9140B2A906F03FDAFA275A_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Matrix_1E430E5CAF9140B2A906F03FDAFA275A.lvgen/NIMS_Get Scalar - Matrix_1E430E5CAF9140B2A906F03FDAFA275A_000.vi"/>
+			<Item Name="NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2.lvgen/NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2_000.vi"/>
 			<Item Name="NIMS_Replace - V(S)=V.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - V(S)=V.vi"/>
 			<Item Name="NIMS_Replace - V(S)=M.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - V(S)=M.vi"/>
 			<Item Name="NIMS_Replace - M(S)=V.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - M(S)=V.vi"/>
@@ -205,29 +169,57 @@
 			<Item Name="NIMS_Replace - Size Check _(_)=VorM.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - Size Check _(_)=VorM.vi"/>
 			<Item Name="NIMS_M_Check_R3_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_M_Check_R3_Index.vi"/>
 			<Item Name="NIMS_M_Check_R2_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_M_Check_R2_Index.vi"/>
+			<Item Name="NIMS_V_Check_R3_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_R3_Index.vi"/>
 			<Item Name="NIMS_S_Check_R2_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_S_Check_R2_Index.vi"/>
 			<Item Name="NIMS_S_Check_R3_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_S_Check_R3_Index.vi"/>
+			<Item Name="NIMS_V_Check_R2_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_R2_Index.vi"/>
 			<Item Name="NIMS_S_Check_S_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_S_Check_S_Index.vi"/>
+			<Item Name="NIMS_And Array Elements.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Array Elements.vi"/>
+			<Item Name="NIMS_And Scalar Element.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_And Scalar Element.vi"/>
+			<Item Name="NIMS_And Array Elements_631861BECDC54B97B1BA31611A562819_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_And Array Elements_631861BECDC54B97B1BA31611A562819.lvgen/NIMS_And Array Elements_631861BECDC54B97B1BA31611A562819_000.vi"/>
 			<Item Name="NIMS_S_Check_VorM_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_S_Check_VorM_Index.vi"/>
+			<Item Name="NIMS_V_Check_VorM_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_VorM_Index.vi"/>
+			<Item Name="NIMS_V_Check_S_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_V_Check_S_Index.vi"/>
 			<Item Name="NIMS_M_Check_S_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_M_Check_S_Index.vi"/>
 			<Item Name="NIMS_M_Check_VorM_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_M_Check_VorM_Index.vi"/>
 			<Item Name="NIMS_M_Check_VorM_Index_9941B787820C470B85BF9C9D4F6C0C6D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_M_Check_VorM_Index_9941B787820C470B85BF9C9D4F6C0C6D.lvgen/NIMS_M_Check_VorM_Index_9941B787820C470B85BF9C9D4F6C0C6D_000.vi"/>
 			<Item Name="NIMS_M_Check_S_Index_6C2E43F40DF04AB7AC861AED8498117F_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_M_Check_S_Index_6C2E43F40DF04AB7AC861AED8498117F.lvgen/NIMS_M_Check_S_Index_6C2E43F40DF04AB7AC861AED8498117F_000.vi"/>
+			<Item Name="NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20.lvgen/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_000.vi"/>
+			<Item Name="NIMS_V_Check_S_Index_1B3A1D02FE1341DD90AAF85B01B8FF3B_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_S_Index_1B3A1D02FE1341DD90AAF85B01B8FF3B.lvgen/NIMS_V_Check_S_Index_1B3A1D02FE1341DD90AAF85B01B8FF3B_000.vi"/>
 			<Item Name="NIMS_S_Check_VorM_Index_D381BFED79A74A629F205F1908EA34E3_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_S_Check_VorM_Index_D381BFED79A74A629F205F1908EA34E3.lvgen/NIMS_S_Check_VorM_Index_D381BFED79A74A629F205F1908EA34E3_000.vi"/>
 			<Item Name="NIMS_S_Check_S_Index_F47685525A604848B641FFFB95C01280_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_S_Check_S_Index_F47685525A604848B641FFFB95C01280.lvgen/NIMS_S_Check_S_Index_F47685525A604848B641FFFB95C01280_000.vi"/>
 			<Item Name="NIMS_M_Check_R3_Index_17C28E3853C14DADB56913B88E5C5D2D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_M_Check_R3_Index_17C28E3853C14DADB56913B88E5C5D2D.lvgen/NIMS_M_Check_R3_Index_17C28E3853C14DADB56913B88E5C5D2D_000.vi"/>
 			<Item Name="NIMS_M_Check_R2_Index_58405C0DC17049A9995A8E998BBA5783_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_M_Check_R2_Index_58405C0DC17049A9995A8E998BBA5783.lvgen/NIMS_M_Check_R2_Index_58405C0DC17049A9995A8E998BBA5783_000.vi"/>
+			<Item Name="NIMS_V_Check_R3_Index_EB158D3003744B2A8E5DEED7FE9B25D1_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_R3_Index_EB158D3003744B2A8E5DEED7FE9B25D1.lvgen/NIMS_V_Check_R3_Index_EB158D3003744B2A8E5DEED7FE9B25D1_000.vi"/>
+			<Item Name="NIMS_V_Check_R2_Index_0CF0EF6F08964BBC8E3339DBE90EDA4A_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_R2_Index_0CF0EF6F08964BBC8E3339DBE90EDA4A.lvgen/NIMS_V_Check_R2_Index_0CF0EF6F08964BBC8E3339DBE90EDA4A_000.vi"/>
 			<Item Name="NIMS_S_Check_R3_Index_0AC90A50AE5948DEAFB1093AEE95E5F3_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_S_Check_R3_Index_0AC90A50AE5948DEAFB1093AEE95E5F3.lvgen/NIMS_S_Check_R3_Index_0AC90A50AE5948DEAFB1093AEE95E5F3_000.vi"/>
 			<Item Name="NIMS_S_Check_R2_Index_3FB747B10E3842D6AC1C933B5A06D632_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_S_Check_R2_Index_3FB747B10E3842D6AC1C933B5A06D632.lvgen/NIMS_S_Check_R2_Index_3FB747B10E3842D6AC1C933B5A06D632_000.vi"/>
 			<Item Name="NIMS_Replace - Check Linear.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ReplaceToken/NIMS_Replace - Check Linear.vi"/>
 			<Item Name="NIMS_length(GV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/length/NIMS_length(GV).vi"/>
+			<Item Name="NIMS_Get Elements - V(R2).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - V(R2).vi"/>
+			<Item Name="NIMS_Get Elements - V(S).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - V(S).vi"/>
+			<Item Name="NIMS_Get Elements - V(V).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - V(V).vi"/>
+			<Item Name="NIMS_Get Elements - RV(M).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(M).vi"/>
+			<Item Name="NIMS_Get Elements - RV(M)_26B0FF57CBD149438820B5A2EA9835D0_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(M)_26B0FF57CBD149438820B5A2EA9835D0.lvgen/NIMS_Get Elements - RV(M)_26B0FF57CBD149438820B5A2EA9835D0_000.vi"/>
+			<Item Name="NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8.lvgen/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_000.vi"/>
+			<Item Name="NIMS_Get Elements - V(R2)_6908C3CBC145405FBDD78690B7F1945D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(R2)_6908C3CBC145405FBDD78690B7F1945D.lvgen/NIMS_Get Elements - V(R2)_6908C3CBC145405FBDD78690B7F1945D_000.vi"/>
+			<Item Name="NIMS_Get Elements - V(S)_C99A26467DB24FA3A79619D034B25FD8_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(S)_C99A26467DB24FA3A79619D034B25FD8.lvgen/NIMS_Get Elements - V(S)_C99A26467DB24FA3A79619D034B25FD8_000.vi"/>
 			<Item Name="NIMS_Get Elements - RV(_) - Check.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(_) - Check.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/NodeEndStatement/NIMS_NodeEndStatement_Output.vi"/>
-			<Item Name="MergeErrorsWrapper.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/MergeErrorsWrapper.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Get Scalar.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/NodeEndStatement/NIMS_NodeEndStatement_Get Scalar.vi"/>
 			<Item Name="NIMS_sort_real.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/sort/NIMS_sort_real.vi"/>
 			<Item Name="NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565.lvgen/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_000.vi"/>
 			<Item Name="NIMS_[2o]_sort(RRowV,I32,Str).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/sort/NIMS_[2o]_sort(RRowV,I32,Str).vi"/>
+			<Item Name="NIMS_DBL Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_DBL Index to I32 Index.vi"/>
+			<Item Name="NIMS_Complex Is Real.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeSupport/NIMS_Complex Is Real.vi"/>
+			<Item Name="NIMS_DBL Index to I32 Index_7BB6E1164FCD413DA3058BD0442BB432_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_DBL Index to I32 Index_7BB6E1164FCD413DA3058BD0442BB432.lvgen/NIMS_DBL Index to I32 Index_7BB6E1164FCD413DA3058BD0442BB432_000.vi"/>
+			<Item Name="NIMS_Complex Is Real_BCCCE425E10B42D99B0B06E87470C368_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Complex Is Real_BCCCE425E10B42D99B0B06E87470C368.lvgen/NIMS_Complex Is Real_BCCCE425E10B42D99B0B06E87470C368_002.vi"/>
+			<Item Name="NIMS_Complex Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Complex Index to I32 Index.vi"/>
+			<Item Name="MC_Subscripts_to_Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/MC_Matrix_Indexing/MC_Support/MC_Subscripts_to_Index.vi"/>
+			<Item Name="NIMS_Matrix Boolean Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Matrix Boolean Index to I32 Index.vi"/>
+			<Item Name="NIMS_Vector Boolean Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Vector Boolean Index to I32 Index.vi"/>
+			<Item Name="NIMS_Scalar Boolean Index to I32 Index.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Support/NIMS_Scalar Boolean Index to I32 Index.vi"/>
+			<Item Name="NIMS_Complex Index to I32 Index_E6BBD096F76B426E945A1E1EEB24330D_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Complex Index to I32 Index_E6BBD096F76B426E945A1E1EEB24330D.lvgen/NIMS_Complex Index to I32 Index_E6BBD096F76B426E945A1E1EEB24330D_000.vi"/>
+			<Item Name="NIMS_Get Elements - RV(_) - Check(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/VariableToken/Read/NIMS_Get Elements - RV(_) - Check(_).vi"/>
+			<Item Name="NIMS_NodeEndStatement_Output.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/NodeEndStatement/NIMS_NodeEndStatement_Output.vi"/>
 			<Item Name="MC_Registration_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Registration_Global.vi"/>
 			<Item Name="MC_Registered_VIs_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Registered_VIs_Global.vi"/>
 			<Item Name="MC_Close_All_Registered_SubVI.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Close_All_Registered_SubVI.vi"/>
@@ -241,48 +233,45 @@
 			<Item Name="MC_Global_NamesAndDefaultValues.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Constants/MC_Global_NamesAndDefaultValues.vi"/>
 			<Item Name="Untranslate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Untranslate Error.vi"/>
 			<Item Name="NIMS_Finalize Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Finalize Error.vi"/>
-			<Item Name="NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9.lvgen/NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9_005.vi"/>
-			<Item Name="NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2_003.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2.lvgen/NIMS_Get Scalar - Vector_A71547F357DE42FF9547CA52A4646AC2_003.vi"/>
-			<Item Name="NIMS_Get Dims (Vector)_A2EDA302BA1D47449C1BA3CB58D8106E_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Dims (Vector)_A2EDA302BA1D47449C1BA3CB58D8106E.lvgen/NIMS_Get Dims (Vector)_A2EDA302BA1D47449C1BA3CB58D8106E_002.vi"/>
-			<Item Name="NIMS_Is Scalar_76061E57F1104919A2ECDFB7B635F2E9_010.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Is Scalar_76061E57F1104919A2ECDFB7B635F2E9.lvgen/NIMS_Is Scalar_76061E57F1104919A2ECDFB7B635F2E9_010.vi"/>
-			<Item Name="NIMS_Compare Dims_379F6FBB95194E1AB4A32DBF0BC163D1_018.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Compare Dims_379F6FBB95194E1AB4A32DBF0BC163D1.lvgen/NIMS_Compare Dims_379F6FBB95194E1AB4A32DBF0BC163D1_018.vi"/>
-			<Item Name="NIMS_Relational_Operator_Eq_C018818758B54C4B8F0275E4A84ACC33_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Relational_Operator_Eq_C018818758B54C4B8F0275E4A84ACC33.lvgen/NIMS_Relational_Operator_Eq_C018818758B54C4B8F0275E4A84ACC33_005.vi"/>
 			<Item Name="NIMS_is_empty(GV)_FC7E7C3D9544432CB6AA2416ADCF6D56_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_is_empty(GV)_FC7E7C3D9544432CB6AA2416ADCF6D56.lvgen/NIMS_is_empty(GV)_FC7E7C3D9544432CB6AA2416ADCF6D56_000.vi"/>
-			<Item Name="NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8.lvgen/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_001.vi"/>
-			<Item Name="NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20.lvgen/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_002.vi"/>
-			<Item Name="NIMS_Get Elements - RV(_) - Check(_)_260A45C9C4AF472A8F32F86A1BEF7DEE_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(_) - Check(_)_260A45C9C4AF472A8F32F86A1BEF7DEE.lvgen/NIMS_Get Elements - RV(_) - Check(_)_260A45C9C4AF472A8F32F86A1BEF7DEE_001.vi"/>
+			<Item Name="NIMS_findnz_Rotate_Matrix_BA3F545161D8454E94DAA185DE99192D_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_findnz_Rotate_Matrix_BA3F545161D8454E94DAA185DE99192D.lvgen/NIMS_findnz_Rotate_Matrix_BA3F545161D8454E94DAA185DE99192D_005.vi"/>
+			<Item Name="NIMS_findnz_core_2ADB407513D24EB7975C76F1663C01AA_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_findnz_core_2ADB407513D24EB7975C76F1663C01AA.lvgen/NIMS_findnz_core_2ADB407513D24EB7975C76F1663C01AA_005.vi"/>
+			<Item Name="NIMS_[1o]_findnz(GRowV)_005A6E28988F485CA06F579662DA62C7_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_[1o]_findnz(GRowV)_005A6E28988F485CA06F579662DA62C7.lvgen/NIMS_[1o]_findnz(GRowV)_005A6E28988F485CA06F579662DA62C7_002.vi"/>
 			<Item Name="NIMS_Replace - Assignment Check _(_)=VorM_C130F3B8B64B4DD7B9359A2D3A035D18_007.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - Assignment Check _(_)=VorM_C130F3B8B64B4DD7B9359A2D3A035D18.lvgen/NIMS_Replace - Assignment Check _(_)=VorM_C130F3B8B64B4DD7B9359A2D3A035D18_007.vi"/>
 			<Item Name="NIMS_Replace - Size Check _(_)=VorM_4228B35EE910471DB74F3866D9D09B95_007.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - Size Check _(_)=VorM_4228B35EE910471DB74F3866D9D09B95.lvgen/NIMS_Replace - Size Check _(_)=VorM_4228B35EE910471DB74F3866D9D09B95_007.vi"/>
 			<Item Name="NIMS_Replace - Check Linear_662D5651E4E34E0584DA82A256193A4C_007.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Replace - Check Linear_662D5651E4E34E0584DA82A256193A4C.lvgen/NIMS_Replace - Check Linear_662D5651E4E34E0584DA82A256193A4C_007.vi"/>
 			<Item Name="NIMS_length(GV)_08A3D13377FD4E4B96F5795FBF3698FA_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_length(GV)_08A3D13377FD4E4B96F5795FBF3698FA.lvgen/NIMS_length(GV)_08A3D13377FD4E4B96F5795FBF3698FA_002.vi"/>
+			<Item Name="NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8.lvgen/NIMS_Get Elements - V(V)_D802331D13C1477FBB264FA67E6BC4E8_001.vi"/>
+			<Item Name="NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20.lvgen/NIMS_V_Check_VorM_Index_A41EC0B2D46F469BA0D118C81D7FAB20_002.vi"/>
 			<Item Name="NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9_003.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9.lvgen/NIMS_Get Elements - RV(_) - Check_1F6F8656162345078B1D4DC9877DFAE9_003.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_001.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Get Scalar_0AAFCDF933264FB7B29B72A0D8479FBB_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Get Scalar_0AAFCDF933264FB7B29B72A0D8479FBB.lvgen/NIMS_NodeEndStatement_Get Scalar_0AAFCDF933264FB7B29B72A0D8479FBB_000.vi"/>
 			<Item Name="NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_003.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565.lvgen/NIMS_sort_real_145CFFB80E864A93A09BAF33145C1565_003.vi"/>
 			<Item Name="NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192.lvgen/NIMS_[2o]_sort(RRowV,I32,Str)_1834406CABAC430BB40FEC772A4FC192_001.vi"/>
+			<Item Name="NIMS_Get Elements - RV(_) - Check(_)_260A45C9C4AF472A8F32F86A1BEF7DEE_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Get Elements - RV(_) - Check(_)_260A45C9C4AF472A8F32F86A1BEF7DEE.lvgen/NIMS_Get Elements - RV(_) - Check(_)_260A45C9C4AF472A8F32F86A1BEF7DEE_001.vi"/>
+			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_001.vi"/>
+			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi"/>
+			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_004.vi"/>
 			<Item Name="ni.dex.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2010/resource/objmgr/ni.dex.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="TetrodeDisplayer" Type="EXE">
+			<Item Name="DisplayTetrodes" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{B33B949E-01EA-445B-8A57-0952076D89F5}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{C086E7F9-DB66-4DDA-96DA-4418ADFC41E4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">TetrodeDisplayer</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{A4869D5B-DD2A-4DF0-84D8-212A8458089E}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{AD35DC58-9BA7-4F60-93EF-0BDA4C6AC4A7}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DisplayTetrodes</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/DataDisplay/TetrodeDisplayer</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/DataDisplay/DisplayTetrodes</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Destination[0].destName" Type="Str">TetrodeDisplayer.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrodeDisplayer/TetrodeDisplayer.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">DisplayTetrodes.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/DisplayTetrodes/DisplayTetrodes.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrodeDisplayer/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/DisplayTetrodes/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{34C7D60C-03B7-4E4B-BEB4-967D732BBF5C}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/TETRODE.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E80CCB94-4CC5-4150-BB1E-1E0F4567E877}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DisplayTetrodes.lvclass/Display.vi</Property>
@@ -293,13 +282,13 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">Baylor College of Medicine</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TetrodeDisplayer</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">DisplayTetrodes</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">TetrodeDisplayer</Property>
+				<Property Name="TgtF_internalName" Type="Str">DisplayTetrodes</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 Baylor College of Medicine</Property>
-				<Property Name="TgtF_productName" Type="Str">TetrodeDisplayer</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{4DC00165-0821-4B59-AB41-7ED85C79EDCC}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">TetrodeDisplayer.exe</Property>
+				<Property Name="TgtF_productName" Type="Str">DisplayTetrodes</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{53CED46E-2752-42C5-B92B-31E02167CFEF}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">DisplayTetrodes.exe</Property>
 			</Item>
 		</Item>
 	</Item>
