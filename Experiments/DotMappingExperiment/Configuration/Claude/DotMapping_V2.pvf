@@ -13,19 +13,19 @@ acquireFixation=1
 allowSaccades=0
 
 monitorSize=40,30
-monitorDistance=107
+monitorDistance=100
 monitorCenter=800,600
 
 rewardProb=1
 randReward=0
 nTrials=1500
-joystickThreshold= 250
+joystickThreshold=250
 
-pFill=0.001449
+pFill=0
 stimFrames=3
 
-stimCenterX= 1001
-stimCenterY= 710
+stimCenterX=991
+stimCenterY=705
 
 dotSize= 16
 

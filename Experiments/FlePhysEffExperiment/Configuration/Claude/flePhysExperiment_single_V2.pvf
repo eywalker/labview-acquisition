@@ -10,16 +10,16 @@ acquireFixation=1
 allowSaccades=0
 
 monitorSize=41,30
-monitorDistance=107
+monitorDistance=100
 monitorCenter=800,600
 
 barColor=255,255,255
-barSize=20,120
+barSize=20,180
 dx=5,10,20
-stimCenter=860,702
+stimCenter=903,690
 trajectoryLength=320
 trajectoryAngle=0
-numFlashLocs=5
+numFlashLocs=10
 flashLocDistance=20
 verticalDistance=150
 direction=0,1

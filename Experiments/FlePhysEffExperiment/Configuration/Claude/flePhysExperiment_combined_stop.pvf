@@ -10,7 +10,7 @@ acquireFixation=1
 allowSaccades=0
 
 monitorSize=41,30
-monitorDistance=107
+monitorDistance=100
 monitorCenter=800,600
 
 barColor=255,255,255

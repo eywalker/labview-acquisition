@@ -17,8 +17,8 @@ monitorCenter=800,600
 stimulusTime=1800
 postStimulusTime=300
 stimFrames=1
-location=182,110
-diskSize=364
+location=70,88
+diskSize=150
 luminance=.5
 
 contrast=1
