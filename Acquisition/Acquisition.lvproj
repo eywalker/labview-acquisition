@@ -38,7 +38,7 @@
 			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
 		</Item>
 		<Item Name="Experiments" Type="Folder">
-			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/ClassDiscrimination/ClassDiscrimination.lvclass"/>
+			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Experiments/ClassDiscrimination/ClassDiscrimination.lvclass"/>
 			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/EyeCalibration/EyeCalibration.lvclass"/>
 			<Item Name="FlePhysEffExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlePhysEffExperiment/FlePhysEffExperiment.lvclass"/>
 			<Item Name="MultDimExperiment.lvclass" Type="LVClass" URL="../../Experiments/MultDimExperiment/MultDimExperiment.lvclass"/>
@@ -57,7 +57,8 @@
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="acquisition-errors.txt" Type="Document" URL="../acquisition-errors.txt"/>
 		<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
-		<Item Name="Test Sound.vi" Type="VI" URL="/C/Users/jcotton/Desktop/Test Sound.vi"/>
+		<Item Name="Test Sound.vi" Type="VI" URL="../../../Users/jcotton/Desktop/Test Sound.vi"/>
+		<Item Name="globalStimulationPK.vi" Type="VI" URL="../globalStimulationPK.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -345,22 +346,6 @@
 				<Item Name="DAQmx Flatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Flatten Channel String.vi"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="subGetSignalName.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subGetSignalName.vi"/>
-				<Item Name="sub2ShouldUseDefSigName.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/sub2ShouldUseDefSigName.vi"/>
-				<Item Name="subShouldUseDefSigName.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subShouldUseDefSigName.vi"/>
-				<Item Name="subInternalTiming.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subInternalTiming.vi"/>
-				<Item Name="DU64_U32AddWithOverflow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32AddWithOverflow.vi"/>
-				<Item Name="Timestamp Add.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Add.vi"/>
-				<Item Name="ex_WaveformAttribs.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribs.ctl"/>
-				<Item Name="ex_SetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetAllExpressAttribs.vi"/>
-				<Item Name="ex_WaveformAttribsPlus.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribsPlus.ctl"/>
-				<Item Name="ex_SetExpAttribsAndT0.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetExpAttribsAndT0.vi"/>
-				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
-				<Item Name="ex_GenAddAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/ex_GenAddAttribs.vi"/>
-				<Item Name="Nearest Freq in Int Cycles.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Freq in Int Cycles.vi"/>
-				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
-				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
-				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -387,8 +372,13 @@
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
-			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
+			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
+			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/ClassDiscrimination/ClassDiscrimination.lvclass"/>
+			<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../../Experiments/MatlabExperiment/MatlabExperiment.lvclass"/>
+			<Item Name="Trigger.ctl" Type="VI" URL="../../Experiments/Trial Based Experiment.lvsc/Trigger.ctl"/>
+			<Item Name="State.ctl" Type="VI" URL="../../Experiments/Trial Based Experiment.lvsc/State.ctl"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
@@ -416,7 +406,6 @@
 			<Item Name="NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170.lvgen/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_001.vi"/>
 			<Item Name="NIMS_Range_0B7635FB69F84E19AA68E7FF959DF37C_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_0B7635FB69F84E19AA68E7FF959DF37C.lvgen/NIMS_Range_0B7635FB69F84E19AA68E7FF959DF37C_001.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi"/>
-			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
