@@ -375,10 +375,6 @@
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
 			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
-			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/ClassDiscrimination/ClassDiscrimination.lvclass"/>
-			<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../../Experiments/MatlabExperiment/MatlabExperiment.lvclass"/>
-			<Item Name="Trigger.ctl" Type="VI" URL="../../Experiments/Trial Based Experiment.lvsc/Trigger.ctl"/>
-			<Item Name="State.ctl" Type="VI" URL="../../Experiments/Trial Based Experiment.lvsc/State.ctl"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
