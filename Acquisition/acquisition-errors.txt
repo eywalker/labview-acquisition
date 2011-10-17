@@ -25,4 +25,7 @@ Reading config file before setting in
 <nierror code="-8006">
 Subject not defined in SQL table.  Please have someone add it.
 </nierror>
+<nierror code="-8007">
+Unable to connect to the session database
+</nierror>
 </nidocument> 
