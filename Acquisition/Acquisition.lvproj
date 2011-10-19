@@ -31,6 +31,7 @@
 			<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Trial Based Experiment Runner.vi"/>
 			<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
 			<Item Name="SessionManagerSimulator.vi" Type="VI" URL="../SessionManagerSimulator.vi"/>
+			<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
 		</Item>
 		<Item Name="BehaviorObjects" Type="Folder">
 			<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
@@ -56,8 +57,6 @@
 		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="acquisition-errors.txt" Type="Document" URL="../acquisition-errors.txt"/>
-		<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
-		<Item Name="Test Sound.vi" Type="VI" URL="../../../Users/jcotton/Desktop/Test Sound.vi"/>
 		<Item Name="globalStimulationPK.vi" Type="VI" URL="../globalStimulationPK.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -372,9 +371,9 @@
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
-			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
+			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
@@ -587,7 +586,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Start Listener.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Start Listener.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
