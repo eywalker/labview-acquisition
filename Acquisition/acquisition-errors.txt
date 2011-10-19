@@ -28,4 +28,8 @@ Subject not defined in SQL table.  Please have someone add it.
 <nierror code="-8007">
 Unable to connect to the session database
 </nierror>
+<nierror code="-8008">
+Unable to create file.  File name should end in %d.h5.
+</nierror>
+
 </nidocument> 
