@@ -19,7 +19,7 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typedefName1" Type="Str">BehPrimary.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../Database/BehPrimary.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#QL!!!!"%!A!A!!!!&amp;!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"6!#A!0=X2J&lt;6^T&gt;'&amp;S&gt;&amp;^U;7VF!"6!#A!/9G6I8X.U98*U8X2J&lt;75!!$5!]=I.T$5!!!!"$E*F;&amp;"S;7VB=HEO9X2M!"Z!5!!%!!!!!1!#!!-+1G6I98:J&lt;X*13Q!!!1!%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#IJ!!!!"%!A!A!!!!&amp;!!N!"1!&amp;=W6U&gt;8!!%5!$!!JT&gt;7*K:7.U8WFE!!!:1!I!%H.F=X.J&lt;WZ@=X2B=H2@&gt;'FN:1!!&amp;5!+!!^T&gt;'FN8X.U98*U8X2J&lt;75!.1$RSMO0PA!!!!%/1G6I5(*J&lt;7&amp;S?3ZD&gt;'Q!(E"1!!1!!!!"!!)!!QJ#:7BB&gt;GFP=F",!!!"!!1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="EphysAIscalingCoeff" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
@@ -54,7 +54,7 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typedefName1" Type="Str">EphysPrimary.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../Database/EphysPrimary.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#2D1!!!"%!A!A!!!!%!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"&gt;!#A!1:8"I?8.@=X2B=H2@&gt;'FN:1!!-1$RSAW&gt;[A!!!!%128"I?8.1=GFN98*Z,G.U&lt;!!91&amp;!!!Q!!!!%!!A&gt;&amp;='BZ=V",!!%!!Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#IJ!!!!"%!A!A!!!!&amp;!!N!"1!&amp;=W6U&gt;8!!%5!$!!JT&gt;7*K:7.U8WFE!!!:1!I!%H.F=X.J&lt;WZ@=X2B=H2@&gt;'FN:1!!&amp;U!+!""F='BZ=V^T&gt;'&amp;S&gt;&amp;^U;7VF!!!T!0(+SY`2!!!!!2"&amp;='BZ=V"S;7VB=HEO9X2M!"J!5!!%!!!!!1!#!!-(28"I?8.13Q!"!!1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Message" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
@@ -88,7 +88,7 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typedefName1" Type="Str">SessionPrimary.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../Database/SessionPrimary.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"U=!!!!"%!A!A!!!!$!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!$-!]=I.H@]!!!!"%F.F=X.J&lt;WZ1=GFN98*Z,G.U&lt;!!91&amp;!!!A!!!!%*5W6T=WFP&lt;F",!!%!!A!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#,BQ!!!"%!A!A!!!!%!!N!"1!&amp;=W6U&gt;8!!%5!$!!JT&gt;7*K:7.U8WFE!!!:1!I!%H.F=X.J&lt;WZ@=X2B=H2@&gt;'FN:1!!.1$RSMO6\Q!!!!%35W6T=WFP&lt;F"S;7VB=HEO9X2M!"J!5!!$!!!!!1!##6.F=X.J&lt;WZ13Q!"!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="StimulationPK" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
@@ -99,7 +99,7 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typedefName1" Type="Str">StimulationPrimary.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../Database/StimulationPrimary.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#&lt;FQ!!!"%!A!A!!!!%!!N!"1!&amp;=W6U&gt;8!!'5!+!"*T:8.T;7^O8X.U98*U8X2J&lt;75!!"6!#A!0=X2J&lt;6^T&gt;'&amp;S&gt;&amp;^U;7VF!$U!]=I.S7I!!!!"&amp;F.U;7VV&lt;'&amp;U;7^O5(*J&lt;7&amp;S?3ZD&gt;'Q!(E"1!!-!!!!"!!).5X2J&lt;86M982J&lt;WZ13Q!"!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#SLA!!!"%!A!A!!!!&amp;!!N!"1!&amp;=W6U&gt;8!!%5!$!!JT&gt;7*K:7.U8WFE!!!:1!I!%H.F=X.J&lt;WZ@=X2B=H2@&gt;'FN:1!!&amp;5!+!!^T&gt;'FN8X.U98*U8X2J&lt;75!0Q$RSMO1KA!!!!%75X2J&lt;86M982J&lt;WZ1=GFN98*Z,G.U&lt;!!A1&amp;!!"!!!!!%!!A!$$6.U;7VV&lt;'&amp;U;7^O5%M!!1!%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Subject" Type="Variable">
 		<Property Name="Description:Description" Type="Str">The subject currenty running in the setup.</Property>

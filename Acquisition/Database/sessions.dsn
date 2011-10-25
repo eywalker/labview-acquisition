@@ -4,4 +4,4 @@ UID=timestamper
 SERVER=at-storage
 PORT=0
 OPTION=0
-DATABASE=sessions
+DATABASE=acq
