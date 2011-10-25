@@ -577,7 +577,7 @@
 				<Property Name="TgtF_companyName" Type="Str">BCM</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Behavior</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">1</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">4</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Behavior</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 BCM</Property>
