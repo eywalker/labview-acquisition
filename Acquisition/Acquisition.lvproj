@@ -39,10 +39,10 @@
 		</Item>
 		<Item Name="Experiments" Type="Folder">
 			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Experiments/ClassDiscrimination/ClassDiscrimination.lvclass"/>
-			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/EyeCalibration/EyeCalibration.lvclass"/>
 			<Item Name="FlePhysEffExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlePhysEffExperiment/FlePhysEffExperiment.lvclass"/>
 			<Item Name="MultDimExperiment.lvclass" Type="LVClass" URL="../../Experiments/MultDimExperiment/MultDimExperiment.lvclass"/>
 			<Item Name="DotMappingExperiment.lvclass" Type="LVClass" URL="../../Experiments/DotMappingExperiment/DotMappingExperiment.lvclass"/>
+			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Experiments/EyeCalibration/EyeCalibration.lvclass"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
@@ -371,7 +371,6 @@
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
@@ -556,7 +555,7 @@
 				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Experiments/EyeCalibration.lvclass/Cycle.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Dependencies/EyeCalibration.lvclass/Cycle.vi</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
