@@ -12,7 +12,7 @@
 </String>
 </Property>
 	<Property Name="NI.LVClass.IsTransferClass" Type="Bool">false</Property>
-	<Property Name="NI.LVClass.ParentClassLinkInfo" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"7!!!!!2B.982M97*&amp;?("F=GFN:7ZU,GRW9WRB=X-!5&amp;2)-!!!!$!!!1!%!!!147&amp;U&lt;'&amp;C28BQ:8*J&lt;76O&gt;"B.982M97*&amp;?("F=GFN:7ZU,GRW9WRB=X-!!!!!</Property>
+	<Property Name="NI.LVClass.ParentClassLinkInfo" Type="Bin">%1#!#!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"Z!!!!!2B.982M97*&amp;?("F=GFN:7ZU,GRW9WRB=X-!5&amp;2)-!!!!&amp;-!!1!'!!!!)62S;7&amp;M)%*B=W6E)%6Y='6S;7VF&lt;H1A5X2B&gt;'6D;'&amp;S&gt;"".982M97*&amp;?("F=GFN:7ZU'%VB&gt;'RB9E6Y='6S;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!!!!</Property>
 	<Item Name="EyeCalibration.ctl" Type="Class Private Data" URL="EyeCalibration.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -32,6 +32,6 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1118306832</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
 </LVClass>
