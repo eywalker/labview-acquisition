@@ -2319,7 +2319,7 @@ Force InitializationArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegister
 &lt;/Cluster&gt;
 &lt;/Array&gt;
 MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;WriteArbs=Arbitrate if Multiple Requestors Only;Implementation=2;MotionChannels;DataType=1000800000000001000940030003493332000100000000000000000000"PArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 6;0;WriteMethodType=boolPll UnlockedNumberOfSyncRegistersForReadInProject=0;resource=/IO Module/SignalList/Pll Unlocked;0;ReadMethodType=boolPXIe-7965R/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGARaw"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;WriteArbs=Arbitrate if Multiple Requestors Only;Implementation=2;Raw;DataType=100080000000000100094002000349313600010000000000000000"Read_Data_LowerNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Data_Lower;0;ReadMethodType=U64Read_Data_UpperNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Data_Upper;0;ReadMethodType=U64Read_StrobeNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Strobe;0;ReadMethodType=boolRESETArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 7;0;WriteMethodType=boolSample Clock SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/Sample Clock Select;0;WriteMethodType=U8SCLKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 4;0;WriteMethodType=boolSDIO0ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 0;0;WriteMethodType=boolSDIO1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 1;0;WriteMethodType=boolSDIO2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 2;0;WriteMethodType=boolSDIO3ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 3;0;WriteMethodType=boolSPI AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Address;0;WriteMethodType=U16SPI Device SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Device Select;0;WriteMethodType=U8SPI IdleNumberOfSyncRegistersForReadInProject=0;resource=/IO Module/SignalList/SPI Idle;0;ReadMethodType=boolSPI Write DataArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Write Data;0;WriteMethodType=U16SPI WriteArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Write;0;WriteMethodType=boolTemporalChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;WriteArbs=Arbitrate if Multiple Requestors Only;Implementation=2;TemporalChannels;DataType=1000800000000001000940030003493332000100000000000000000000"TRIG0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig0;0;ReadMethodType=bool;WriteMethodType=boolTRIG5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig5;0;ReadMethodType=bool;WriteMethodType=boolUPDATE_IOArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 5;0;WriteMethodType=boolWrite_Data_LowerArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/DRAM Bank 0/SignalList/Write_Data_Lower;0;WriteMethodType=U64Write_Data_UpperArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/DRAM Bank 0/SignalList/Write_Data_Upper;0;WriteMethodType=U64</Property>
-					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Labview2\AOD_Control\FPGA_Control\FPGA Bitfiles\AODControl_FPGATarget_5751Acquire_038F9455.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Labview2\Acquisition\FPGA Bitfiles\Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx</Property>
 				</Item>
 				<Item Name="Coordinate" Type="FPGA FIFO">
 					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
@@ -2735,6 +2735,34 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 						<Property Name="SupportResourceEstimation" Type="Bool">true</Property>
 						<Property Name="TargetName" Type="Str">FPGA Target</Property>
 						<Property Name="TopLevelVI" Type="Ref"></Property>
+					</Item>
+					<Item Name="AOD Control (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
+						<Property Name="BuildSpecDecription" Type="Str"></Property>
+						<Property Name="BuildSpecName" Type="Str">AOD Control (FPGA)</Property>
+						<Property Name="Comp.BitfileName" Type="Str">Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx</Property>
+						<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
+						<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
+						<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
+						<Property Name="Comp.RunWhenLoaded" Type="Bool">false</Property>
+						<Property Name="Comp.Version.Build" Type="Int">0</Property>
+						<Property Name="Comp.Version.Fix" Type="Int">0</Property>
+						<Property Name="Comp.Version.Major" Type="Int">1</Property>
+						<Property Name="Comp.Version.Minor" Type="Int">0</Property>
+						<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
+						<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">balanced</Property>
+						<Property Name="Comp.Xilinx.MapEffort" Type="Str">high(timing)</Property>
+						<Property Name="Comp.Xilinx.ParEffort" Type="Str">standard</Property>
+						<Property Name="Comp.Xilinx.SynthEffort" Type="Str">normal</Property>
+						<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
+						<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
+						<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+						<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
+						<Property Name="ProjectPath" Type="Path">/C/Labview2/Acquisition/Acquisition.lvproj</Property>
+						<Property Name="RelativePath" Type="Bool">true</Property>
+						<Property Name="SupportDownload" Type="Bool">true</Property>
+						<Property Name="SupportResourceEstimation" Type="Bool">true</Property>
+						<Property Name="TargetName" Type="Str">FPGA Target</Property>
+						<Property Name="TopLevelVI" Type="Ref">/My Computer/AOD/FPGA Target/AOD Control (FPGA).vi</Property>
 					</Item>
 				</Item>
 			</Item>
@@ -3246,7 +3274,59 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="WraparoundUpdate.vi" Type="VI" URL="../AOD_Control/WraparoundUpdate.vi"/>
 			<Item Name="CleanupTraces.vi" Type="VI" URL="../AOD_Control/CleanupTraces.vi"/>
 			<Item Name="SweepSettings.vi" Type="VI" URL="../AOD_Control/FPGA_Control/SweepSettings.vi"/>
+			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
+			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
+			<Item Name="niLvFpga_Open_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Open_PXIe-7965R.vi"/>
+			<Item Name="niLvFpga_ReadFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ReadFifo_PXIe-7965R.vi"/>
+			<Item Name="niLvFpga_Read32_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Read32_PXIe-7965R.vi"/>
+			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
+			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
+			<Item Name="niFpgaRWControlAccessTimeoutTemplate.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/nirviReadWriteControl/niFpgaRWControlAccessTimeoutTemplate.vi"/>
+			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="niLvFpga_Reset_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Reset_PXIe-7965R.vi"/>
+			<Item Name="niLvFpga_Run_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Run_PXIe-7965R.vi"/>
+			<Item Name="_nirio_device_attributes.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attributes.ctl"/>
+			<Item Name="_nirio_device_handleType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_handleType.ctl"/>
+			<Item Name="_nirio_device_attrSet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrSet32.vi"/>
+			<Item Name="nicrio_CreateHostErrorCluster.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nicrio_HostTools.llb/nicrio_CreateHostErrorCluster.vi"/>
+			<Item Name="_nirio_IniPathGlobalActionEnum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobalActionEnum.ctl"/>
+			<Item Name="_nirio_IniPathGlobal_RioCommonFiles.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_RioCommonFiles.vi"/>
+			<Item Name="_nirio_GetLVLanguage.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_GetLVLanguage.vi"/>
+			<Item Name="_nirio_ConvertLVLangToToolsSuffix.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_ConvertLVLangToToolsSuffix.vi"/>
+			<Item Name="nirio_subCreateDir.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/FileIOVIs/nirio_subCreateDir.vi"/>
+			<Item Name="nirio_MAG_Config Data RefNum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Config Data RefNum.ctl"/>
+			<Item Name="nirio_MAG_Open Config Data.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Open Config Data.vi"/>
+			<Item Name="nirio_subSearchRaw.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_subSearchRaw.vi"/>
+			<Item Name="nirio_subReadRaw.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_subReadRaw.vi"/>
+			<Item Name="nirio_MAG_Read Key (String).vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Read Key (String).vi"/>
+			<Item Name="nirio_MAG_Close Config Data.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Close Config Data.vi"/>
+			<Item Name="nirio_GetStringsFromRepositoryWrapper.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringsFromRepositoryWrapper.vi"/>
+			<Item Name="nirio_GetStringFromRepository_RioCommonFiles.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RioCommonFiles.vi"/>
+			<Item Name="_nirio_IniPathGlobal_cRIO_Targets.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_cRIO_Targets.vi"/>
+			<Item Name="nirio_GetStringFromRepository_cRIO_Targets.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_cRIO_Targets.vi"/>
+			<Item Name="_nirio_IniPathGlobal_Modules.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_Modules.vi"/>
+			<Item Name="nirio_GetStringFromRepository_Modules.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_Modules.vi"/>
+			<Item Name="_nirio_IniPathGlobal_Cartridges.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_Cartridges.vi"/>
+			<Item Name="nirio_GetStringFromRepository_Cartridges.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_Cartridges.vi"/>
+			<Item Name="_nirio_IniPathGlobal_RSeries.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_RSeries.vi"/>
+			<Item Name="nirio_GetStringFromRepository_RSeries.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RSeries.vi"/>
+			<Item Name="nirio_GetStringFromRepositoryPoly.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepositoryPoly.vi"/>
+			<Item Name="nirio_ErrorSetSourceField.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_Utility/nirio_ErrorSetSourceField.vi"/>
+			<Item Name="78XX_ReserveTriggerImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/78XX_ReserveTriggerImpl.vi"/>
+			<Item Name="nirioReserveTrigger.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirioReserveTrigger.vi"/>
+			<Item Name="Interface_ValueType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_ValueType.ctl"/>
+			<Item Name="FlexRIO_Host_Attribute.ctl" Type="VI" URL="/&lt;vilib&gt;/FlexRIO/FlexRIO_HostInterface.llb/FlexRIO_Host_Attribute.ctl"/>
+			<Item Name="Interface_QueryAttributeArray_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_Session.vi"/>
+			<Item Name="Interface_QueryAttributeArray_U32_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_U32_Session.vi"/>
+			<Item Name="_nirio_device_attrGet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrGet32.vi"/>
+			<Item Name="FlexRIO_isFlexRIODevice.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/79XXR/ClientSDK/Tools/FlexRIO_isFlexRIODevice.vi"/>
+			<Item Name="79XXR_Method_IOModuleStatusImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/79XXR/Private/79XXR_Method_IOModuleStatusImpl.vi"/>
+			<Item Name="niLvFpga_ConfigureFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ConfigureFifo_PXIe-7965R.vi"/>
+			<Item Name="niLvFpga_StartFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_StartFifo_PXIe-7965R.vi"/>
 			<Item Name="matscript.dll" Type="Document"/>
+			<Item Name="Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx" Type="Document" URL="../FPGA Bitfiles/Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
