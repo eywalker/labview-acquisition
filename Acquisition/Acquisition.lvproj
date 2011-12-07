@@ -39,6 +39,7 @@
 			<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
 			<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/MatlabExperiment/MatlabExperiment.lvclass"/>
 			<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../../Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
+			<Item Name="TwoAfcEye.lvclass" Type="LVClass" URL="../../Experiments/TwoAfcEye/TwoAfcEye.lvclass"/>
 		</Item>
 		<Item Name="Experiments" Type="Folder">
 			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Experiments/ClassDiscrimination/ClassDiscrimination.lvclass"/>
@@ -46,6 +47,7 @@
 			<Item Name="MultDimExperiment.lvclass" Type="LVClass" URL="../../Experiments/MultDimExperiment/MultDimExperiment.lvclass"/>
 			<Item Name="DotMappingExperiment.lvclass" Type="LVClass" URL="../../Experiments/DotMappingExperiment/DotMappingExperiment.lvclass"/>
 			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Experiments/EyeCalibration/EyeCalibration.lvclass"/>
+			<Item Name="FlashLagExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlashLagExperiment/FlashLagExperiment.lvclass"/>
 		</Item>
 		<Item Name="AOD" Type="Folder">
 			<Item Name="AODRef.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/AODRef.ctl"/>
@@ -3074,7 +3076,6 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="DAQmx Reset Device.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Reset Device.vi"/>
 				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
-				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
@@ -3103,6 +3104,11 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="Convert 1DWfm to DDT.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DWfm to DDT.vi"/>
 				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
 				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
+				<Item Name="IMAQdx Camera Control Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Camera Control Mode.ctl"/>
+				<Item Name="IMAQdx Open Camera.vi" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Open Camera.vi"/>
+				<Item Name="IMAQdx Configure Grab.vi" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Configure Grab.vi"/>
+				<Item Name="IMAQdx Grab.vi" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Grab.vi"/>
+				<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niHWS Fill In Error Info.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Fill In Error Info.vi"/>
@@ -3198,11 +3204,39 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
-			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 			<Item Name="nihwsu.dll" Type="Document" URL="nihwsu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="ScanPoints (host).vi" Type="VI" URL="../AOD_Control/FPGA_Control/ScanPoints (host).vi"/>
+			<Item Name="FPGAState.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/FPGAState.ctl"/>
+			<Item Name="AODCalibration.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/AODCalibration.ctl"/>
+			<Item Name="AODControl_FPGATarget_5751Acquire_1926D8C3.lvbitx" Type="Document" URL="../AOD_Control/FPGA_Control/FPGA Bitfiles/AODControl_FPGATarget_5751Acquire_1926D8C3.lvbitx"/>
+			<Item Name="CoordinatePermutations.vi" Type="VI" URL="../AOD_Control/Debugging/CoordinatePermutations.vi"/>
+			<Item Name="Rotate.vi" Type="VI" URL="../AOD_Control/Rotate.vi"/>
+			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="LVASPT_TFA.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/LVASPT_TFA.dll"/>
+			<Item Name="UpdateStack.vi" Type="VI" URL="../AOD_Control/FPGA_Control/UpdateStack.vi"/>
+			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="PointsToROI.vi" Type="VI" URL="../AOD_Control/FPGA_Control/PointsToROI.vi"/>
+			<Item Name="ROIsToPoints.vi" Type="VI" URL="../AOD_Control/FPGA_Control/ROIsToPoints.vi"/>
+			<Item Name="PointToSetting.vi" Type="VI" URL="../AOD_Control/FPGA_Control/PointToSetting.vi"/>
+			<Item Name="LineToSetting.vi" Type="VI" URL="../AOD_Control/FPGA_Control/LineToSetting.vi"/>
+			<Item Name="BoxToSetting.vi" Type="VI" URL="../AOD_Control/FPGA_Control/BoxToSetting.vi"/>
+			<Item Name="WraparoundUpdate.vi" Type="VI" URL="../AOD_Control/WraparoundUpdate.vi"/>
+			<Item Name="CleanupTraces.vi" Type="VI" URL="../AOD_Control/CleanupTraces.vi"/>
+			<Item Name="SweepSettings.vi" Type="VI" URL="../AOD_Control/FPGA_Control/SweepSettings.vi"/>
+			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx" Type="Document" URL="../FPGA Bitfiles/Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx"/>
+			<Item Name="daqmx.rc" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
@@ -3231,94 +3265,25 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="NIMS_Range_0B7635FB69F84E19AA68E7FF959DF37C_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_0B7635FB69F84E19AA68E7FF959DF37C.lvgen/NIMS_Range_0B7635FB69F84E19AA68E7FF959DF37C_001.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi"/>
 			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
-			<Item Name="FPGAState.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/FPGAState.ctl"/>
-			<Item Name="AODCalibration.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/AODCalibration.ctl"/>
 			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
+			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
 			<Item Name="niFpgaViExecutionMode.ctl" Type="VI" URL="/&lt;vilib&gt;/FPGA/interface/niFpgaViExecutionMode.ctl"/>
-			<Item Name="AODControl_FPGATarget_5751Acquire_1926D8C3.lvbitx" Type="Document" URL="../AOD_Control/FPGA_Control/FPGA Bitfiles/AODControl_FPGATarget_5751Acquire_1926D8C3.lvbitx"/>
-			<Item Name="CoordinatePermutations.vi" Type="VI" URL="../AOD_Control/Debugging/CoordinatePermutations.vi"/>
-			<Item Name="Rotate.vi" Type="VI" URL="../AOD_Control/Rotate.vi"/>
-			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="LVASPT_TFA.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/LVASPT_TFA.dll"/>
-			<Item Name="UpdateStack.vi" Type="VI" URL="../AOD_Control/FPGA_Control/UpdateStack.vi"/>
-			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="PointsToROI.vi" Type="VI" URL="../AOD_Control/FPGA_Control/PointsToROI.vi"/>
-			<Item Name="ROIsToPoints.vi" Type="VI" URL="../AOD_Control/FPGA_Control/ROIsToPoints.vi"/>
-			<Item Name="PointToSetting.vi" Type="VI" URL="../AOD_Control/FPGA_Control/PointToSetting.vi"/>
-			<Item Name="LineToSetting.vi" Type="VI" URL="../AOD_Control/FPGA_Control/LineToSetting.vi"/>
-			<Item Name="BoxToSetting.vi" Type="VI" URL="../AOD_Control/FPGA_Control/BoxToSetting.vi"/>
-			<Item Name="WraparoundUpdate.vi" Type="VI" URL="../AOD_Control/WraparoundUpdate.vi"/>
-			<Item Name="CleanupTraces.vi" Type="VI" URL="../AOD_Control/CleanupTraces.vi"/>
-			<Item Name="SweepSettings.vi" Type="VI" URL="../AOD_Control/FPGA_Control/SweepSettings.vi"/>
+			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
 			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
 			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
 			<Item Name="niLvFpga_Open_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Open_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_ReadFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ReadFifo_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_Read32_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Read32_PXIe-7965R.vi"/>
-			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
-			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
-			<Item Name="niFpgaRWControlAccessTimeoutTemplate.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/nirviReadWriteControl/niFpgaRWControlAccessTimeoutTemplate.vi"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niLvFpga_Reset_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Reset_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_Run_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Run_PXIe-7965R.vi"/>
-			<Item Name="_nirio_device_attributes.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attributes.ctl"/>
-			<Item Name="_nirio_device_handleType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_handleType.ctl"/>
-			<Item Name="_nirio_device_attrSet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrSet32.vi"/>
-			<Item Name="nicrio_CreateHostErrorCluster.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nicrio_HostTools.llb/nicrio_CreateHostErrorCluster.vi"/>
-			<Item Name="_nirio_IniPathGlobalActionEnum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobalActionEnum.ctl"/>
-			<Item Name="_nirio_IniPathGlobal_RioCommonFiles.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_RioCommonFiles.vi"/>
-			<Item Name="_nirio_GetLVLanguage.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_GetLVLanguage.vi"/>
-			<Item Name="_nirio_ConvertLVLangToToolsSuffix.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_ConvertLVLangToToolsSuffix.vi"/>
-			<Item Name="nirio_subCreateDir.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/FileIOVIs/nirio_subCreateDir.vi"/>
-			<Item Name="nirio_MAG_Config Data RefNum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Config Data RefNum.ctl"/>
-			<Item Name="nirio_MAG_Open Config Data.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Open Config Data.vi"/>
-			<Item Name="nirio_subSearchRaw.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_subSearchRaw.vi"/>
-			<Item Name="nirio_subReadRaw.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_subReadRaw.vi"/>
-			<Item Name="nirio_MAG_Read Key (String).vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Read Key (String).vi"/>
-			<Item Name="nirio_MAG_Close Config Data.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Close Config Data.vi"/>
-			<Item Name="nirio_GetStringsFromRepositoryWrapper.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringsFromRepositoryWrapper.vi"/>
-			<Item Name="nirio_GetStringFromRepository_RioCommonFiles.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RioCommonFiles.vi"/>
-			<Item Name="_nirio_IniPathGlobal_cRIO_Targets.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_cRIO_Targets.vi"/>
-			<Item Name="nirio_GetStringFromRepository_cRIO_Targets.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_cRIO_Targets.vi"/>
-			<Item Name="_nirio_IniPathGlobal_Modules.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_Modules.vi"/>
-			<Item Name="nirio_GetStringFromRepository_Modules.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_Modules.vi"/>
-			<Item Name="_nirio_IniPathGlobal_Cartridges.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_Cartridges.vi"/>
-			<Item Name="nirio_GetStringFromRepository_Cartridges.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_Cartridges.vi"/>
-			<Item Name="_nirio_IniPathGlobal_RSeries.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_RSeries.vi"/>
-			<Item Name="nirio_GetStringFromRepository_RSeries.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RSeries.vi"/>
-			<Item Name="nirio_GetStringFromRepositoryPoly.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepositoryPoly.vi"/>
-			<Item Name="nirio_ErrorSetSourceField.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_Utility/nirio_ErrorSetSourceField.vi"/>
-			<Item Name="78XX_ReserveTriggerImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/78XX_ReserveTriggerImpl.vi"/>
-			<Item Name="nirioReserveTrigger.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirioReserveTrigger.vi"/>
-			<Item Name="Interface_ValueType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_ValueType.ctl"/>
-			<Item Name="FlexRIO_Host_Attribute.ctl" Type="VI" URL="/&lt;vilib&gt;/FlexRIO/FlexRIO_HostInterface.llb/FlexRIO_Host_Attribute.ctl"/>
-			<Item Name="Interface_QueryAttributeArray_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_Session.vi"/>
-			<Item Name="Interface_QueryAttributeArray_U32_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_U32_Session.vi"/>
-			<Item Name="_nirio_device_attrGet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrGet32.vi"/>
-			<Item Name="FlexRIO_isFlexRIODevice.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/79XXR/ClientSDK/Tools/FlexRIO_isFlexRIODevice.vi"/>
-			<Item Name="79XXR_Method_IOModuleStatusImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/79XXR/Private/79XXR_Method_IOModuleStatusImpl.vi"/>
-			<Item Name="niLvFpga_ConfigureFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ConfigureFifo_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_StartFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_StartFifo_PXIe-7965R.vi"/>
-			<Item Name="matscript.dll" Type="Document"/>
-			<Item Name="Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx" Type="Document" URL="../FPGA Bitfiles/Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx"/>
+			<Item Name="NIMS_abs(signed).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/abs/NIMS_abs(signed).vi"/>
+			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi"/>
+			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi"/>
+			<Item Name="NIMS_sum(GV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/sum/NIMS_sum(GV).vi"/>
+			<Item Name="NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC.lvgen/NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC_002.vi"/>
+			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal_26C0DCAD7F024225968CB0639EC17D76_006.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_26C0DCAD7F024225968CB0639EC17D76.lvgen/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_26C0DCAD7F024225968CB0639EC17D76_006.vi"/>
+			<Item Name="NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5.lvgen/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi"/>
+			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_009.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_009.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
