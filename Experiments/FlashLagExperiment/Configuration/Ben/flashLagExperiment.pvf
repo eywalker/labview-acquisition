@@ -48,6 +48,7 @@ condRepeatType=None
 
 flashDuration=1
 flashOffset=250
+flashLocation=500
 yOffset=336
 noFlashZone=100
 maxBlockSize=2
