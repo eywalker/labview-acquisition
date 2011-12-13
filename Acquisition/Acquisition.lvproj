@@ -48,6 +48,8 @@
 			<Item Name="DotMappingExperiment.lvclass" Type="LVClass" URL="../../Experiments/DotMappingExperiment/DotMappingExperiment.lvclass"/>
 			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Experiments/EyeCalibration/EyeCalibration.lvclass"/>
 			<Item Name="FlashLagExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlashLagExperiment/FlashLagExperiment.lvclass"/>
+			<Item Name="WNOriDiscExperiment.lvclass" Type="LVClass" URL="../../Experiments/WNOriDiscExperiment/WNOriDiscExperiment.lvclass"/>
+			<Item Name="OriDiscExperiment.lvclass" Type="LVClass" URL="../../Experiments/OriDiscExperiment/OriDiscExperiment.lvclass"/>
 		</Item>
 		<Item Name="AOD" Type="Folder">
 			<Item Name="AODRef.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/AODRef.ctl"/>
