@@ -14,7 +14,7 @@ monitorSize=41,30
 monitorDistance=100
 monitorCenter=800,600
 
-passive=0
+passive=1
 acquireFixation=1
 
 targetLocation=-450,-350
