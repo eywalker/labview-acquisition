@@ -1,7 +1,17 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="11008008">
+	<Property Name="varPersistentID:{0BBF3F7B-6F48-4A57-BBCD-A0A7E20CB378}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
+	<Property Name="varPersistentID:{1AA3C4F5-9182-4E7B-8C03-76F459B89630}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
 	<Property Name="varPersistentID:{4C964596-C49B-46DA-93D2-D24C2207483A}" Type="Ref">/My Computer/AODAcq.lvclass/ReadFraction</Property>
+	<Property Name="varPersistentID:{573AE693-42CD-40C6-B418-83F6ABB9144A}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysChanNames</Property>
+	<Property Name="varPersistentID:{6D80F92E-8B07-4897-AAF4-A74340A73828}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysFs</Property>
+	<Property Name="varPersistentID:{782E2D28-420A-41D8-BA56-4BE0747531A1}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysPK</Property>
+	<Property Name="varPersistentID:{7BEA890F-5C3E-4234-AC24-835F4BA71B44}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Subject</Property>
+	<Property Name="varPersistentID:{7FF38AAA-141D-4962-A555-AF1D5A1254F5}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/BehaviorPK</Property>
+	<Property Name="varPersistentID:{C4A42D0D-015E-4A85-8E82-142B99AFC779}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysAIscalingCoeff</Property>
 	<Property Name="varPersistentID:{D6201F2E-09B5-41E6-9849-9F30610DEF0C}" Type="Ref">/My Computer/AODAcq.lvclass/ScanFraction</Property>
+	<Property Name="varPersistentID:{EEF1169A-A25C-4E65-B85B-8EBA94745699}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/StimulationPK</Property>
+	<Property Name="varPersistentID:{F2CE5279-C9E4-434A-82BF-934ACC28B726}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -167,7 +177,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
             <RelativeToLabVIEW>C:\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToLabVIEW>
             <RelativeToNiPubDocs>C:\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToNiPubDocs>
             <RelativeToNiSharedDir>FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToNiSharedDir>
-            <RelativeToProject>..\..\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToProject>
+            <RelativeToProject>..\..\..\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToProject>
             <Valid>true</Valid>
          </DeclarationPaths>
          <Description>Presents a random-access external memory interface with a 128-bit data port.\n\nRequests to write to and read from memory are satisfied by issuing a write or read command to this memory interface.  To issue a write, set the Command signal to 0 and assert Command_Write_Enable.  To issue a read, set the Command signal to 1 and assert Command_Write_Enable.  Latch the read data on the same clock cycle that Read_Strobe asserts.  Command_Write_Enable should never be asserted when Command_FIFO_Full is &quot;TRUE&quot;.\n\nAll signals for this memory interface must be accessed from within a Single Cycle Timed Loop, and you must configure the User_Clk to run on the same clock domain as this Timed Loop.\n\nThis version of the memory interface will automatically disable synchronization registers on all FPGA I/O to and from the memory interface.  All synchronization registers on FPGA I/O to and from this memory interface must be disabled in order for it to function properly.</Description>
@@ -432,7 +442,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
             <RelativeToLabVIEW>C:\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToLabVIEW>
             <RelativeToNiPubDocs>C:\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToNiPubDocs>
             <RelativeToNiSharedDir>FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToNiSharedDir>
-            <RelativeToProject>..\..\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToProject>
+            <RelativeToProject>..\..\..\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToProject>
             <Valid>true</Valid>
          </DeclarationPaths>
          <Description>This CLIP provides access to sixteen analog input channels, eight digital input lines, and eight digital output lines.  This CLIP also contains a SPI interface to program the ADC registers.  
@@ -2839,6 +2849,8 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 		<Item Name="Debug_WFS_Tilt.vi" Type="VI" URL="../Debugging/Debug_WFS_Tilt.vi"/>
 		<Item Name="CoordinatePermutations.vi" Type="VI" URL="../Debugging/CoordinatePermutations.vi"/>
 		<Item Name="AODAcq.lvclass" Type="LVClass" URL="../AODAcq/AODAcq.lvclass"/>
+		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../../AcquisitionVariables.lvlib"/>
+		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../../AcquistionObject/AcquistionObject.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
@@ -3089,7 +3101,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="DAQmx Write (Counter 1D Frequency 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Frequency 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Counter 1D Ticks 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Ticks 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Counter 1D Time 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Counter 1D Time 1Chan NSamp).vi"/>
-				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userDefined/High Color/IMAQdx.ctl"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Convert 1DWfm to DDT.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DWfm to DDT.vi"/>
 				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
 				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
@@ -3115,9 +3127,20 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="Sound Format.ctl" Type="VI" URL="/&lt;vilib&gt;/sound/lvsound.llb/Sound Format.ctl"/>
 				<Item Name="Snd Gen Error Call Chain.vi" Type="VI" URL="/&lt;vilib&gt;/sound/lvsound.llb/Snd Gen Error Call Chain.vi"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="NI_Database_API.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/database/NI_Database_API.lvlib"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="GOOP Object Repository Method.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Method.ctl"/>
+				<Item Name="GOOP Object Repository Statistics.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Statistics.ctl"/>
+				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="niHWS Close File.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Close File.vi"/>
 				<Item Name="niHWS Fill In Error Info.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Fill In Error Info.vi"/>
 				<Item Name="niHWS Write.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Write.vi"/>
 				<Item Name="niHWS Write Analog I16.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Write Analog I16.vi"/>
@@ -3136,14 +3159,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="niHWS Write Digital U16.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Write Digital U16.vi"/>
 				<Item Name="niHWS Write Digital 2D U8.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Write Digital 2D U8.vi"/>
 				<Item Name="niHWS Write Digital 2D U16.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Write Digital 2D U16.vi"/>
-				<Item Name="niHWS Set Wfm Attribute.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Set Wfm Attribute.vi"/>
-				<Item Name="niHWS Set Wfm String Attribute.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Set Wfm String Attribute.vi"/>
-				<Item Name="niHWS Set Wfm String Attribute ID.ctl" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Set Wfm String Attribute ID.ctl"/>
 				<Item Name="niHWS New Wfm Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS New Wfm Reference.vi"/>
-				<Item Name="niHWS Open File Permissions ID.ctl" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Open File Permissions ID.ctl"/>
-				<Item Name="niHWS Open File.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Open File.vi"/>
-				<Item Name="niHWS Set Group String Attribute.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Set Group String Attribute.vi"/>
-				<Item Name="niHWS Group String Attribute ID.ctl" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Group String Attribute ID.ctl"/>
 				<Item Name="niScope timestamp type.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope timestamp type.ctl"/>
 				<Item Name="niScope vertical coupling.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope vertical coupling.ctl"/>
 				<Item Name="niScope Initiate Acquisition.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Acquire/Fetch/niScope Initiate Acquisition.vi"/>
@@ -3204,34 +3220,51 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Rotate.vi" Type="VI" URL="../Rotate.vi"/>
-			<Item Name="AODControl_FPGATarget_5751Acquire_1926D8C3.lvbitx" Type="Document" URL="../FPGA_Control/FPGA Bitfiles/AODControl_FPGATarget_5751Acquire_1926D8C3.lvbitx"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="LVASPT_TFA.dll" Type="Document" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/LVASPT_TFA.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="AODCalibration.ctl" Type="VI" URL="../FPGA_Control/AODCalibration.ctl"/>
-			<Item Name="AODControl_FPGATarget_5751Acquire_038F9455.lvbitx" Type="Document" URL="../FPGA_Control/FPGA Bitfiles/AODControl_FPGATarget_5751Acquire_038F9455.lvbitx"/>
+			<Item Name="Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx" Type="Document" URL="../../FPGA Bitfiles/Acquisition_FPGATarget_AODControl(FPGA)_C1C38267.lvbitx"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
+			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
+			<Item Name="HDF5Tools.dll" Type="Document" URL="../../../../HDF5Tools/Release/HDF5Tools.dll"/>
+			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../../../HDF5Tools/Release/hdf5_hldll.dll"/>
+			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
+			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
+			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
+			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
+			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
+			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
+			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
+			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
+			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
+			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
+			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../../../HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
+			<Item Name="SessionPrimary.ctl" Type="VI" URL="../../Database/SessionPrimary.ctl"/>
+			<Item Name="AodScanPrimary.ctl" Type="VI" URL="../../Database/AodScanPrimary.ctl"/>
+			<Item Name="LVASPT_TFA.dll" Type="Document" URL="../../../../Program Files/National Instruments/LabVIEW 2011/resource/LVASPT_TFA.dll"/>
 			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
 			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
-			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
-			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
 			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
+			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
+			<Item Name="niFpgaViExecutionMode.ctl" Type="VI" URL="/&lt;vilib&gt;/FPGA/interface/niFpgaViExecutionMode.ctl"/>
+			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
 			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
 			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
 			<Item Name="niLvFpga_Open_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Open_PXIe-7965R.vi"/>
-			<Item Name="niFpgaViExecutionMode.ctl" Type="VI" URL="/&lt;vilib&gt;/FPGA/interface/niFpgaViExecutionMode.ctl"/>
-			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
+			<Item Name="BehPrimary.ctl" Type="VI" URL="../../Database/BehPrimary.ctl"/>
+			<Item Name="EphysPrimary.ctl" Type="VI" URL="../../Database/EphysPrimary.ctl"/>
+			<Item Name="StimulationPrimary.ctl" Type="VI" URL="../../Database/StimulationPrimary.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="AOD Scanner" Type="EXE">
