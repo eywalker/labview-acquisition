@@ -2787,6 +2787,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="acquisition-errors.txt" Type="Document" URL="../acquisition-errors.txt"/>
 		<Item Name="CoordinatePermutations.vi" Type="VI" URL="../AOD_Control/Debugging/CoordinatePermutations.vi"/>
+		<Item Name="Pulse Divider.vi" Type="VI" URL="../../Utilities/Pulse Divider.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
@@ -3078,7 +3079,6 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="DAQmx Reset Device.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Reset Device.vi"/>
 				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
-				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
@@ -3107,7 +3107,12 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="Convert 1DWfm to DDT.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DWfm to DDT.vi"/>
 				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
 				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
+				<Item Name="IMAQdx Camera Control Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Camera Control Mode.ctl"/>
+				<Item Name="IMAQdx Open Camera.vi" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Open Camera.vi"/>
+				<Item Name="IMAQdx Configure Grab.vi" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Configure Grab.vi"/>
+				<Item Name="IMAQdx Grab.vi" Type="VI" URL="/&lt;vilib&gt;/vision/driver/IMAQdx.llb/IMAQdx Grab.vi"/>
 				<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi"/>
+				<Item Name="DAQmx Is Task Done.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Is Task Done.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niHWS Fill In Error Info.vi" Type="VI" URL="/&lt;instrlib&gt;/niHWS/nihws.llb/niHWS Fill In Error Info.vi"/>
@@ -3213,9 +3218,6 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -3274,59 +3276,13 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
-			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
 			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
 			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
-			<Item Name="niLvFpga_WriteFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_WriteFifo_PXIe-7965R.vi"/>
-			<Item Name="niFpgaRWControlAccessTimeoutTemplate.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/nirviReadWriteControl/niFpgaRWControlAccessTimeoutTemplate.vi"/>
-			<Item Name="niLvFpga_Read32_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Read32_PXIe-7965R.vi"/>
 			<Item Name="niFpgaViExecutionMode.ctl" Type="VI" URL="/&lt;vilib&gt;/FPGA/interface/niFpgaViExecutionMode.ctl"/>
-			<Item Name="Interface_ValueType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_ValueType.ctl"/>
-			<Item Name="FlexRIO_Host_Attribute.ctl" Type="VI" URL="/&lt;vilib&gt;/FlexRIO/FlexRIO_HostInterface.llb/FlexRIO_Host_Attribute.ctl"/>
-			<Item Name="Interface_QueryAttributeArray_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_Session.vi"/>
-			<Item Name="Interface_QueryAttributeArray_U32_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_U32_Session.vi"/>
-			<Item Name="_nirio_IniPathGlobalActionEnum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobalActionEnum.ctl"/>
-			<Item Name="_nirio_IniPathGlobal_RioCommonFiles.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_RioCommonFiles.vi"/>
-			<Item Name="_nirio_GetLVLanguage.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_GetLVLanguage.vi"/>
-			<Item Name="_nirio_ConvertLVLangToToolsSuffix.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_ConvertLVLangToToolsSuffix.vi"/>
-			<Item Name="nirio_subCreateDir.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/FileIOVIs/nirio_subCreateDir.vi"/>
-			<Item Name="nirio_MAG_Config Data RefNum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Config Data RefNum.ctl"/>
-			<Item Name="nirio_MAG_Open Config Data.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Open Config Data.vi"/>
-			<Item Name="nirio_subSearchRaw.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_subSearchRaw.vi"/>
-			<Item Name="nirio_subReadRaw.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_subReadRaw.vi"/>
-			<Item Name="nirio_MAG_Read Key (String).vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Read Key (String).vi"/>
-			<Item Name="nirio_MAG_Close Config Data.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/ConfigFileVIs/nirio_MAG_Close Config Data.vi"/>
-			<Item Name="nirio_GetStringsFromRepositoryWrapper.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringsFromRepositoryWrapper.vi"/>
-			<Item Name="nirio_GetStringFromRepository_RioCommonFiles.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RioCommonFiles.vi"/>
-			<Item Name="_nirio_IniPathGlobal_cRIO_Targets.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_cRIO_Targets.vi"/>
-			<Item Name="nirio_GetStringFromRepository_cRIO_Targets.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_cRIO_Targets.vi"/>
-			<Item Name="_nirio_IniPathGlobal_Modules.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_Modules.vi"/>
-			<Item Name="nirio_GetStringFromRepository_Modules.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_Modules.vi"/>
-			<Item Name="_nirio_IniPathGlobal_Cartridges.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_Cartridges.vi"/>
-			<Item Name="nirio_GetStringFromRepository_Cartridges.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_Cartridges.vi"/>
-			<Item Name="_nirio_IniPathGlobal_RSeries.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobal_RSeries.vi"/>
-			<Item Name="nirio_GetStringFromRepository_RSeries.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RSeries.vi"/>
-			<Item Name="nirio_GetStringFromRepositoryPoly.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2011/resource/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepositoryPoly.vi"/>
-			<Item Name="nirio_ErrorSetSourceField.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_Utility/nirio_ErrorSetSourceField.vi"/>
-			<Item Name="_nirio_device_attributes.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attributes.ctl"/>
-			<Item Name="_nirio_device_handleType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_handleType.ctl"/>
-			<Item Name="_nirio_device_attrGet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrGet32.vi"/>
-			<Item Name="FlexRIO_isFlexRIODevice.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/79XXR/ClientSDK/Tools/FlexRIO_isFlexRIODevice.vi"/>
-			<Item Name="79XXR_Method_IOModuleStatusImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/79XXR/Private/79XXR_Method_IOModuleStatusImpl.vi"/>
-			<Item Name="_nirio_device_attrSet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrSet32.vi"/>
-			<Item Name="nicrio_CreateHostErrorCluster.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nicrio_HostTools.llb/nicrio_CreateHostErrorCluster.vi"/>
 			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
-			<Item Name="78XX_ReserveTriggerImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/78XX_ReserveTriggerImpl.vi"/>
-			<Item Name="nirioReserveTrigger.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirioReserveTrigger.vi"/>
-			<Item Name="niLvFpga_Run_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Run_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_Reset_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Reset_PXIe-7965R.vi"/>
 			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
 			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
 			<Item Name="niLvFpga_Open_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Open_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_StartFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_StartFifo_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_ConfigureFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ConfigureFifo_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_ReadFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ReadFifo_PXIe-7965R.vi"/>
 			<Item Name="NIMS_abs(signed).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/abs/NIMS_abs(signed).vi"/>
 			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi"/>
 			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi"/>
@@ -3335,7 +3291,6 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal_26C0DCAD7F024225968CB0639EC17D76_006.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_26C0DCAD7F024225968CB0639EC17D76.lvgen/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_26C0DCAD7F024225968CB0639EC17D76_006.vi"/>
 			<Item Name="NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5.lvgen/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_009.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_009.vi"/>
-			<Item Name="matscript.dll" Type="Document"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -3381,7 +3336,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">64</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">65</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
@@ -3439,7 +3394,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">43</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">44</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
@@ -3451,15 +3406,12 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{553AB8C8-E65A-4920-AD8F-D5551B6C458E}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{C4959624-F23C-419B-8C8B-FD59A26C8B23}</Property>
-				<Property Name="App_INI_itemID" Type="Ref">/My Computer/app.ini</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{30A74DE6-484A-4B98-8876-607AE0B74582}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Behavior</Property>
 				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Behavior</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C17D3D5E-8A41-4867-9CCA-9F03B2DAD986}</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
@@ -3477,7 +3429,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="Exe_VardepHideDeployDlg" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{6A930EB7-0339-4147-841F-3AED3438D617}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{248D4215-6788-4564-9EC9-21954425F92E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Trial Based Experiment Runner.vi</Property>
@@ -3486,32 +3438,39 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Experiments/ClassDiscrimination.lvclass/Cycle.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Dependencies/EyeCalibration.lvclass/Cycle.vi</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/BehaviorObjects/PassiveExperiment.lvclass/Cycle.vi</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/BehaviorObjects/PassiveExperiment.lvclass/Cycle.vi</Property>
-				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[4].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[4].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/AcquistionObject.lvclass</Property>
+				<Property Name="Source[4].type" Type="Str">Library</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/AcquireTraces.lvclass</Property>
+				<Property Name="Source[5].type" Type="Str">Library</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Experiments/EyeCalibration.lvclass/Cycle.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Behavior</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">15</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">20</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Behavior</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 BCM</Property>
