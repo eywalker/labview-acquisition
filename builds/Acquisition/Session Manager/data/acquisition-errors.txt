@@ -31,5 +31,8 @@ Unable to connect to the session database
 <nierror code="-8008">
 Unable to create file.  File name should end in %d.h5.
 </nierror>
+<nierror code="-8009">
+Unable to create file.  File name should end in %d.h5.
+</nierror>
 
 </nidocument> 
