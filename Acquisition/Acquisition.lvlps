@@ -1,5 +1,5 @@
 [ProjectWindow_Data]
-ProjectExplorer.ClassicPosition[String] = "571,41,1162,361"
+ProjectExplorer.ClassicPosition[String] = "329,122,920,442"
 
 [AB_Cache_{B40E3E4E-8173-4A26-8DFE-F04631182A5C}]
 Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
@@ -171,46 +171,6 @@ Cache_GenGUID[4][String] = ""
 Cache_GenGUID[5][String] = ""
 Cache_OutputDir[Path] = "/C/Labview/builds/Acquisition/EphysAcquisition"
 
-[AB_Cache_{B7FFAE01-E07C-43A7-AEA1-BD6CF7C0DD6C}]
-Cache_ProjSymbolChksum[String] = "dd8a23d5bf38aa81e9e52eb43d310cea"
-Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
-Cache_MyCompChksum[String] = "dc960188964cd02371c7a327e55778f3"
-Cache_GenFile_Count[Integer] = 4
-Cache_GenFile[0][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[0][Path] Line0002 = "r/SessionManager.exe"
-Cache_GenFile[1][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[1][Path] Line0002 = "r/SessionManager.aliases"
-Cache_GenFile[2][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[2][Path] Line0002 = "r/SessionManager.ini"
-Cache_GenFile[3][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[3][Path] Line0002 = "r/data/acquisition-errors.txt"
-Cache_GenGUID_Count[Integer] = 4
-Cache_GenGUID[0][String] = "{5E1B8872-F18F-4D51-B732-54E9C8DFD3E4}"
-Cache_GenGUID[1][String] = "{629D9A91-67B0-4D56-8882-01D1D0B115EB}"
-Cache_GenGUID[2][String] = "{0F120A39-FB7C-403A-B296-AF11CA614B36}"
-Cache_GenGUID[3][String] = "{80525F92-B2B6-4AF1-B29A-C4D46BB76598}"
-Cache_OutputDir[Path] = "/C/Labview/builds/Acquisition/Session Manager"
-
-[AB_Cache_{7E5B2598-D249-4ED8-8834-445757BA8943}]
-Cache_ProjSymbolChksum[String] = "dd8a23d5bf38aa81e9e52eb43d310cea"
-Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
-Cache_MyCompChksum[String] = "dc960188964cd02371c7a327e55778f3"
-Cache_GenFile_Count[Integer] = 4
-Cache_GenFile[0][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[0][Path] Line0002 = "r/SessionManager.exe"
-Cache_GenFile[1][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[1][Path] Line0002 = "r/SessionManager.aliases"
-Cache_GenFile[2][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[2][Path] Line0002 = "r/SessionManager.ini"
-Cache_GenFile[3][Path] Line0001 = "/C/Labview/builds/Acquisition/Session Manage"
-Cache_GenFile[3][Path] Line0002 = "r/data/acquisition-errors.txt"
-Cache_GenGUID_Count[Integer] = 4
-Cache_GenGUID[0][String] = "{5E1B8872-F18F-4D51-B732-54E9C8DFD3E4}"
-Cache_GenGUID[1][String] = "{629D9A91-67B0-4D56-8882-01D1D0B115EB}"
-Cache_GenGUID[2][String] = "{0F120A39-FB7C-403A-B296-AF11CA614B36}"
-Cache_GenGUID[3][String] = "{80525F92-B2B6-4AF1-B29A-C4D46BB76598}"
-Cache_OutputDir[Path] = "/C/Labview/builds/Acquisition/Session Manager"
-
 [AB_Cache_{30A74DE6-484A-4B98-8876-607AE0B74582}]
 Cache_ProjSymbolChksum[String] = "dd8a23d5bf38aa81e9e52eb43d310cea"
 Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
@@ -258,4 +218,44 @@ Cache_GenGUID[3][String] = ""
 Cache_GenGUID[4][String] = ""
 Cache_GenGUID[5][String] = ""
 Cache_OutputDir[Path] = "/C/Labview/builds/Acquisition/Behavior"
+
+[AB_Cache_{B7FFAE01-E07C-43A7-AEA1-BD6CF7C0DD6C}]
+Cache_ProjSymbolChksum[String] = "dd8a23d5bf38aa81e9e52eb43d310cea"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "f7fd5fd1945bea4eb6fe7106d841bcb0"
+Cache_GenFile_Count[Integer] = 4
+Cache_GenFile[0][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[0][Path] Line0002 = "er/SessionManager.exe"
+Cache_GenFile[1][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[1][Path] Line0002 = "er/SessionManager.aliases"
+Cache_GenFile[2][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[2][Path] Line0002 = "er/SessionManager.ini"
+Cache_GenFile[3][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[3][Path] Line0002 = "er/data/acquisition-errors.txt"
+Cache_GenGUID_Count[Integer] = 4
+Cache_GenGUID[0][String] = "{5E1B8872-F18F-4D51-B732-54E9C8DFD3E4}"
+Cache_GenGUID[1][String] = "{629D9A91-67B0-4D56-8882-01D1D0B115EB}"
+Cache_GenGUID[2][String] = "{0F120A39-FB7C-403A-B296-AF11CA614B36}"
+Cache_GenGUID[3][String] = "{AAFDC19D-4E23-4CE2-9B09-23671DAA4FA5}"
+Cache_OutputDir[Path] = "/C/Labview2/builds/Acquisition/Session Manager"
+
+[AB_Cache_{7E5B2598-D249-4ED8-8834-445757BA8943}]
+Cache_ProjSymbolChksum[String] = "dd8a23d5bf38aa81e9e52eb43d310cea"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "f7fd5fd1945bea4eb6fe7106d841bcb0"
+Cache_GenFile_Count[Integer] = 4
+Cache_GenFile[0][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[0][Path] Line0002 = "er/SessionManager.exe"
+Cache_GenFile[1][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[1][Path] Line0002 = "er/SessionManager.aliases"
+Cache_GenFile[2][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[2][Path] Line0002 = "er/SessionManager.ini"
+Cache_GenFile[3][Path] Line0001 = "/C/Labview2/builds/Acquisition/Session Manag"
+Cache_GenFile[3][Path] Line0002 = "er/data/acquisition-errors.txt"
+Cache_GenGUID_Count[Integer] = 4
+Cache_GenGUID[0][String] = "{5E1B8872-F18F-4D51-B732-54E9C8DFD3E4}"
+Cache_GenGUID[1][String] = "{629D9A91-67B0-4D56-8882-01D1D0B115EB}"
+Cache_GenGUID[2][String] = "{0F120A39-FB7C-403A-B296-AF11CA614B36}"
+Cache_GenGUID[3][String] = "{AAFDC19D-4E23-4CE2-9B09-23671DAA4FA5}"
+Cache_OutputDir[Path] = "/C/Labview2/builds/Acquisition/Session Manager"
 
