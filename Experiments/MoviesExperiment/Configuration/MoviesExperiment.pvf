@@ -30,5 +30,5 @@ magnification=-1
 Intertrial = 500
 AcquireFixation = 0
 HoldFixation = 0
-DelayPeriod = 2000
+DelayPeriod = 10000
 ResponsePeriod = 0
