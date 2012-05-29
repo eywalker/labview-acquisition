@@ -14,17 +14,17 @@ monitorSize=43,27.09
 monitorDistance=28
 monitorCenter=840,525
 
-stimulusTime=5000
+stimulusTime=1800
 postStimulusTime=300
-stimFrames=20
+stimFrames=300
 location=0,0
 diskSize=2000
 luminance=10
 
 contrast=0.9
 spatialFreq=.08
-orientation=0.0,10.0,20.0,30.0,40.0,50.0,60.0,70.0,80.0,90.0,100.0,110.0,120.0,130.0,140.0,150.0,160.0,170.0
-initialPhase=0,0.785,1.571,2.356,3.142,3.927,4.712,5.498
+orientation=0.0,90
+initialPhase=0
 speed=2
 color=1,1,1
 sinusoidal=1
