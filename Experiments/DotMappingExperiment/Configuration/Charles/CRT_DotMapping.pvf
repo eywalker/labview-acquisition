@@ -15,6 +15,8 @@ allowSaccades=0
 monitorSize=40,30
 monitorDistance=100
 monitorCenter=800,600
+monitorType=CRT
+
 
 rewardProb=1
 randReward=0
@@ -24,11 +26,11 @@ joystickThreshold= 250
 pFill=0
 stimFrames=3
 
-stimCenterX=954
-stimCenterY=669
+stimCenterX=869
+stimCenterY=686
 
-dotSize=14
+dotSize=8
 
-dotNumX=27
-dotNumY=15
+dotNumX=26
+dotNumY=22
 

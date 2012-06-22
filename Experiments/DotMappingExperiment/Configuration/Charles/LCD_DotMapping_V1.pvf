@@ -12,9 +12,10 @@ passive=1
 acquireFixation=1
 allowSaccades=0
 
-monitorSize=40,30
+monitorSize=50.8,28.6
 monitorDistance=100
-monitorCenter=800,600
+monitorCenter=960,540
+monitorType=LCD
 
 rewardProb=1
 randReward=0
@@ -24,11 +25,11 @@ joystickThreshold= 250
 pFill=0
 stimFrames=3
 
-stimCenterX=937
-stimCenterY=703
+stimCenterX=1018
+stimCenterY=600
 
-dotSize=16
+dotSize=7
 
-dotNumX=26
-dotNumY=30
+dotNumX=22
+dotNumY=17
 
