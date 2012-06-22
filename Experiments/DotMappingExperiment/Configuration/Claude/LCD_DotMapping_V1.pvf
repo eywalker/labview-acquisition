@@ -12,23 +12,24 @@ passive=1
 acquireFixation=1
 allowSaccades=0
 
-monitorSize=40,30
+monitorSize=41,30
 monitorDistance=100
 monitorCenter=800,600
+monitorType=LCD
 
 rewardProb=1
 randReward=0
 nTrials=1500
-joystickThreshold=250
+joystickThreshold= 250
 
 pFill=0
 stimFrames=3
 
-stimCenterX=991
-stimCenterY=705
+stimCenterX=877
+stimCenterY=677
 
-dotSize= 16
+dotSize=7
 
-dotNumX= 30
-dotNumY= 23
+dotNumX=27
+dotNumY=13
 
