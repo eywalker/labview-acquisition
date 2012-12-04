@@ -34,4 +34,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
+	<Item Name="ProcessData.vi" Type="VI" URL="../ProcessData.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">%A#!"!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!0)!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$%!B"U:J?'&amp;U:71!E1$R!!!!!!!!!!)&lt;6(*J97QA1G&amp;T:71A28BQ:8*J&lt;76O&gt;#ZM&gt;H.D#V2S;7&gt;H:8)O9X2M!'&amp;!&amp;A!("%Z64%Q(2GFY982F:!Z#=G^L:3"';8BB&gt;'FP&lt;A24&gt;'^Q%%.P=H*F9X1A5G6T='^O=W5337ZD&lt;X*S:7.U)&amp;*F=X"P&lt;H.F"V2J&lt;76P&gt;81!!!&gt;5=GFH:W6S!&amp;:!=!!?!!!I*F&gt;I;82F4G^J=W60=GFF&lt;H2B&gt;'FP&lt;E2F&gt;'6D&gt;'FP&lt;CZM&gt;G.M98.T!!!C6WBJ&gt;'6/&lt;WFT:5^S;76O&gt;'&amp;U;7^O2'6U:7.U;7^O)'^V&gt;!!!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE"=1$R!!!!!!!!!!)&lt;6(*J97QA1G&amp;T:71A28BQ:8*J&lt;76O&gt;#ZM&gt;H.D#6.U982F,G.U&lt;!&amp;$1"9!$QV/33Z41SZ*&lt;GFU;7&amp;M$5Z*,F.$,EBJ=X2P=HE54EEO5U-O5WBB&lt;'RP&gt;UBJ=X2P=HE/4EEO5U-O6'6S&lt;7FO97Q(1WRF97ZV=!64&gt;'&amp;U:2*4&gt;'&amp;U:6R3:7&gt;J&lt;WZ=5'&amp;V=W5=5X2B&gt;'6=5G6H;7^O8&amp;*F=X"P&lt;H.F)&amp;"F=GFP:"F4&gt;'&amp;U:6R3:7&gt;J&lt;WZ=2'6M98EA5'6S;7^E'F.U982F8&amp;*F:WFP&lt;FR)&lt;WRE)%:J?'&amp;U;7^O(6.U982F8&amp;*F:WFP&lt;FR"9X&amp;V;8*F)%:J?'&amp;U;7^O'&amp;.U982F8&amp;*F:WFP&lt;FR"9G^S&gt;#"5=GFB&lt;":4&gt;'&amp;U:6R3:7&gt;J&lt;WZ=27ZE)&amp;2S;7&amp;M&amp;V.U982F8&amp;*F:WFP&lt;FR*&lt;H2F=H2S;7&amp;M'&amp;.U982F8&amp;*F:WFP&lt;FR4&gt;'&amp;S&gt;#"5=GFB&lt;!!&amp;5X2B&gt;'5!"A"5!!-!41$R!!!!!!!!!!)21W^S:3"4&gt;7*738-O&lt;(:M;7)76&amp;F123!N)%&amp;O97RP:S"%982B,G.U&lt;!!=1%!!!@````]!#AN"&lt;G&amp;M&lt;W=A2'&amp;U91"51(!!(A!!+#:8;'FU:5ZP;8.F4X*J:7ZU982J&lt;WZ%:82F9X2J&lt;WYO&lt;(:D&lt;'&amp;T=Q!!)6&gt;I;82F4G^J=W60=GFF&lt;H2B&gt;'FP&lt;E2F&gt;'6D&gt;'FP&lt;C"J&lt;A"5!0!!$!!$!!1!"1!'!!=!"Q!(!!=!#!!*!!M!$!-!!(A!!!E!!!!*!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!A!!!))!!!!EA!!!!!"!!U!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+	</Item>
 </LVClass>
