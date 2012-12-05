@@ -61,3 +61,13 @@ nRepsPerBlock=1
 nCatchPerBlock=1
 subBlockSize=1
 isMask=1
+
+phase=0
+nFramesPreMin=50
+nFramesPreMean=50
+nFramesPreMax=50
+nFramesCoh=50
+coherence=25
+waitTime=1000
+responseTime=1000
+spatialFreq=0.4
