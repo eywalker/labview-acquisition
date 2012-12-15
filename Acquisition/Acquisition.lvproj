@@ -5,17 +5,17 @@
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
 	<Property Name="varPersistentID:{1E077441-AC7F-4627-B1E7-54A359E432CB}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysAIscalingCoeff</Property>
+	<Property Name="varPersistentID:{42F9C36B-9875-46D5-8199-EB7251C00611}" Type="Ref">/My Computer/SutterShared.lvlib/CurrentPosition</Property>
 	<Property Name="varPersistentID:{4613179C-CB92-4AC9-A3B5-FBE7E0CAC80E}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/StimulationPK</Property>
 	<Property Name="varPersistentID:{500D56EA-A11B-437D-B792-4C2522374099}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
-	<Property Name="varPersistentID:{66250265-17C4-44B6-97D0-8F281C3B2BF2}" Type="Ref">/My Computer/SutterShared.lvlib/TargetPosition</Property>
+	<Property Name="varPersistentID:{5B865D95-E790-48B4-905C-07EF82736137}" Type="Ref">/My Computer/SutterShared.lvlib/Move</Property>
 	<Property Name="varPersistentID:{71A5460E-DDCE-4559-ACFF-46EB94F67A65}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysChanNames</Property>
 	<Property Name="varPersistentID:{84570B87-50EB-414E-9131-9EE73C03F685}" Type="Ref">/My Computer/AODAcq.lvclass/ReadFraction</Property>
 	<Property Name="varPersistentID:{BE53E74B-B5E1-4CFB-8FCE-3DFD5ECDDC15}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/BehaviorPK</Property>
 	<Property Name="varPersistentID:{CF269BBD-E219-4BBE-AA8F-571B018135FB}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysFs</Property>
-	<Property Name="varPersistentID:{D132FC6B-2AB0-4B54-8AB8-5026BE62C62C}" Type="Ref">/My Computer/SutterShared.lvlib/CurrentPosition</Property>
 	<Property Name="varPersistentID:{D38A100C-4C39-4349-8B51-72906B7E64F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
 	<Property Name="varPersistentID:{DD2184FE-091A-4647-A290-151834C8289B}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Subject</Property>
-	<Property Name="varPersistentID:{E45D4100-35C0-4A22-96EC-AF58F791F41D}" Type="Ref">/My Computer/SutterShared.lvlib/Move</Property>
+	<Property Name="varPersistentID:{DF398F09-4E1C-4BE0-A814-D2E9561700BC}" Type="Ref">/My Computer/SutterShared.lvlib/TargetPosition</Property>
 	<Property Name="varPersistentID:{E839629F-2548-4AAA-A6C0-3BDB1B830A64}" Type="Ref">/My Computer/AODAcq.lvclass/ScanFraction</Property>
 	<Property Name="varPersistentID:{FABF56F5-998C-408E-8D41-59E475F5CB79}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysPK</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -4973,7 +4973,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="Test position.vi" Type="VI" URL="../AOD_Control/Test position.vi"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
-		<Item Name="SutterShared.lvlib" Type="Library" URL="/Z/users/Manolis/Labview/SerialController/SutterShared.lvlib"/>
+		<Item Name="SutterShared.lvlib" Type="Library" URL="../../../MoreLabview/Scanner/SutterShared.lvlib"/>
 		<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquistionObject/AcquistionObject.lvclass"/>
 		<Item Name="AcquireTraces.lvclass" Type="LVClass" URL="../AcquireTraces/AcquireTraces.lvclass"/>
 		<Item Name="AODAcq.lvclass" Type="LVClass" URL="../AOD_Control/AODAcq/AODAcq.lvclass"/>
@@ -5319,6 +5319,13 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
 				<Item Name="_ArrWfmsToData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsToData.vi"/>
 				<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="ex_WaveformAttribs.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribs.ctl"/>
+				<Item Name="ex_WaveformAttribsPlus.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribsPlus.ctl"/>
+				<Item Name="ex_GetAllExpressAttribsPlus.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_GetAllExpressAttribsPlus.vi"/>
+				<Item Name="ex_SetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetAllExpressAttribs.vi"/>
+				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
+				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope timestamp type.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope timestamp type.ctl"/>
@@ -5517,6 +5524,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E_006.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E.lvgen/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E_006.vi"/>
 			<Item Name="NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5.lvgen/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_012.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_012.vi"/>
+			<Item Name="matscript.dll" Type="Document"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
