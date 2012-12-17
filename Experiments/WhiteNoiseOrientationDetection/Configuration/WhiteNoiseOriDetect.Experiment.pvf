@@ -62,6 +62,5 @@ subBlockSize=1
 isMask=1
 
 phase=0
-waitTime=1000
-responseTime=1000
+waitTime=0
 spatialFreq=0.4
