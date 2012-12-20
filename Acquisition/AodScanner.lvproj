@@ -32,9 +32,6 @@
 		<Item Name="Database" Type="Folder" URL="../Database">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Main Programs" Type="Folder">
-			<Item Name="AODScanner.vi" Type="VI" URL="../AOD_Control/AODScanner.vi"/>
-		</Item>
 		<Item Name="AOD" Type="Folder">
 			<Item Name="AODRef.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/AODRef.ctl"/>
 			<Item Name="FPGA Target" Type="FPGA Target">
@@ -3400,7 +3397,7 @@ Force InitializationArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegister
 &lt;/Cluster&gt;
 &lt;/Array&gt;
 MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;MotionChannels;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"PArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 6;0;WriteMethodType=boolPll UnlockedNumberOfSyncRegistersForReadInProject=0;resource=/IO Module/SignalList/Pll Unlocked;0;ReadMethodType=boolPXI_Clk10NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Clk10;0;ReadMethodType=boolPXI_Trig1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig1;0;ReadMethodType=bool;WriteMethodType=boolPXIe-7965R/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGARaw"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Raw;DataType=100080000000000100094002000349313600010000000000000000;DisableOnOverflowUnderflow=FALSE"Read_Data_LowerNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Data_Lower;0;ReadMethodType=U64Read_Data_UpperNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Data_Upper;0;ReadMethodType=U64Read_StrobeNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Strobe;0;ReadMethodType=boolRESETArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 7;0;WriteMethodType=boolSample Clock SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/Sample Clock Select;0;WriteMethodType=U8SCLKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 4;0;WriteMethodType=boolSDIO0ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 0;0;WriteMethodType=boolSDIO1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 1;0;WriteMethodType=boolSDIO2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 2;0;WriteMethodType=boolSDIO3ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 3;0;WriteMethodType=boolSPI AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Address;0;WriteMethodType=U16SPI Device SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Device Select;0;WriteMethodType=U8SPI IdleNumberOfSyncRegistersForReadInProject=0;resource=/IO Module/SignalList/SPI Idle;0;ReadMethodType=boolSPI Write DataArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Write Data;0;WriteMethodType=U16SPI WriteArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Write;0;WriteMethodType=boolTemporalChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TemporalChannels;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"TRIG3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig3;0;ReadMethodType=bool;WriteMethodType=boolTRIG5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig5;0;ReadMethodType=bool;WriteMethodType=boolUPDATE_IOArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 5;0;WriteMethodType=boolWrite_Data_LowerArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/DRAM Bank 0/SignalList/Write_Data_Lower;0;WriteMethodType=U64Write_Data_UpperArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/DRAM Bank 0/SignalList/Write_Data_Upper;0;WriteMethodType=U64</Property>
-					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Labview2\Acquisition\FPGA Bitfiles\Acquisition_FPGATarget_AODControl(FPGA)_4bIEsolI3SU.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Labview-git\Acquisition\FPGA Bitfiles\AodScanner_FPGATarget_AODControl(FPGA)_HzWc4w5qqfg.lvbitx</Property>
 				</Item>
 				<Item Name="Coordinate" Type="FPGA FIFO">
 					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
@@ -4949,6 +4946,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="FilteringTest.vi" Type="VI" URL="../AOD_Control/AODAcq/FilteringTest.vi"/>
 			<Item Name="Test position.vi" Type="VI" URL="../AOD_Control/Test position.vi"/>
 		</Item>
+		<Item Name="AODScanner.vi" Type="VI" URL="../AOD_Control/AODScanner.vi"/>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="SutterShared.lvlib" Type="Library" URL="../../../MoreLabview/Scanner/SutterShared.lvlib"/>
 		<Item Name="AODAcq.lvclass" Type="LVClass" URL="../AOD_Control/AODAcq/AODAcq.lvclass"/>
@@ -5258,13 +5256,6 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
 				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
-				<Item Name="ex_WaveformAttribs.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribs.ctl"/>
-				<Item Name="ex_WaveformAttribsPlus.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribsPlus.ctl"/>
-				<Item Name="ex_GetAllExpressAttribsPlus.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_GetAllExpressAttribsPlus.vi"/>
-				<Item Name="ex_SetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetAllExpressAttribs.vi"/>
-				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
-				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
-				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope timestamp type.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope timestamp type.ctl"/>
@@ -5451,248 +5442,12 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="79XXR_Method_IOModuleStatusImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/CustomFPGAMethods/79XXR_Method_IOModuleStatusImpl.vi"/>
 			<Item Name="niLvFpga_ConfigureFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ConfigureFifo_PXIe-7965R.vi"/>
 			<Item Name="niLvFpga_StartFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_StartFifo_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_ReadFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ReadFifo_PXIe-7965R.vi"/>
-			<Item Name="matscript.dll" Type="Document"/>
+			<Item Name="niLvFpga_Read32_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Read32_PXIe-7965R.vi"/>
+			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2012/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
+			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2012/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
+			<Item Name="niFpgaRWControlAccessTimeoutTemplate.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/nirviReadWriteControl/niFpgaRWControlAccessTimeoutTemplate.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="EphysAcquisition" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{351396BC-D2C7-433A-A8B6-1FB733715FDF}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{45D2851E-BB76-4C91-B8F6-18D36ADC66E6}</Property>
-				<Property Name="App_INI_itemID" Type="Ref">/My Computer/app.ini</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{C7626A8D-B93B-498C-B468-9CE9F40E4F70}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">EphysAcquisition</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/EphysAcquisition</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{6B44A15E-9B10-4D19-8D61-392E7C5D8717}</Property>
-				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
-				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">EphysAcquisition.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/EphysAcquisition/EphysAcquisition.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/EphysAcquisition/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
-				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
-				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EDFD0574-5781-4C2D-870A-3334913340C4}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AcquisitionVariables.lvlib</Property>
-				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].propertiesCount" Type="Int">1</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">67</Property>
-				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
-				<Property Name="TgtF_productName" Type="Str">Ephys Acquisition</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{5AC4E99B-5787-4148-9903-82ED91BD88A7}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">EphysAcquisition.exe</Property>
-			</Item>
-			<Item Name="Session Manager" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{629D9A91-67B0-4D56-8882-01D1D0B115EB}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{0F120A39-FB7C-403A-B296-AF11CA614B36}</Property>
-				<Property Name="App_INI_itemID" Type="Ref">/My Computer/app.ini</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{B7FFAE01-E07C-43A7-AEA1-BD6CF7C0DD6C}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Session Manager</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Session Manager</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{7E5B2598-D249-4ED8-8834-445757BA8943}</Property>
-				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
-				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">SessionManager.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Session Manager/SessionManager.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Session Manager/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
-				<Property Name="Exe_Vardep[0].LibItemID" Type="Ref">/My Computer/AcquisitionVariables.lvlib</Property>
-				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
-				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EAB03004-73C7-484F-B079-01DDFA93DE97}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
-				<Property Name="Source[1].newName" Type="Str">Session Manage.vi</Property>
-				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[1].properties[1].type" Type="Str">Show vertical scroll bar</Property>
-				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[1].properties[2].type" Type="Str">Show horizontal scroll bar</Property>
-				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[1].properties[3].type" Type="Str">Show menu bar</Property>
-				<Property Name="Source[1].properties[3].value" Type="Bool">true</Property>
-				<Property Name="Source[1].propertiesCount" Type="Int">4</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/acquisition-errors.txt</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
-				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">51</Property>
-				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
-				<Property Name="TgtF_productName" Type="Str">Session Manager</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{5E1B8872-F18F-4D51-B732-54E9C8DFD3E4}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">SessionManager.exe</Property>
-			</Item>
-			<Item Name="Behavior" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{553AB8C8-E65A-4920-AD8F-D5551B6C458E}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{C4959624-F23C-419B-8C8B-FD59A26C8B23}</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{30A74DE6-484A-4B98-8876-607AE0B74582}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Behavior</Property>
-				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Behavior</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{C17D3D5E-8A41-4867-9CCA-9F03B2DAD986}</Property>
-				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
-				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Behavior.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Behavior/Behavior.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Behavior/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
-				<Property Name="Exe_Vardep[0].LibItemID" Type="Ref">/My Computer/AcquisitionVariables.lvlib</Property>
-				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
-				<Property Name="Exe_VardepHideDeployDlg" Type="Bool">true</Property>
-				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
-				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2CEBE1B5-C1EB-41C1-9F9D-D83B08CF1ADC}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
-				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MoviesExperiment.lvclass/Cycle.vi</Property>
-				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[10].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/ClassDiscrimination.lvclass/Cycle.vi</Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/AcquisitionCoreObjects.lvlib/BehaviorObjects/PassiveExperiment.lvclass/Cycle.vi</Property>
-				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/AcquisitionCoreObjects.lvlib/AcquistionObject.lvclass</Property>
-				<Property Name="Source[4].type" Type="Str">Library</Property>
-				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Dependencies/AcquireTraces.lvclass</Property>
-				<Property Name="Source[5].type" Type="Str">Library</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/EyeCalibration.lvclass/Cycle.vi</Property>
-				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MouseBar.lvclass/Cycle.vi</Property>
-				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[7].type" Type="Str">VI</Property>
-				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MouseDotMapping.lvclass/Cycle.vi</Property>
-				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[8].type" Type="Str">VI</Property>
-				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MouseMultiDim.lvclass/Cycle.vi</Property>
-				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">11</Property>
-				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
-				<Property Name="TgtF_companyName" Type="Str">BCM</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Behavior</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">34</Property>
-				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">Behavior</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 BCM</Property>
-				<Property Name="TgtF_productName" Type="Str">Behavior</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{9148D384-D5A8-44D3-A50D-68C5AB98A472}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Behavior.exe</Property>
-			</Item>
-			<Item Name="Listener" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{A2B25B06-11D8-4EC2-B450-379F69A88629}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{0C043433-790B-4CF5-B428-82260BC31AB6}</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.FALSE.com</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{2F5068D5-8C8F-4D71-83AE-25FDF11AB76E}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Listener</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Listener</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{E5C3714D-7DDD-41E6-81F0-8ADF7653B39E}</Property>
-				<Property Name="Destination[0].destName" Type="Str">Listener.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Listener/Listener.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Listener/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Source[0].itemID" Type="Str">{80BF230A-6443-4D34-BA0E-E38C1BE19DBB}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">BCM</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Listener</Property>
-				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">Listener</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 BCM</Property>
-				<Property Name="TgtF_productName" Type="Str">Listener</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{8ACA9772-065A-429E-A552-D8D2EC25B3B3}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Listener.exe</Property>
-			</Item>
 			<Item Name="AODScanner" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{AC4FC04E-134F-4F92-A3AB-40801DE06E22}</Property>
@@ -5718,7 +5473,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Property Name="Source[0].itemID" Type="Str">{8AB1FB9D-1639-4097-A3B1-8EF3A7B2BF40}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/AODScanner.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AODScanner.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
