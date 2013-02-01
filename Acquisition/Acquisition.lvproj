@@ -374,7 +374,6 @@
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="FlashLagExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlashLagExperiment/FlashLagExperiment.lvclass"/>
 			<Item Name="TwoAfcEye.lvclass" Type="LVClass" URL="../../Experiments/TwoAfcEye/TwoAfcEye.lvclass"/>
 			<Item Name="FleTraining.lvclass" Type="LVClass" URL="../../Experiments/FleTraining/FleTraining.lvclass"/>
