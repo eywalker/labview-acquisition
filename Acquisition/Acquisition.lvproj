@@ -553,7 +553,7 @@
 				<Property Name="Exe_VardepHideDeployDlg" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
 				<Property Name="Exe_VardepUndeployOnExit" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2CEBE1B5-C1EB-41C1-9F9D-D83B08CF1ADC}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F80CEDFB-0900-4DA5-A4A7-0967303470DB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Trial Based Experiment Runner.vi</Property>
@@ -566,6 +566,10 @@
 				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Experiments/MoviesExperiment.lvclass/Cycle.vi</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[10].type" Type="Str">VI</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Experiments/WhiteNoiseOrientationDetection.lvclass/Cycle.vi</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Experiments/ClassDiscrimination.lvclass/Cycle.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
@@ -606,11 +610,11 @@
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Experiments/MouseMultiDim.lvclass/Cycle.vi</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">11</Property>
+				<Property Name="SourceCount" Type="Int">12</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Behavior</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">45</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">46</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Behavior</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 BCM</Property>
