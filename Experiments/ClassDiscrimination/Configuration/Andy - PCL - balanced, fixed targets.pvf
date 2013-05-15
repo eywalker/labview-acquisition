@@ -21,7 +21,6 @@ rewardProb=1.0
 rewardGamma=0
 
 answer=targetSetup
-randomization=RepeatIncorrectBlockRandomization
 location=0,0
 
 stimTime=10000
@@ -50,12 +49,13 @@ targetAColor=255,0,0
 targetBColor=0,255,0
 targetOffColor=255,255,255
 
-targetDelayTime=1000
+targetDelayTime=200
 cueTime=500
 targetTime=500
-targetMemoryTime=500
+targetMemoryTime=-300
 speed=10
 blockLength=8
+cueColor = 0
 
 targetSetup=1,2
 cueClass=1,2
