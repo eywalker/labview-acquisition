@@ -348,7 +348,6 @@
 				<Item Name="_ArrWfmsTo2DArr.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo2DArr.vi"/>
 				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
 				<Item Name="_ArrWfmsToData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsToData.vi"/>
-				<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -374,12 +373,6 @@
 			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
 			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
 			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="FlashLagExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlashLagExperiment/FlashLagExperiment.lvclass"/>
-			<Item Name="TwoAfcEye.lvclass" Type="LVClass" URL="../../Experiments/TwoAfcEye/TwoAfcEye.lvclass"/>
-			<Item Name="FleTraining.lvclass" Type="LVClass" URL="../../Experiments/FleTraining/FleTraining.lvclass"/>
-			<Item Name="OriDiscExperiment.lvclass" Type="LVClass" URL="../../Experiments/OriDiscExperiment/OriDiscExperiment.lvclass"/>
-			<Item Name="WNOriDiscExperiment.lvclass" Type="LVClass" URL="../../Experiments/WNOriDiscExperiment/WNOriDiscExperiment.lvclass"/>
-			<Item Name="Trial Based Experiment.lvsc" Type="LVStatechart" URL="../../Trial Based Experiment Statechart/Trial Based Experiment.lvsc"/>
 			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
 			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
 			<Item Name="MC_Global_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Constants/MC_Global_Global.vi"/>
@@ -407,14 +400,7 @@
 			<Item Name="NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170.lvgen/NIMS_Range_Compute_Iterations_E8D80E2E2826472C92413183A93F3170_001.vi"/>
 			<Item Name="NIMS_Range_3104F3C74E39439AB2C0407E7DA2F64D_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_Range_3104F3C74E39439AB2C0407E7DA2F64D.lvgen/NIMS_Range_3104F3C74E39439AB2C0407E7DA2F64D_001.vi"/>
 			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_005.vi"/>
-			<Item Name="NIMS_abs(signed).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/abs/NIMS_abs(signed).vi"/>
-			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi"/>
-			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi"/>
-			<Item Name="NIMS_sum(GV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/sum/NIMS_sum(GV).vi"/>
-			<Item Name="NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC.lvgen/NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC_002.vi"/>
-			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E_006.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E.lvgen/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E_006.vi"/>
-			<Item Name="NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5.lvgen/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_012.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_012.vi"/>
+			<Item Name="QueuedWriteToDatabase.vi" Type="VI" URL="../../Core SubVIs/QueuedWriteToDatabase.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -460,7 +446,7 @@
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">68</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">69</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">EphysAcquisition</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 </Property>
@@ -518,7 +504,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">BCM, Andreas Tolias Lab</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Session Manager runs the timestamper and inserts entries into the database</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">54</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">55</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">Session Manager</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 James Cotton</Property>
