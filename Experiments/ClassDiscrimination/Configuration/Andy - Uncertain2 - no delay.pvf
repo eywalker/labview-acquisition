@@ -13,8 +13,8 @@ allowSaccades=0
 acquireFixation=1
 eyeResponse=1
 
-monitorSize=40,30
-monitorDistance=113
+monitorSize=41,30
+monitorDistance=107
 monitorCenter=800,600
 
 rewardProb=1.0
@@ -29,7 +29,7 @@ color=255,0,0
 
 spatialFreq=.25
 diskSize=300
-contrast=50,20,5,2,1
+contrast=50
 pcb1sd=1000
 pcbsize=80
 
