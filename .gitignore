@@ -1,1 +1,5 @@
 *.exe
+*.h5
+*.dll
+*.DS_Store
+*.bindat
