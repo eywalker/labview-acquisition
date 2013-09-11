@@ -33,6 +33,15 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="AOD" Type="Folder">
+			<Item Name="Motion Stabilization" Type="Folder">
+				<Item Name="ComputeFourierPhaseOfPeakSF.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/ComputeFourierPhaseOfPeakSF.vi"/>
+				<Item Name="ComputeShifts.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/ComputeShifts.vi"/>
+				<Item Name="RealTimeMain.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/RealTimeMain.vi"/>
+				<Item Name="ConvertShiftsToScanCoordinates.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/ConvertShiftsToScanCoordinates.vi"/>
+				<Item Name="InterfaceAODSWWithStabilizationSW.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/InterfaceAODSWWithStabilizationSW.vi"/>
+				<Item Name="GlobalVars.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/GlobalVars.vi"/>
+				<Item Name="RunDuringExperiment.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/RunDuringExperiment.vi"/>
+			</Item>
 			<Item Name="AODRef.ctl" Type="VI" URL="../AOD_Control/FPGA_Control/AODRef.ctl"/>
 			<Item Name="FPGA Target" Type="FPGA Target">
 				<Property Name="AutoRun" Type="Bool">false</Property>
@@ -467,12 +476,12 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
             <Socket>FlexRIO-DRAMTypeB-Bank1</Socket>
          </CompatibleCLIPSocketList>
          <DeclarationPaths>
-            <Absolute>C:\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</Absolute>
+            <Absolute>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</Absolute>
             <MD5>9dc09844071435c72a4dc904d2bc81de</MD5>
-            <RelativeToLabVIEW>C:\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToLabVIEW>
-            <RelativeToNiPubDocs>C:\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToNiPubDocs>
+            <RelativeToLabVIEW>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToLabVIEW>
+            <RelativeToNiPubDocs>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToNiPubDocs>
             <RelativeToNiSharedDir>FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToNiSharedDir>
-            <RelativeToProject>..\..\Program Files\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToProject>
+            <RelativeToProject>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\External Memory\RandomAccess128Bit-DRAMTypeB\1.0.0\FlexRIO_RandomAccess128Bit_DRAMTypeB.xml</RelativeToProject>
             <Valid>true</Valid>
          </DeclarationPaths>
          <Description>Presents a random-access external memory interface with a 128-bit data port.\n\nRequests to write to and read from memory are satisfied by issuing a write or read command to this memory interface.  To issue a write, set the Command signal to 0 and assert Command_Write_Enable.  To issue a read, set the Command signal to 1 and assert Command_Write_Enable.  Latch the read data on the same clock cycle that Read_Strobe asserts.  Command_Write_Enable should never be asserted when Command_FIFO_Full is &quot;TRUE&quot;.\n\nAll signals for this memory interface must be accessed from within a Single Cycle Timed Loop, and you must configure the User_Clk to run on the same clock domain as this Timed Loop.\n\nThis version of the memory interface will automatically disable synchronization registers on all FPGA I/O to and from the memory interface.  All synchronization registers on FPGA I/O to and from this memory interface must be disabled in order for it to function properly.</Description>
@@ -732,12 +741,12 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
             <IOModule>IOModuleID:0x109374F2</IOModule>
          </CompatibleIOModuleList>
          <DeclarationPaths>
-            <Absolute>C:\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</Absolute>
+            <Absolute>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</Absolute>
             <MD5>8cb3d049668d2f8042475ee7a542d2c5</MD5>
-            <RelativeToLabVIEW>C:\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToLabVIEW>
-            <RelativeToNiPubDocs>C:\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToNiPubDocs>
+            <RelativeToLabVIEW>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToLabVIEW>
+            <RelativeToNiPubDocs>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToNiPubDocs>
             <RelativeToNiSharedDir>FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToNiSharedDir>
-            <RelativeToProject>..\..\Program Files\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToProject>
+            <RelativeToProject>C:\Program Files (x86)\National Instruments\Shared\FlexRIO\IO Modules\NI 5751\NI5751\1.0.0\NI5751FamClk.xml</RelativeToProject>
             <Valid>true</Valid>
          </DeclarationPaths>
          <Description>This CLIP provides access to sixteen analog input channels, eight digital input lines, and eight digital output lines.  This CLIP also contains a SPI interface to program the ADC registers.  
@@ -3397,7 +3406,7 @@ Force InitializationArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegister
 &lt;/Cluster&gt;
 &lt;/Array&gt;
 MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;MotionChannels;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"PArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 6;0;WriteMethodType=boolPll UnlockedNumberOfSyncRegistersForReadInProject=0;resource=/IO Module/SignalList/Pll Unlocked;0;ReadMethodType=boolPXI_Clk10NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Clk10;0;ReadMethodType=boolPXI_Trig1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig1;0;ReadMethodType=bool;WriteMethodType=boolPXIe-7965R/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGARaw"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Raw;DataType=100080000000000100094002000349313600010000000000000000;DisableOnOverflowUnderflow=FALSE"Read_Data_LowerNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Data_Lower;0;ReadMethodType=U64Read_Data_UpperNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Data_Upper;0;ReadMethodType=U64Read_StrobeNumberOfSyncRegistersForReadInProject=0;resource=/DRAM Bank 0/SignalList/Read_Strobe;0;ReadMethodType=boolRESETArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 7;0;WriteMethodType=boolSample Clock SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/Sample Clock Select;0;WriteMethodType=U8SCLKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 4;0;WriteMethodType=boolSDIO0ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 0;0;WriteMethodType=boolSDIO1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 1;0;WriteMethodType=boolSDIO2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 2;0;WriteMethodType=boolSDIO3ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 3;0;WriteMethodType=boolSPI AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Address;0;WriteMethodType=U16SPI Device SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Device Select;0;WriteMethodType=U8SPI IdleNumberOfSyncRegistersForReadInProject=0;resource=/IO Module/SignalList/SPI Idle;0;ReadMethodType=boolSPI Write DataArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Write Data;0;WriteMethodType=U16SPI WriteArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/IO Module/SignalList/SPI Write;0;WriteMethodType=boolTemporalChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TemporalChannels;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"TRIG3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig3;0;ReadMethodType=bool;WriteMethodType=boolTRIG5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/PXI/PXI_Trig5;0;ReadMethodType=bool;WriteMethodType=boolUPDATE_IOArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/IO Module/SignalList/D0 5;0;WriteMethodType=boolWrite_Data_LowerArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/DRAM Bank 0/SignalList/Write_Data_Lower;0;WriteMethodType=U64Write_Data_UpperArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/DRAM Bank 0/SignalList/Write_Data_Upper;0;WriteMethodType=U64</Property>
-					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Labview-git\Acquisition\FPGA Bitfiles\AodScanner_FPGATarget_AODControl(FPGA)_HzWc4w5qqfg.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">W:\BR_Disks\BR_2\Saumil Z3\Documents\Tolias Lab\spatel\Labview\labview-acquisition\Acquisition\FPGA Bitfiles\AodScanner_FPGATarget_AODControl(FPGA)_qeZpty1-UqE.lvbitx</Property>
 				</Item>
 				<Item Name="Coordinate" Type="FPGA FIFO">
 					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
@@ -4948,7 +4957,7 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 		</Item>
 		<Item Name="AODScanner.vi" Type="VI" URL="../AOD_Control/AODScanner.vi"/>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
-		<Item Name="SutterShared.lvlib" Type="Library" URL="../../../MoreLabview/Scanner/SutterShared.lvlib"/>
+		<Item Name="SutterShared.lvlib" Type="Library" URL="../SutterShared.lvlib"/>
 		<Item Name="AODAcq.lvclass" Type="LVClass" URL="../AOD_Control/AODAcq/AODAcq.lvclass"/>
 		<Item Name="AODScan.ico" Type="Document" URL="../AOD_Control/AODScan.ico"/>
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
@@ -5256,6 +5265,13 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
 				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="ex_WaveformAttribs.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribs.ctl"/>
+				<Item Name="ex_WaveformAttribsPlus.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribsPlus.ctl"/>
+				<Item Name="ex_GetAllExpressAttribsPlus.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_GetAllExpressAttribsPlus.vi"/>
+				<Item Name="ex_SetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetAllExpressAttribs.vi"/>
+				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
+				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niScope timestamp type.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope timestamp type.ctl"/>
@@ -5390,25 +5406,24 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../BehaviorData/BehaviorData.lvclass"/>
 			<Item Name="UpdateStack.vi" Type="VI" URL="../AOD_Control/FPGA_Control/UpdateStack.vi"/>
 			<Item Name="CoordinatePermutations.vi" Type="VI" URL="../AOD_Control/Debugging/CoordinatePermutations.vi"/>
+			<Item Name="ComputeFourierPhaseOfSpecifcSF.vi" Type="VI" URL="../AOD_Control/Motion Stabilization/ComputeFourierPhaseOfSpecifcSF.vi"/>
+			<Item Name="AodScanner_FPGATarget_AODControl(FPGA)_qeZpty1-UqE.lvbitx" Type="Document" URL="../FPGA Bitfiles/AodScanner_FPGATarget_AODControl(FPGA)_qeZpty1-UqE.lvbitx"/>
 			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
 			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2012/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
+			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2012/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
+			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
+			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
 			<Item Name="niLvFpga_WriteFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_WriteFifo_PXIe-7965R.vi"/>
-			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
-			<Item Name="niLvFpga_Open_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Open_PXIe-7965R.vi"/>
-			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
-			<Item Name="niFpgaViExecutionMode.ctl" Type="VI" URL="/&lt;vilib&gt;/FPGA/interface/niFpgaViExecutionMode.ctl"/>
-			<Item Name="niLvFpga_Reset_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Reset_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_Run_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Run_PXIe-7965R.vi"/>
-			<Item Name="_nirio_device_attributes.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attributes.ctl"/>
-			<Item Name="_nirio_device_handleType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_handleType.ctl"/>
-			<Item Name="_nirio_device_attrSet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrSet32.vi"/>
-			<Item Name="nicrio_CreateHostErrorCluster.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nicrio_HostTools.llb/nicrio_CreateHostErrorCluster.vi"/>
+			<Item Name="niFpgaRWControlAccessTimeoutTemplate.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/nirviReadWriteControl/niFpgaRWControlAccessTimeoutTemplate.vi"/>
+			<Item Name="niLvFpga_Read32_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Read32_PXIe-7965R.vi"/>
+			<Item Name="Interface_ValueType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_ValueType.ctl"/>
+			<Item Name="FlexRIO_Host_Attribute.ctl" Type="VI" URL="/&lt;vilib&gt;/FlexRIO/FlexRIO_HostInterface.llb/FlexRIO_Host_Attribute.ctl"/>
+			<Item Name="Interface_QueryAttributeArray_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_Session.vi"/>
+			<Item Name="Interface_QueryAttributeArray_U32_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_U32_Session.vi"/>
 			<Item Name="nirio_GetLocalizedDictionaryIDs.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetLocalizedDictionaryIDs.vi"/>
 			<Item Name="_nirio_IniPathGlobalActionEnum.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_IniPathGlobalActionEnum.ctl"/>
 			<Item Name="_nirio_DictionaryDirectoryGlobal.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/lvrio/LocalizationTools/RioVIs/_nirio_DictionaryDirectoryGlobal.vi"/>
@@ -5430,22 +5445,27 @@ MotionChannels"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if
 			<Item Name="nirio_GetStringFromRepository_RSeries.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepository_RSeries.vi"/>
 			<Item Name="nirio_GetStringFromRepositoryPoly.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/lvrio/LocalizationTools/RioVIs/nirio_GetStringFromRepositoryPoly.vi"/>
 			<Item Name="nirio_ErrorSetSourceField.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_Utility/nirio_ErrorSetSourceField.vi"/>
-			<Item Name="78XX_ReserveTriggerImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/78XX_ReserveTriggerImpl.vi"/>
-			<Item Name="nirioReserveTrigger.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirioReserveTrigger.vi"/>
-			<Item Name="Interface_ValueType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_ValueType.ctl"/>
-			<Item Name="FlexRIO_Host_Attribute.ctl" Type="VI" URL="/&lt;vilib&gt;/FlexRIO/FlexRIO_HostInterface.llb/FlexRIO_Host_Attribute.ctl"/>
-			<Item Name="Interface_QueryAttributeArray_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_Session.vi"/>
-			<Item Name="Interface_QueryAttributeArray_U32_Session.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/NiFlexRIO Interface/Interface_QueryAttributeArray_U32_Session.vi"/>
+			<Item Name="_nirio_device_attributes.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attributes.ctl"/>
+			<Item Name="_nirio_device_handleType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_handleType.ctl"/>
 			<Item Name="_nirio_device_attrGet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrGet32.vi"/>
 			<Item Name="ViTracer.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/Tools/ViTracer.vi"/>
 			<Item Name="FlexRIO_isFlexRIODevice.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/ClientSDK/Tools/FlexRIO_isFlexRIODevice.vi"/>
 			<Item Name="79XXR_Method_IOModuleStatusImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/FlexRIO/CustomFPGAMethods/79XXR_Method_IOModuleStatusImpl.vi"/>
-			<Item Name="niLvFpga_ConfigureFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ConfigureFifo_PXIe-7965R.vi"/>
+			<Item Name="_nirio_device_attrSet32.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_driverPrimitives.llb/_nirio_device_attrSet32.vi"/>
+			<Item Name="nicrio_CreateHostErrorCluster.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nicrio_HostTools.llb/nicrio_CreateHostErrorCluster.vi"/>
+			<Item Name="nirio_PxiTriggers.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirio_PxiTriggers.ctl"/>
+			<Item Name="78XX_ReserveTriggerImpl.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/78XX_ReserveTriggerImpl.vi"/>
+			<Item Name="nirioReserveTrigger.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/RIO/nirioReserveTrigger.vi"/>
+			<Item Name="niLvFpga_Run_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Run_PXIe-7965R.vi"/>
+			<Item Name="niLvFpga_Reset_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Reset_PXIe-7965R.vi"/>
+			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
+			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
+			<Item Name="niLvFpga_Open_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Open_PXIe-7965R.vi"/>
 			<Item Name="niLvFpga_StartFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_StartFifo_PXIe-7965R.vi"/>
-			<Item Name="niLvFpga_Read32_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_Read32_PXIe-7965R.vi"/>
-			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2012/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
-			<Item Name="StockFPGA_PlugInRead32.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2012/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/StockFPGA_PlugInRead32.vi"/>
-			<Item Name="niFpgaRWControlAccessTimeoutTemplate.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/nirviReadWriteControl/niFpgaRWControlAccessTimeoutTemplate.vi"/>
+			<Item Name="niLvFpga_ConfigureFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ConfigureFifo_PXIe-7965R.vi"/>
+			<Item Name="niFpgaViExecutionMode.ctl" Type="VI" URL="/&lt;vilib&gt;/FPGA/interface/niFpgaViExecutionMode.ctl"/>
+			<Item Name="niLvFpga_ReadFifo_PXIe-7965R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PXIe-7965R/niLvFpga_ReadFifo_PXIe-7965R.vi"/>
+			<Item Name="matscript.dll" Type="Document"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="AODScanner" Type="EXE">
