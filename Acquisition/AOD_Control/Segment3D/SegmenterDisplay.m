@@ -66,8 +66,6 @@ set(handles.planeSelector,'Max',length(handles.seg.z));
 set(handles.planeSelector,'Value',1);
 set(gcf,'KeyPressFcn',@keyPress);
 
-plotPlane(handles)
-
 % remove mean and normalize the aod stack
 handles.scdata_aod = handles.seg.dat ;
 for ii=1:size(handles.scdata_aod,3)
@@ -95,6 +93,10 @@ handles.aligned = false ;
 
 % Update handles structure
 guidata(hObject, handles);
+[handles.begrow, handles.endrow, handles.begcol, handles.endcol, handles.sr] = plotPlane(handles);
+
+guidata(hObject, handles);
+
 
 % UIWAIT makes SegmenterDisplay wait for user response (see UIRESUME)
 uiwait(handles.figure1);
@@ -133,6 +135,7 @@ handles = guidata(hObject);
 
 cp = get(handles.plane,'CurrentPoint');
 coordinate = cp(1,1:2);
+[coordinate(2) coordinate(1)] = plottoimagecoordinates(hObject, coordinate(2), coordinate(1)) ;
 coordinate(3) = get(handles.planeSelector,'Value');
 coordinate = round(coordinate);
 
@@ -147,8 +150,10 @@ plotPlane(handles);
 
 
 
-
-function plotPlane(handles)
+% rowpixels and colpixels give the size of the plot rectangle
+% sr is the factor by which the image is sclaed to fit the plot rectangle
+% while maintaining the aspect ratio
+function [begrow, endrow, begcol, endcol, sr] = plotPlane(handles)
 
 % plane in the aod volume
 index = round(get(handles.planeSelector,'Value'));
@@ -156,7 +161,7 @@ index = round(get(handles.planeSelector,'Value'));
 % corresponding plane in the mirror volume is only availabe after alignment
 if (handles.aligned)
     mirrorindex = index + handles.zoffset ;
-    if (mirrorindex > size(handles.scdata_mirror))
+    if (mirrorindex > size(handles.scdata_mirror,3))
         mirrorindex = nan ;
     end ;
 end ;
@@ -164,16 +169,13 @@ end ;
 % get the aod frame that needs to be displayed along with any selected
 % points in that frame
 im1 = handles.seg.dat(:,:,index)';
-mask = generateMask(handles.seg,4,index)';
+mask = generateMask(handles.seg,4,index)'
 im1 = (im1 - min(im1(:))) / range(im1(:));
 im1 = repmat(im1,[1 1 3]);
 
 % use half the blue channel and half the mask value (mask represents the
 % selected points), this is a rgb image
 im1(:,:,3) = im1(:,:,3) / 2 + mask / 2;
-
-% stretch contrast and bring the values in 0 - 255 range
-im1 = (im1 - min(im1(:)))*255 / range(im1(:));
 
 % determine the scaling needed to fit the aod image in the window while
 % keeping the aspect of the original acquired image
@@ -185,13 +187,13 @@ set(handles.plane, 'Units', oldunits) ;
 sr1 = min(p1(4)/size(im1,1), p1(3)/size(im1,2)) ;
 
 % if alignment has been done, determine what is the smaller scale factor
+axes(handles.mirrorframe) ; 
+oldunits = get(handles.mirrorframe, 'Units') ;
+set(handles.mirrorframe, 'Units', 'pixels') ;
+p2 = get(handles.mirrorframe, 'Position') ;
+set(handles.mirrorframe, 'Units', oldunits) ;
 if (handles.aligned)
-    axes(handles.mirrorframe) ; 
     im2 = handles.scdata_mirror(1) ; % use the first frame for scale calculations
-    oldunits = get(handles.mirrorframe, 'Units') ;
-	set(handles.mirrorframe, 'Units', 'pixels') ;
-	p2 = get(handles.mirrorframe, 'Position') ;
-	set(handles.mirrorframe, 'Units', oldunits) ;
  
 % % resize the image proprtionally to fit the destination rectangle, get
 % % scale factor
@@ -205,19 +207,27 @@ end ;
 
 % resize the aod image and center it for drawing
 t1 = imresize(im1, sr) ;
+
+% stretch contrast and bring the values in 0 - 255 range
+t1 = (t1 - min(t1(:))) / range(t1(:));
+
 im1 = zeros(p1(4), p1(3), size(im1,3)) ;
-drow = floor((p1(4)/2)-(size(t1,1)/2))+1 ;
-dcol = floor((p1(3)/2)-(size(t1,2)/2))+1 ;
-im1(drow:drow+size(t1,1)-1, dcol:dcol+size(t1,2)-1, :) = t1 ;
+begrow = floor((p1(4)/2)-(size(t1,1)/2))+1 ;
+endrow = begrow+size(t1,1)-1 ;
+begcol = floor((p1(3)/2)-(size(t1,2)/2))+1 ;
+endcol = begcol+size(t1,2)-1 ;
+im1(begrow:endrow, begcol:endcol, :) = t1 ;
 
 % draw the rescaled aod image
 axes(handles.plane) ;
-image(im1) ;
+h=image(im1) ;
 axis off ;
+set(h,'ButtonDownFcn', @cellClicked);
+colormap gray ;
 
 % need to draw the mirror frame based on what has been done with the mirror
 % volume
-if (~isempty(handles.scdata))
+if (~isempty(handles.scdata_mirror))
     if (handles.aligned)
         if (mirrorindex ~= nan)            
 %           display the red and green channels mixed together            
@@ -236,27 +246,29 @@ if (~isempty(handles.scdata))
 
             t2 = imresize(f1f2, sr) ;
         else
-            t2 = imresize(zeros(size(im2,1), size(im2,2), 3), sr) ;
+            t2 = imresize(zeros(size(handles.scdata_mirror(1),1), size(handles.scdata_mirror(1),2), 3), sr) ;  % black frame
         end ;
     else
-            t2 = imresize(zeros(size(im2,1), size(im2,2), 3)+255, sr) ;
+            t2 = imresize(ones(size(handles.scdata_mirror(1),1), size(handles.scdata_mirror(1),2), 3), sr) ; % white frame
     end ;
 else
-            t2 = imresize(zeros(size(im2,1), size(im2,2), 3)+128, sr) ;
+    t2 = imresize(zeros(size(handles.seg.dat,1), size(handles.seg.dat,2), 3)+0.5, sr) ; % keep the same size as aod frame, gray frame
 end ;  
 
-im2 = zeros(p2(4), p2(3)) ;
-drow = floor((p2(4)/2)-(size(t2,1)/2))+1 ;
-dcol = floor((p2(3)/2)-(size(t2,2)/2))+1 ;
+% stretch contrast and bring the values in 0 - 255 range
+t2 = (t2 - min(t2(:))) / range(t2(:));
+
+im2 = zeros(p2(4), p2(3), 3) ;
+drow = floor((p2(4)/2)-(size(t2,1)/2))+1 
+dcol = floor((p2(3)/2)-(size(t2,2)/2))+1 
+size(t2)
 im2(drow:drow+size(t2,1)-1, dcol:dcol+size(t2,2)-1, :) = t2 ;
 
 axes(handles.mirrorframe) ;
 image(im2) ;
 axis off ;
 
-set(h,'ButtonDownFcn', @cellClicked);
 
-colormap gray ;
 
 
 
@@ -384,14 +396,23 @@ function autoAlign_Callback(hObject, eventdata, handles)
 [handles.scdata_aod foo1 foo2] = FindShear(handles.scdata_aod, true, false) ;
 
 % find the x,y and z offsets that produces a match between AOD and mirror stacks
+% assumes dx = dy, i.e. a square pixel
 [handles.xoffset handles.effectivewidth handles.yoffset handles.effectiveheight handles.zoffset handles.aodframeislarger] = FindMatch2(handles.scdata_aod, handles.scdata_mirror, ...
                                                                                             handles.scdata_mirror_ch2,...
-                                                                                            handles.pixelsize_aod, false, false, true, false) ;
+                                                                                            handles.seg.dx, false, false, true, false) ;
 
 guidata(hObject, handles);
 plotPlane(handles) ;
 
 
 
+
+% r = row number, c=col number
+function [rimage cimage] = plottoimagecoordinates(hObject, rplot, cplot)
+
+handles = guidata(hObject) ;
+
+rimage = round((rplot - handles.begrow)/handles.sr) ;
+cimage = round((cplot - handles.begcol)/handles.sr) ;
 
 

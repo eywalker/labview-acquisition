@@ -26,8 +26,7 @@ classdef Segmenter
         magnification = [] ;
         ip = [] ;
         sharedfolder = [] ;
-        
-    end
+     end
     
     methods 
         function self = Segmenter(dat,x,y,z,lens,magnification, ip, sharedfolder)
@@ -48,12 +47,12 @@ classdef Segmenter
             
             self.numCells = 0;
             self = smoothVolume(self);
+  
         end
 
         function mask = generateMask(self, radius, zind)
             % Generates a 3D mask of the selected points that extends the
             % selected radius
-            
             if nargin < 3
                 zind = ':';
             end
@@ -62,12 +61,13 @@ classdef Segmenter
             mask = zeros(length(self.x),length(self.y),length(zval));
             
             [gy gx gz] = meshgrid(self.y,self.x,zval);
+            
             for i = 1:size(self.centered_coordinates,1)
                 x = self.centered_coordinates(i,1);
                 y = self.centered_coordinates(i,2);
                 z = self.centered_coordinates(i,3);
                 mask(((gx(:) - x).^2 + (gy(:) - y).^2 + (gz(:) - z).^2) < radius^2) = 1;
-            end
+            end           
         end
             
         function self = smoothVolume(self)
