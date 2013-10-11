@@ -29,7 +29,7 @@ classdef Segmenter
      end
     
     methods 
-        function self = Segmenter(dat,x,y,z,lens,magnification, ip, sharedfolder)
+        function self = Segmenter(dat,x,y,z,points,lens,magnification, ip, sharedfolder)
             % Store the volume information in this object
             self.dat = dat;
             self.x = x;
@@ -40,12 +40,14 @@ classdef Segmenter
             self.ip = ip ;
             self.sharedfolder = sharedfolder ;
             
-            % Get the pixel spacing
+            % Get the pixel spacing in microns
             self.dx = mean(diff(self.x));
             self.dy = mean(diff(self.y));
             self.dz = mean(diff(self.z));
             
-            self.numCells = 0;
+            self.numCells = size(points,1);
+            self.click_coordinates = points ;
+            self.centered_coordinates = points ;
             self = smoothVolume(self);
   
         end
@@ -92,6 +94,7 @@ classdef Segmenter
             self.dat_smoothed = imfilter(dat, h, 'replicate');
         end
         
+ %      x, y z are in microns
         function self = addClick(self, x, y, z)
             % Find the center of a cell given a click location
             
@@ -147,6 +150,13 @@ classdef Segmenter
             self.centered_coordinates(self.numCells,1:3) = [cent_x cent_y cent_z];
         end
         
+        
+        function self = clearPoints(self)
+            self.click_coordinates = [] ;
+            self.centered_coordinates = [] ;
+            self.numCells = 0 ;
+            
+            
         function self = updateVolume(self, dat, x, y, z)
             self.dat = dat;
             self.x = x;
