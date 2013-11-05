@@ -155,7 +155,7 @@ classdef Segmenter
             self.click_coordinates = [] ;
             self.centered_coordinates = [] ;
             self.numCells = 0 ;
-            
+        end    
             
         function self = updateVolume(self, dat, x, y, z)
             self.dat = dat;
