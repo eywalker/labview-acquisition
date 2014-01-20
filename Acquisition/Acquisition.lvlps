@@ -161,3 +161,11 @@ Cache_Path[Path] Line0001 = "/C/Documents and Settings/atlab/Local Settings/Tem"
 Cache_Path[Path] Line0002 = "p/AB_Cache_{C17D3D5E-8A41-4867-9CCA-9F03B2DAD986}."
 Cache_Path[Path] Line0003 = "txt"
 
+[AB_Cache_{F69AB3A5-ECB4-4FBF-814A-1C5AADDD7611}]
+Cache_Path[Path] Line0001 = "/C/Users/atlab.NEUROSCIENCE/AppData/Local/Temp/AB_"
+Cache_Path[Path] Line0002 = "Cache_{F69AB3A5-ECB4-4FBF-814A-1C5AADDD7611}.txt"
+
+[AB_Cache_{5C8D2C40-283D-474D-8B98-37DA601BB7AB}]
+Cache_Path[Path] Line0001 = "/C/Users/atlab.NEUROSCIENCE/AppData/Local/Temp/AB_"
+Cache_Path[Path] Line0002 = "Cache_{5C8D2C40-283D-474D-8B98-37DA601BB7AB}.txt"
+
