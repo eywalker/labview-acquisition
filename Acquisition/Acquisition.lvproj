@@ -29,23 +29,11 @@
 		</Item>
 		<Item Name="Main Programs" Type="Folder">
 			<Item Name="SessionManager.vi" Type="VI" URL="../SessionManager.vi"/>
-			<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
 			<Item Name="Trial Based Experiment Runner.vi" Type="VI" URL="../../Trial Based Experiment Statechart/TrialBasedExperimentObject/Trial Based Experiment Runner.vi"/>
+			<Item Name="DataReceiver.vi" Type="VI" URL="../DataReceiver.vi"/>
 			<Item Name="Ephys.vi" Type="VI" URL="../Ephys.vi"/>
 			<Item Name="SessionManagerSimulator.vi" Type="VI" URL="../SessionManagerSimulator.vi"/>
 			<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
-		</Item>
-		<Item Name="Experiments" Type="Folder">
-			<Item Name="ClassDiscrimination.lvclass" Type="LVClass" URL="../../Experiments/ClassDiscrimination/ClassDiscrimination.lvclass"/>
-			<Item Name="FlePhysEffExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlePhysEffExperiment/FlePhysEffExperiment.lvclass"/>
-			<Item Name="MultDimExperiment.lvclass" Type="LVClass" URL="../../Experiments/MultDimExperiment/MultDimExperiment.lvclass"/>
-			<Item Name="DotMappingExperiment.lvclass" Type="LVClass" URL="../../Experiments/DotMappingExperiment/DotMappingExperiment.lvclass"/>
-			<Item Name="EyeCalibration.lvclass" Type="LVClass" URL="../../Experiments/EyeCalibration/EyeCalibration.lvclass"/>
-			<Item Name="MoviesExperiment.lvclass" Type="LVClass" URL="../../Experiments/MoviesExperiment/MoviesExperiment.lvclass"/>
-			<Item Name="MouseMultiDim.lvclass" Type="LVClass" URL="../../Experiments/MouseMultiDim/MouseMultiDim.lvclass"/>
-			<Item Name="MouseBar.lvclass" Type="LVClass" URL="../../Experiments/MouseBar/MouseBar.lvclass"/>
-			<Item Name="MouseDotMapping.lvclass" Type="LVClass" URL="../../Experiments/MouseDotMapping/MouseDotMapping.lvclass"/>
-			<Item Name="WhiteNoiseOrientationDetection.lvclass" Type="LVClass" URL="../../Experiments/WhiteNoiseOrientationDetection/WhiteNoiseOrientationDetection.lvclass"/>
 		</Item>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="beh.ico" Type="Document" URL="../beh.ico"/>
@@ -54,7 +42,109 @@
 		<Item Name="sessMan.ico" Type="Document" URL="../sessMan.ico"/>
 		<Item Name="app.ini" Type="Document" URL="../app.ini"/>
 		<Item Name="acquisition-errors.txt" Type="Document" URL="../acquisition-errors.txt"/>
-		<Item Name="AcquisitionCoreObjects.lvlib" Type="Library" URL="../AcquisitionCoreObjects.lvlib"/>
+		<Item Name="AcquisitionCoreLibrary.lvlibp" Type="LVLibp" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp">
+			<Item Name="BehaviorObjects" Type="Folder">
+				<Item Name="MatlabExperiment.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Trial Based Experiment Statechart/MatlabExperiment/MatlabExperiment.lvclass"/>
+				<Item Name="PassiveExperiment.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Trial Based Experiment Statechart/PassiveExperiment/PassiveExperiment.lvclass"/>
+				<Item Name="TrialBasedExperiment.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Trial Based Experiment Statechart/TrialBasedExperimentObject/TrialBasedExperiment.lvclass"/>
+			</Item>
+			<Item Name="AcqCoreLib_8.6CompatibleGlobalVar.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/config.llb/AcqCoreLib_8.6CompatibleGlobalVar.vi"/>
+			<Item Name="AcqCoreLib__ArrWfmsTo2DArr.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/sound2/lvsound2.llb/AcqCoreLib__ArrWfmsTo2DArr.vi"/>
+			<Item Name="AcqCoreLib__Get Sound Error From Return Value.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/sound2/lvsound2.llb/AcqCoreLib__Get Sound Error From Return Value.vi"/>
+			<Item Name="AcqCoreLib_AddCircle.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/NonCore SubVIs/AcqCoreLib_AddCircle.vi"/>
+			<Item Name="AcqCoreLib_Append To Dataset 2D Integer.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/HDF5Tools/LabView/AcqCoreLib_Append To Dataset 2D Integer.vi"/>
+			<Item Name="AcqCoreLib_BehPrimary.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/Database/AcqCoreLib_BehPrimary.ctl"/>
+			<Item Name="AcqCoreLib_BuildHelpPath.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_BuildHelpPath.vi"/>
+			<Item Name="AcqCoreLib_Check for Equality.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Waveform/WDTOps.llb/AcqCoreLib_Check for Equality.vi"/>
+			<Item Name="AcqCoreLib_Check if File or Folder Exists.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/AcqCoreLib_Check if File or Folder Exists.vi"/>
+			<Item Name="AcqCoreLib_Check Special Tags.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Check Special Tags.vi"/>
+			<Item Name="AcqCoreLib_Clear Errors.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Clear Errors.vi"/>
+			<Item Name="AcqCoreLib_Convert property node font to graphics font.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Convert property node font to graphics font.vi"/>
+			<Item Name="AcqCoreLib_Core SubVIs.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Core SubVIs/AcqCoreLib_Core SubVIs.lvlib"/>
+			<Item Name="AcqCoreLib_Create Dataset 2D Integer.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/HDF5Tools/LabView/AcqCoreLib_Create Dataset 2D Integer.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Clear Task.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/configure/task.llb/AcqCoreLib_DAQmx Clear Task.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Connect Terminals.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/configure/routing.llb/AcqCoreLib_DAQmx Connect Terminals.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Create Channel (CI-Count Edges).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/create/channels.llb/AcqCoreLib_DAQmx Create Channel (CI-Count Edges).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Create Channel (DO-Digital Output).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/create/channels.llb/AcqCoreLib_DAQmx Create Channel (DO-Digital Output).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Create CI Channel (sub).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/create/channels.llb/AcqCoreLib_DAQmx Create CI Channel (sub).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Create DO Channel (sub).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/create/channels.llb/AcqCoreLib_DAQmx Create DO Channel (sub).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Create Task.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/create/task.llb/AcqCoreLib_DAQmx Create Task.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Disconnect Terminals.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/configure/routing.llb/AcqCoreLib_DAQmx Disconnect Terminals.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Fill In Error Info.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/miscellaneous.llb/AcqCoreLib_DAQmx Fill In Error Info.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Flatten Channel String.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/miscellaneous.llb/AcqCoreLib_DAQmx Flatten Channel String.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Read (Analog 2D I32 NChan NSamp).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/read.llb/AcqCoreLib_DAQmx Read (Analog 2D I32 NChan NSamp).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Read (Counter U32 1Chan 1Samp).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/read.llb/AcqCoreLib_DAQmx Read (Counter U32 1Chan 1Samp).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Rollback Channel If Error.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/create/channels.llb/AcqCoreLib_DAQmx Rollback Channel If Error.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Start Task.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/configure/task.llb/AcqCoreLib_DAQmx Start Task.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Stop Task.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/configure/task.llb/AcqCoreLib_DAQmx Stop Task.vi"/>
+			<Item Name="AcqCoreLib_DAQmx Timing (Sample Clock).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/configure/timing.llb/AcqCoreLib_DAQmx Timing (Sample Clock).vi"/>
+			<Item Name="AcqCoreLib_DAQmx Write (Digital Bool 1Line 1Point).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/DAQmx/write.llb/AcqCoreLib_DAQmx Write (Digital Bool 1Line 1Point).vi"/>
+			<Item Name="AcqCoreLib_Details Display Dialog.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Details Display Dialog.vi"/>
+			<Item Name="AcqCoreLib_DialogType.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_DialogType.ctl"/>
+			<Item Name="AcqCoreLib_DialogTypeEnum.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_DialogTypeEnum.ctl"/>
+			<Item Name="AcqCoreLib_DU64_U32SubtractWithBorrow.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Waveform/TSOps.llb/AcqCoreLib_DU64_U32SubtractWithBorrow.vi"/>
+			<Item Name="AcqCoreLib_EphysPrimary.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/Database/AcqCoreLib_EphysPrimary.ctl"/>
+			<Item Name="AcqCoreLib_Error Cluster From Error Code.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Error Cluster From Error Code.vi"/>
+			<Item Name="AcqCoreLib_Error Code Database.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Error Code Database.vi"/>
+			<Item Name="AcqCoreLib_ErrWarn.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_ErrWarn.ctl"/>
+			<Item Name="AcqCoreLib_eventvkey.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/event_ctls.llb/AcqCoreLib_eventvkey.ctl"/>
+			<Item Name="AcqCoreLib_ex_CorrectErrorChain.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/express/express shared/AcqCoreLib_ex_CorrectErrorChain.vi"/>
+			<Item Name="AcqCoreLib_Find Tag.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Find Tag.vi"/>
+			<Item Name="AcqCoreLib_Format Message String.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Format Message String.vi"/>
+			<Item Name="AcqCoreLib_General Error Handler CORE.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_General Error Handler CORE.vi"/>
+			<Item Name="AcqCoreLib_General Error Handler.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_General Error Handler.vi"/>
+			<Item Name="AcqCoreLib_Get LV Class Path.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/LVClass/AcqCoreLib_Get LV Class Path.vi"/>
+			<Item Name="AcqCoreLib_Get String Text Bounds.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Get String Text Bounds.vi"/>
+			<Item Name="AcqCoreLib_Get Text Rect.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/picture/picture.llb/AcqCoreLib_Get Text Rect.vi"/>
+			<Item Name="AcqCoreLib_GetHelpDir.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_GetHelpDir.vi"/>
+			<Item Name="AcqCoreLib_GetRTHostConnectedProp.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_GetRTHostConnectedProp.vi"/>
+			<Item Name="AcqCoreLib_GOOP Object Repository Method.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/_goopsup.llb/AcqCoreLib_GOOP Object Repository Method.ctl"/>
+			<Item Name="AcqCoreLib_GOOP Object Repository Statistics.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/_goopsup.llb/AcqCoreLib_GOOP Object Repository Statistics.ctl"/>
+			<Item Name="AcqCoreLib_GOOP Object Repository.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/_goopsup.llb/AcqCoreLib_GOOP Object Repository.vi"/>
+			<Item Name="AcqCoreLib_HDF5Tools.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/HDF5Tools/LabView/AcqCoreLib_HDF5Tools.lvlib"/>
+			<Item Name="AcqCoreLib_I128 Timestamp.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Waveform/TSOps.llb/AcqCoreLib_I128 Timestamp.ctl"/>
+			<Item Name="AcqCoreLib_Longest Line Length in Pixels.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Longest Line Length in Pixels.vi"/>
+			<Item Name="AcqCoreLib_LVBoundsTypeDef.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/AcqCoreLib_LVBoundsTypeDef.ctl"/>
+			<Item Name="AcqCoreLib_Matlab API.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Matlab API/AcqCoreLib_Matlab API.lvlib"/>
+			<Item Name="AcqCoreLib_NI_AALBase.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Analysis/AcqCoreLib_NI_AALBase.lvlib"/>
+			<Item Name="AcqCoreLib_NI_AALPro.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Analysis/AcqCoreLib_NI_AALPro.lvlib"/>
+			<Item Name="AcqCoreLib_NI_Database_API.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/addons/database/AcqCoreLib_NI_Database_API.lvlib"/>
+			<Item Name="AcqCoreLib_NI_FileType.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/AcqCoreLib_NI_FileType.lvlib"/>
+			<Item Name="AcqCoreLib_NI_LVConfig.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/config.llb/AcqCoreLib_NI_LVConfig.lvlib"/>
+			<Item Name="AcqCoreLib_NI_MABase.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/measure/AcqCoreLib_NI_MABase.lvlib"/>
+			<Item Name="AcqCoreLib_NI_MAPro.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/measure/AcqCoreLib_NI_MAPro.lvlib"/>
+			<Item Name="AcqCoreLib_NI_Matrix.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Analysis/Matrix/AcqCoreLib_NI_Matrix.lvlib"/>
+			<Item Name="AcqCoreLib_NI_PackedLibraryUtility.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/AcqCoreLib_NI_PackedLibraryUtility.lvlib"/>
+			<Item Name="AcqCoreLib_NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Statechart/Common/AcqCoreLib_NI_SC_LVSCCommonFiles.lvlib"/>
+			<Item Name="AcqCoreLib_Not Found Dialog.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Not Found Dialog.vi"/>
+			<Item Name="AcqCoreLib_Sampling Mode.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/sound2/lvsound2.llb/AcqCoreLib_Sampling Mode.ctl"/>
+			<Item Name="AcqCoreLib_SCRT Dbg Rtn.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Statechart/Infrastructure/RTStatechart/Dbg/AcqCoreLib_SCRT Dbg Rtn.vi"/>
+			<Item Name="AcqCoreLib_SCRT SDV Rtn.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Statechart/Infrastructure/RTStatechart/Dbg/AcqCoreLib_SCRT SDV Rtn.vi"/>
+			<Item Name="AcqCoreLib_Search and Replace Pattern.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Search and Replace Pattern.vi"/>
+			<Item Name="AcqCoreLib_SessionPrimary.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/Database/AcqCoreLib_SessionPrimary.ctl"/>
+			<Item Name="AcqCoreLib_Set Bold Text.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Set Bold Text.vi"/>
+			<Item Name="AcqCoreLib_Set String Value.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Set String Value.vi"/>
+			<Item Name="AcqCoreLib_Simple Error Handler.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Simple Error Handler.vi"/>
+			<Item Name="AcqCoreLib_Sound Data Format.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/sound2/lvsound2.llb/AcqCoreLib_Sound Data Format.ctl"/>
+			<Item Name="AcqCoreLib_Sound Output Task ID.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/sound2/lvsound2.llb/AcqCoreLib_Sound Output Task ID.ctl"/>
+			<Item Name="AcqCoreLib_Sound Output Write (DBL).vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/sound2/lvsound2.llb/AcqCoreLib_Sound Output Write (DBL).vi"/>
+			<Item Name="AcqCoreLib_Space Constant.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/AcqCoreLib_Space Constant.vi"/>
+			<Item Name="AcqCoreLib_StimulationPrimary.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/Database/AcqCoreLib_StimulationPrimary.ctl"/>
+			<Item Name="AcqCoreLib_subFile Dialog.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/express/express input/FileDialogBlock.llb/AcqCoreLib_subFile Dialog.vi"/>
+			<Item Name="AcqCoreLib_TagReturnType.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_TagReturnType.ctl"/>
+			<Item Name="AcqCoreLib_Three Button Dialog CORE.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Three Button Dialog CORE.vi"/>
+			<Item Name="AcqCoreLib_Three Button Dialog.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Three Button Dialog.vi"/>
+			<Item Name="AcqCoreLib_Timestamp Subtract.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Waveform/TSOps.llb/AcqCoreLib_Timestamp Subtract.vi"/>
+			<Item Name="AcqCoreLib_Trial Based Experiment.lvsc" Type="LVStatechart" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Trial Based Experiment Statechart/AcqCoreLib_Trial Based Experiment.lvsc"/>
+			<Item Name="AcqCoreLib_Trim Whitespace.vi" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_Trim Whitespace.vi"/>
+			<Item Name="AcqCoreLib_VariantType.lvlib" Type="Library" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/VariantDataType/AcqCoreLib_VariantType.lvlib"/>
+			<Item Name="AcqCoreLib_whitespace.ctl" Type="VI" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/1abvi3w/vi.lib/Utility/error.llb/AcqCoreLib_whitespace.ctl"/>
+			<Item Name="AcquireTraces.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/AcquireTraces/AcquireTraces.lvclass"/>
+			<Item Name="AcquistionObject.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/AcquistionObject/AcquistionObject.lvclass"/>
+			<Item Name="BehaviorData.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/BehaviorData/BehaviorData.lvclass"/>
+			<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/Electrophysiology/Electrophysiology.lvclass"/>
+			<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/TimeStamper/TimeStamper.lvclass"/>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -249,36 +339,35 @@
 				<Item Name="DWDT Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Uncompress Digital.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
-				<Item Name="Sampling Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sampling Mode.ctl"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="Sound Data Format.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Data Format.ctl"/>
-				<Item Name="Sound Output Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Task ID.ctl"/>
-				<Item Name="Sound Output Write (DBL Single).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (DBL Single).vi"/>
-				<Item Name="Sound Output Write (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (DBL).vi"/>
-				<Item Name="Sound Output Write (I16).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (I16).vi"/>
-				<Item Name="Sound Output Write (I32).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (I32).vi"/>
-				<Item Name="Sound Output Write (SGL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (SGL).vi"/>
-				<Item Name="Sound Output Write (U8).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (U8).vi"/>
-				<Item Name="Sound Output Write.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="NI_Database_API.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/database/NI_Database_API.lvlib"/>
 				<Item Name="GOOP Object Repository Statistics.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Statistics.ctl"/>
 				<Item Name="GOOP Object Repository Method.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Method.ctl"/>
 				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
-				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
-				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
+				<Item Name="DAQmx Create Channel (AI-Velocity-IEPE Sensor).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Velocity-IEPE Sensor).vi"/>
+				<Item Name="DAQmx Create Channel (AI-Strain-Rosette Strain Gage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Strain-Rosette Strain Gage).vi"/>
+				<Item Name="DAQmx Create Strain Rosette AI Channels (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Strain Rosette AI Channels (sub).vi"/>
+				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
+				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="Waveform to XY Pairs.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform to XY Pairs.vi"/>
 				<Item Name="WDT Waveform to XY Pairs DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs DBL.vi"/>
 				<Item Name="WDT Waveform to XY Pairs SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs SGL.vi"/>
@@ -296,114 +385,19 @@
 				<Item Name="WDT Waveform to XY Pairs CXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CXT.vi"/>
 				<Item Name="DAQmx Export Signal.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal.vi"/>
 				<Item Name="DAQmx Export Signal (Most Signals).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal (Most Signals).vi"/>
-				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
-				<Item Name="DAQmx Connect Terminals.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/routing.llb/DAQmx Connect Terminals.vi"/>
-				<Item Name="DAQmx Disconnect Terminals.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/routing.llb/DAQmx Disconnect Terminals.vi"/>
-				<Item Name="DAQmx Flatten Channel String.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Flatten Channel String.vi"/>
-				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
-				<Item Name="DAQmx Create Channel (AI-Velocity-IEPE Sensor).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Velocity-IEPE Sensor).vi"/>
-				<Item Name="DAQmx Create Channel (AI-Strain-Rosette Strain Gage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Strain-Rosette Strain Gage).vi"/>
-				<Item Name="DAQmx Create Strain Rosette AI Channels (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Strain Rosette AI Channels (sub).vi"/>
-				<Item Name="NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="/&lt;vilib&gt;/Statechart/Common/NI_SC_LVSCCommonFiles.lvlib"/>
-				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
-				<Item Name="SCRT Dbg Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT Dbg Rtn.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
-				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
-				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
-				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
-				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
-				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
-				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
-				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
-				<Item Name="DTbl Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Uncompress Digital.vi"/>
-				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
-				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
-				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
-				<Item Name="_Get Sound Error From Return Value.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_Get Sound Error From Return Value.vi"/>
-				<Item Name="_ArrWfmsTo2DArr.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo2DArr.vi"/>
-				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
-				<Item Name="_ArrWfmsToData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsToData.vi"/>
-				<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(_).vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Create Dataset 2D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 2D Integer.vi"/>
-			<Item Name="Append To Dataset 2D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 2D Integer.vi"/>
+			<Item Name="AcqCoreLib_lvanlys.dll" Type="Document" URL="../AcquisitionCoreLibrary/AcqCoreLib_lvanlys.dll"/>
+			<Item Name="AcqCoreLib_HDF5Tools.dll" Type="Document" URL="../AcquisitionCoreLibrary/AcqCoreLib_HDF5Tools.dll"/>
+			<Item Name="AcqCoreLib_hdf5_hldll.dll" Type="Document" URL="../AcquisitionCoreLibrary/AcqCoreLib_hdf5_hldll.dll"/>
+			<Item Name="AcqCoreLib_lvsound2.dll" Type="Document" URL="../AcquisitionCoreLibrary/AcqCoreLib_lvsound2.dll"/>
+			<Item Name="Network - Send PSP String.vi" Type="VI" URL="../../Core SubVIs/Network - Send PSP String.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Append_HDF5_waveform 2D.vi" Type="VI" URL="../../HDF5/Append_HDF5_waveform 2D.vi"/>
 			<Item Name="Core SubVIs.lvlib" Type="Library" URL="../../Core SubVIs/Core SubVIs.lvlib"/>
 			<Item Name="Matlab API.lvlib" Type="Library" URL="../../Matlab API/Matlab API.lvlib"/>
-			<Item Name="Network - Send PSP String.vi" Type="VI" URL="../../Core SubVIs/Network - Send PSP String.vi"/>
-			<Item Name="Append_HDF5_waveform 2D.vi" Type="VI" URL="../../HDF5/Append_HDF5_waveform 2D.vi"/>
-			<Item Name="HDF5Tools.dll" Type="Document" URL="../../../HDF5Tools/Release/HDF5Tools.dll"/>
-			<Item Name="Create Dataset 2D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 2D Double.vi"/>
-			<Item Name="Create Dataset 1D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 1D Integer.vi"/>
-			<Item Name="Create Dataset 3D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 3D Double.vi"/>
-			<Item Name="Create Dataset 3D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 3D Integer.vi"/>
-			<Item Name="Create Dataset 1D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Create Dataset 1D Double.vi"/>
-			<Item Name="hdf5_hldll.dll" Type="Document" URL="../../../HDF5Tools/Release/hdf5_hldll.dll"/>
-			<Item Name="Append To Dataset 2D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 2D Double.vi"/>
-			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 1D Double.vi"/>
-			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 1D Integer.vi"/>
-			<Item Name="Append To Dataset 3D Double.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 3D Double.vi"/>
-			<Item Name="Append To Dataset 3D Integer.vi" Type="VI" URL="../../../HDF5Tools/LabView/Append To Dataset 3D Integer.vi"/>
-			<Item Name="HDF5Tools.lvlib" Type="Library" URL="../../../HDF5Tools/LabView/HDF5Tools.lvlib"/>
-			<Item Name="GetSubjectUI.vi" Type="VI" URL="../../NonCore SubVIs/GetSubjectUI.vi"/>
-			<Item Name="AddCircle.vi" Type="VI" URL="../../NonCore SubVIs/AddCircle.vi"/>
-			<Item Name="QueuedWriteToDatabase.vi" Type="VI" URL="../../Core SubVIs/QueuedWriteToDatabase.vi"/>
-			<Item Name="FlashLagExperiment.lvclass" Type="LVClass" URL="../../Experiments/FlashLagExperiment/FlashLagExperiment.lvclass"/>
-			<Item Name="TwoAfcEye.lvclass" Type="LVClass" URL="../../Experiments/TwoAfcEye/TwoAfcEye.lvclass"/>
-			<Item Name="FleTraining.lvclass" Type="LVClass" URL="../../Experiments/FleTraining/FleTraining.lvclass"/>
-			<Item Name="OriDiscExperiment.lvclass" Type="LVClass" URL="../../Experiments/OriDiscExperiment/OriDiscExperiment.lvclass"/>
-			<Item Name="WNOriDiscExperiment.lvclass" Type="LVClass" URL="../../Experiments/WNOriDiscExperiment/WNOriDiscExperiment.lvclass"/>
-			<Item Name="Trial Based Experiment.lvsc" Type="LVStatechart" URL="../../Trial Based Experiment Statechart/Trial Based Experiment.lvsc"/>
-			<Item Name="error.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/error.ctl"/>
-			<Item Name="Translate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Translate Error.vi"/>
-			<Item Name="MC_Global_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Constants/MC_Global_Global.vi"/>
-			<Item Name="NIMS_Already Translated.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Already Translated.vi"/>
-			<Item Name="Create Error.vi" Type="VI" URL="/&lt;vilib&gt;/imathl/engines/lvmath/Functions/Error Handling/Create Error.vi"/>
-			<Item Name="NIMS_abs(signed).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/abs/NIMS_abs(signed).vi"/>
-			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal(CDB).vi"/>
-			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(RV,CV)-internal.vi"/>
-			<Item Name="NIMS_sum(GV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/sum/NIMS_sum(GV).vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/NodeEndStatement/NIMS_NodeEndStatement_Output.vi"/>
-			<Item Name="MC_Registration_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Registration_Global.vi"/>
-			<Item Name="MC_Registered_VIs_Global.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Registered_VIs_Global.vi"/>
-			<Item Name="MC_Close_All_Registered_SubVI.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Close_All_Registered_SubVI.vi"/>
-			<Item Name="MC_Register_Notification_Command.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Register_Notification_Command.ctl"/>
-			<Item Name="MC_Register_Notification_Type.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Register_Notification_Type.ctl"/>
-			<Item Name="MC_Get_Notification_Event.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Get_Notification_Event.vi"/>
-			<Item Name="MC_Registered_VIs.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Registered_VIs.vi"/>
-			<Item Name="MC_Register_VI_In_Memory.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalRegistration/MC_Register_VI_In_Memory.vi"/>
-			<Item Name="MC_GlobalManager_Actions.ctl" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalManager/MC_GlobalManager_Actions.ctl"/>
-			<Item Name="MC_GlobalManager.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/GlobalManager/MC_GlobalManager.vi"/>
-			<Item Name="MC_Global_NamesAndDefaultValues.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Constants/MC_Global_NamesAndDefaultValues.vi"/>
-			<Item Name="Untranslate Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath/Functions/Error Handling/Untranslate Error.vi"/>
-			<Item Name="NIMS_Finalize Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Finalize Error.vi"/>
-			<Item Name="NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC_002.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC.lvgen/NIMS_abs(signed)_C4FCB8E6058B49B797C7C8D53CA5F6EC_002.vi"/>
-			<Item Name="NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E_006.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E.lvgen/NIMS_ArithmeticOperator_multmx(RV,CV)-internal_836141DE3AC14D72BD21D7E9B67C984E_006.vi"/>
-			<Item Name="NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5.lvgen/NIMS_sum(GV)_67F5EC36BC034E54A6BEC5B0673C00E5_000.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_012.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_012.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -552,15 +546,15 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Experiments/MoviesExperiment.lvclass/Cycle.vi</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MoviesExperiment.lvclass/Cycle.vi</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[10].type" Type="Str">VI</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Experiments/WhiteNoiseOrientationDetection.lvclass/Cycle.vi</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/WhiteNoiseOrientationDetection.lvclass/Cycle.vi</Property>
 				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[11].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Experiments/ClassDiscrimination.lvclass/Cycle.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/ClassDiscrimination.lvclass/Cycle.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -569,7 +563,7 @@
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/AcquisitionCoreObjects.lvlib/BehaviorObjects/PassiveExperiment.lvclass/Cycle.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref"></Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -578,25 +572,25 @@
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/AcquisitionCoreObjects.lvlib/AcquistionObject.lvclass</Property>
+				<Property Name="Source[4].itemID" Type="Ref"></Property>
 				<Property Name="Source[4].type" Type="Str">Library</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/AcquisitionCoreObjects.lvlib/AcquireTraces.lvclass</Property>
+				<Property Name="Source[5].itemID" Type="Ref"></Property>
 				<Property Name="Source[5].type" Type="Str">Library</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Experiments/EyeCalibration.lvclass/Cycle.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/EyeCalibration.lvclass/Cycle.vi</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Experiments/MouseBar.lvclass/Cycle.vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MouseBar.lvclass/Cycle.vi</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Experiments/MouseDotMapping.lvclass/Cycle.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MouseDotMapping.lvclass/Cycle.vi</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Experiments/MouseMultiDim.lvclass/Cycle.vi</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/MouseMultiDim.lvclass/Cycle.vi</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">12</Property>
@@ -711,7 +705,7 @@
 				<Property Name="Source[0].newName" Type="Str">AcqCore_</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AcquisitionCoreObjects.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
