@@ -3,16 +3,16 @@
 	<Property Name="CCSymbols" Type="Str"></Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{1D9A456C-8E0C-4CB8-B2C1-B935C584784C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
-	<Property Name="varPersistentID:{1E077441-AC7F-4627-B1E7-54A359E432CB}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysAIscalingCoeff</Property>
-	<Property Name="varPersistentID:{4613179C-CB92-4AC9-A3B5-FBE7E0CAC80E}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/StimulationPK</Property>
-	<Property Name="varPersistentID:{500D56EA-A11B-437D-B792-4C2522374099}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
-	<Property Name="varPersistentID:{71A5460E-DDCE-4559-ACFF-46EB94F67A65}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysChanNames</Property>
-	<Property Name="varPersistentID:{BE53E74B-B5E1-4CFB-8FCE-3DFD5ECDDC15}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/BehaviorPK</Property>
-	<Property Name="varPersistentID:{CF269BBD-E219-4BBE-AA8F-571B018135FB}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysFs</Property>
-	<Property Name="varPersistentID:{D38A100C-4C39-4349-8B51-72906B7E64F2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
-	<Property Name="varPersistentID:{DD2184FE-091A-4647-A290-151834C8289B}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Subject</Property>
-	<Property Name="varPersistentID:{FABF56F5-998C-408E-8D41-59E475F5CB79}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysPK</Property>
+	<Property Name="varPersistentID:{43E7C1CB-55FA-4952-A815-020153047215}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPath</Property>
+	<Property Name="varPersistentID:{6529774B-C145-4E26-A755-20BFDD79A5A9}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysFs</Property>
+	<Property Name="varPersistentID:{84819A73-48CA-4511-A86D-51564D1E8FDA}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysAIscalingCoeff</Property>
+	<Property Name="varPersistentID:{8E7AFA18-CC4B-43CC-9CF1-A6F0B4E91E1F}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/BehaviorPK</Property>
+	<Property Name="varPersistentID:{8F5382F9-CCD3-4E85-B0EE-B85912CDCA1D}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Message</Property>
+	<Property Name="varPersistentID:{BC3378AD-1D68-4B59-BF6D-5FCD2A3763B2}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysPK</Property>
+	<Property Name="varPersistentID:{C7F9AE5A-523A-40F1-8A9F-D2DE43616F13}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Subject</Property>
+	<Property Name="varPersistentID:{C9530380-5386-42EF-8CB8-DBC8980CDBCE}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/StimulationPK</Property>
+	<Property Name="varPersistentID:{E0B95686-A868-4CCF-86B1-7A0B33DE7813}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/SessionPK</Property>
+	<Property Name="varPersistentID:{F03E40E8-0D63-4B2F-99A4-F4B97E54205F}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysChanNames</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -35,7 +35,6 @@
 			<Item Name="SessionManagerSimulator.vi" Type="VI" URL="../SessionManagerSimulator.vi"/>
 			<Item Name="Start Listener.vi" Type="VI" URL="../../Start Listener.vi"/>
 		</Item>
-		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
 		<Item Name="beh.ico" Type="Document" URL="../beh.ico"/>
 		<Item Name="ephysAcq.ico" Type="Document" URL="../ephysAcq.ico"/>
 		<Item Name="matlabListener.ico" Type="Document" URL="../matlabListener.ico"/>
@@ -145,6 +144,10 @@
 			<Item Name="Electrophysiology.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/Electrophysiology/Electrophysiology.lvclass"/>
 			<Item Name="TimeStamper.lvclass" Type="LVClass" URL="../AcquisitionCoreLibrary/AcquisitionCoreLibrary.lvlibp/labview-acquisition/Acquisition/TimeStamper/TimeStamper.lvclass"/>
 		</Item>
+		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../AcquisitionVariables.lvlib"/>
+		<Item Name="SplitString.vi" Type="VI" URL="../../NonCore SubVIs/SplitString.vi"/>
+		<Item Name="Pre-Build Action.vi" Type="VI" URL="../Pre-Build Action.vi"/>
+		<Item Name="GetGitHash.vi" Type="VI" URL="../../NonCore SubVIs/GetGitHash.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -385,6 +388,38 @@
 				<Item Name="WDT Waveform to XY Pairs CXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Waveform to XY Pairs CXT.vi"/>
 				<Item Name="DAQmx Export Signal.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal.vi"/>
 				<Item Name="DAQmx Export Signal (Most Signals).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal (Most Signals).vi"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
+				<Item Name="NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="/&lt;vilib&gt;/Statechart/Common/NI_SC_LVSCCommonFiles.lvlib"/>
+				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
+				<Item Name="SCRT Dbg Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT Dbg Rtn.vi"/>
+				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DTbl Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Uncompress Digital.vi"/>
+				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -398,6 +433,8 @@
 			<Item Name="Append_HDF5_waveform 2D.vi" Type="VI" URL="../../HDF5/Append_HDF5_waveform 2D.vi"/>
 			<Item Name="Core SubVIs.lvlib" Type="Library" URL="../../Core SubVIs/Core SubVIs.lvlib"/>
 			<Item Name="Matlab API.lvlib" Type="Library" URL="../../Matlab API/Matlab API.lvlib"/>
+			<Item Name="QueuedWriteToDatabase.vi" Type="VI" URL="../../Core SubVIs/QueuedWriteToDatabase.vi"/>
+			<Item Name="Trial Based Experiment.lvsc" Type="LVStatechart" URL="../../Trial Based Experiment Statechart/Trial Based Experiment.lvsc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EphysAcquisition" Type="EXE">
@@ -423,24 +460,17 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/EphysAcquisition/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/ephysAcq.ico</Property>
-				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
-				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EDFD0574-5781-4C2D-870A-3334913340C4}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{55030F9F-57B4-4DFF-8B0F-188D54A8A014}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AcquisitionVariables.lvlib</Property>
-				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Main Programs/Ephys.vi</Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].propertiesCount" Type="Int">1</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/Ephys.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Acquire electrophysiological data with timestamping.</Property>
 				<Property Name="TgtF_fileVersion.build" Type="Int">69</Property>
@@ -463,6 +493,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Session Manager</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7E5B2598-D249-4ED8-8834-445757BA8943}</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
@@ -475,10 +506,9 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/sessMan.ico</Property>
 				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
-				<Property Name="Exe_Vardep[0].LibItemID" Type="Ref">/My Computer/AcquisitionVariables.lvlib</Property>
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EAB03004-73C7-484F-B079-01DDFA93DE97}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{15CC7E9B-5E35-47CE-805C-414A4C8AB615}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main Programs/SessionManager.vi</Property>
@@ -531,7 +561,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/beh.ico</Property>
 				<Property Name="Exe_Vardep[0].LibDeploy" Type="Bool">true</Property>
-				<Property Name="Exe_Vardep[0].LibItemID" Type="Ref">/My Computer/AcquisitionVariables.lvlib</Property>
+				<Property Name="Exe_Vardep[0].LibItemID" Type="Ref"></Property>
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
 				<Property Name="Exe_VardepHideDeployDlg" Type="Bool">true</Property>
 				<Property Name="Exe_VardepLibItemCount" Type="Int">1</Property>

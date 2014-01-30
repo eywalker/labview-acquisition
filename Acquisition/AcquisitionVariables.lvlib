@@ -51,6 +51,7 @@
 	</Item>
 	<Item Name="Message" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
 		<Property Name="Network:BuffSize" Type="Str">200</Property>
 		<Property Name="Network:ElemSize" Type="Str">1</Property>
 		<Property Name="Network:PointsPerWaveform" Type="Str">1</Property>
